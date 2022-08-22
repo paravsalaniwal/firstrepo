@@ -81,9 +81,9 @@ key: value
 
 ## Tables
 
-| First name | Last name |
+| Column 1 | Column 2 |
 |-|-|
-| Parav | Salaniwal |
+| A thing | Another thing |
 
 
 ## Tweetcards

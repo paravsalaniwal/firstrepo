@@ -43,7 +43,7 @@ Here's a list of my favorite sports to play:
 
 ## Images
 
-![]({{ https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/San_Francisco_49ers_logo.svg/2560px-San_Francisco_49ers_logo.svg.png }}/images/logo.png "San Francisco 49ers logo")
+![San Francisco 49ers logo](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/San_Francisco_49ers_logo.svg/2560px-San_Francisco_49ers_logo.svg.png)
 
 ## Code
 

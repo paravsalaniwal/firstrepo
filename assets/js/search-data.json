@@ -13,8 +13,8 @@
   
     
         ,"post1": {
-            "title": "Title",
-            "content": "My Jupyter Notebook . &quot;This is a line of code which will print Hello World!&quot; . print (&quot;Hello World!&quot;) . Hello World! .",
+            "title": "My Jupyter Notebook",
+            "content": "print (&quot;Hello World!&quot;) . Hello World! .",
             "url": "https://paravsalaniwal.github.io/firstrepo/2022/08/21/myfirstnb.html",
             "relUrl": "/2022/08/21/myfirstnb.html",
             "date": " • Aug 21, 2022"

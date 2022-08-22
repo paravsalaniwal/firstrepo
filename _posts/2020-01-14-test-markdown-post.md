@@ -43,7 +43,7 @@ Here's a list of my favorite sports to play:
 
 ## Images
 
-![San Francisco 49ers logo](https://blog.logomyway.com/wp-content/uploads/2020/11/49ers-logo.jpg)
+![San Francisco 49ers logo](https://loodibee.com/wp-content/uploads/nfl-san-francisco-49ers-team-logo.png)
 
 ## Code
 

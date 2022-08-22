@@ -25,15 +25,11 @@ You can use *italics*, **bold**, `code font text`, and create [links](https://ww
 
 ## Lists
 
-Here's a list:
+Here's a list of my favorite sports to play:
 
-- item 1
-- item 2
-
-And a numbered list:
-
-1. item 1
-1. item 2
+1. Football
+2. Basketball
+3. Track and Field
 
 ## Boxes and stuff
 
@@ -85,9 +81,9 @@ key: value
 
 ## Tables
 
-| Column 1 | Column 2 |
+| First name | Last name |
 |-|-|
-| A thing | Another thing |
+| Parav | Salaniwal |
 
 
 ## Tweetcards

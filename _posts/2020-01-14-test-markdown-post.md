@@ -81,9 +81,11 @@ key: value
 
 ## Tables
 
-| Column 1 | Column 2 |
+| First Name | Last name |
 |-|-|
-| A thing | Another thing |
+| LeBron | James |
+| Tom | Brady |
+| Lionel | Messi |
 
 
 ## Tweetcards

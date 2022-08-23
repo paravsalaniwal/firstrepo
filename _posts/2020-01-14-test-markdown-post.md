@@ -99,5 +99,5 @@ key: value
 
 
 
-[^1]: This is the footnote.
+[^1]: This is my footnote. Markdown is a markup language in which you can add formatting elements to plaintext text documents. 
 

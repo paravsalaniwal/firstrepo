@@ -56,7 +56,8 @@ General preformatted text:
     # Do a thing
     do_thing()
 
-Python code and output:
+#### Python Code Embeds:
+Addition and Subtraction Calculator
 
 ```python
 num_1 = input('Enter your first number: ')

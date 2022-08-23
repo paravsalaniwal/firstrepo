@@ -42,9 +42,9 @@ Here's a list of my favorite sports to play:
 {% include info.html text="You can include info boxes" %}
 
 ## Images
-
-![](https://loodibee.com/wp-content/uploads/nfl-san-francisco-49ers-team-logo.png)
 ###### 49ers Logo
+![](https://loodibee.com/wp-content/uploads/nfl-san-francisco-49ers-team-logo.png)
+
 
 
 ## Code

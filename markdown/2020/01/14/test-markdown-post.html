@@ -183,18 +183,26 @@ do_thing()
 
 <p>Python code and output:</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Prints '2'
-</span><span class="k">print</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-</code></pre></div></div>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">num_1</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Enter your first number: '</span><span class="p">)</span>
+<span class="n">num_2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Enter your second number: '</span><span class="p">)</span>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2
-</code></pre></div></div>
+<span class="n">num_1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'Enter your first number: '</span><span class="p">))</span>
+<span class="n">num_2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'Enter your second number: '</span><span class="p">))</span>
+ 
+<span class="c1"># Addition
+</span><span class="k">print</span><span class="p">(</span><span class="s">'{} + {} = '</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">num_1</span><span class="p">,</span> <span class="n">num_2</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">num_1</span> <span class="o">+</span> <span class="n">num_2</span><span class="p">)</span>
+ 
+<span class="c1"># Subtraction
+</span><span class="k">print</span><span class="p">(</span><span class="s">'{} - {} = '</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">num_1</span><span class="p">,</span> <span class="n">num_2</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">num_1</span> <span class="o">-</span> <span class="n">num_2</span><span class="p">)</span>
 
-<p>Formatting text as shell commands:</p>
+<span class="n">Formatting</span> <span class="n">text</span> <span class="k">as</span> <span class="n">shell</span> <span class="n">commands</span><span class="p">:</span>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"hello world"</span>
-./some_script.sh <span class="nt">--option</span> <span class="s2">"value"</span>
-wget https://example.com/cat_photo1.png
+<span class="sb">``</span><span class="err">`</span><span class="n">shell</span>
+<span class="n">echo</span> <span class="s">"hello world"</span>
+<span class="p">.</span><span class="o">/</span><span class="n">some_script</span><span class="p">.</span><span class="n">sh</span> <span class="o">--</span><span class="n">option</span> <span class="s">"value"</span>
+<span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">example</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">cat_photo1</span><span class="p">.</span><span class="n">png</span>
 </code></pre></div></div>
 
 <p>Formatting text as YAML:</p>

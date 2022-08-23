@@ -59,11 +59,19 @@ General preformatted text:
 Python code and output:
 
 ```python
-# Prints '2'
-print(1+1)
-```
+num_1 = input('Enter your first number: ')
+num_2 = input('Enter your second number: ')
 
-    2
+num_1 = int(input('Enter your first number: '))
+num_2 = int(input('Enter your second number: '))
+ 
+# Addition
+print('{} + {} = '.format(num_1, num_2))
+print(num_1 + num_2)
+ 
+# Subtraction
+print('{} - {} = '.format(num_1, num_2))
+print(num_1 - num_2)
 
 Formatting text as shell commands:
 

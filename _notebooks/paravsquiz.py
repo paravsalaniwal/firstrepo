@@ -64,3 +64,4 @@ else:
     print(rsp + " is incorrect!")
 
 print(getpass.getuser() + " you scored " + str(correct) +"/" + str(questions))
+print()

@@ -2,22 +2,22 @@
   
     
         "post0": {
-            "title": "Parav's Quiz",
-            "content": "import getpass, sys def question_and_answer(prompt): print(&quot;Question: &quot; + prompt) msg = input() print(&quot;Answer: &quot; + msg) def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg questions = 6 correct = 0 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) print(&quot;You will be asked &quot; + str(questions) + &quot; questions.&quot;) rsp = question_with_response(&quot;Are you ready to take a test?&quot;) if rsp == &quot;yes&quot;: print(&quot;Great, here is your first question!&quot;) else: print(&quot;Okay, come back when you&#39;re ready...&quot;) rsp = question_with_response(&quot;What command is used to include other functions that are developed?&quot;) if rsp == &quot;import&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;What command in this example is used to evaluate a response?&quot;) if rsp == &quot;if&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?&quot;) if rsp == &quot;expression&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;Grouping a sequence of commands is called _____ _____.&quot;) if rsp == &quot;procedural abstraction&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;What is the command for a string concatenation?&quot;) if rsp == &quot;+&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;What can be found below the code cell in Jupyter notebook?&quot;) if rsp == &quot;output&quot;: print(rsp + &quot;is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) print(getpass.getuser() + &quot; you scored &quot; + str(correct) +&quot;/&quot; + str(questions)) print() .",
-            "url": "https://paravsalaniwal.github.io/firstrepo/jupyter/2022/08/24/quiz.html",
-            "relUrl": "/jupyter/2022/08/24/quiz.html",
-            "date": " • Aug 24, 2022"
+            "title": "My Jupyter Notebook",
+            "content": "print (&quot;Hello World!&quot;) . Hello World! .",
+            "url": "https://paravsalaniwal.github.io/firstrepo/2022/08/25/myfirstnb.html",
+            "relUrl": "/2022/08/25/myfirstnb.html",
+            "date": " • Aug 25, 2022"
         }
         
     
   
     
         ,"post1": {
-            "title": "My Jupyter Notebook",
-            "content": "print (&quot;Hello World!&quot;) . Hello World! .",
-            "url": "https://paravsalaniwal.github.io/firstrepo/2022/08/23/myfirstnb.html",
-            "relUrl": "/2022/08/23/myfirstnb.html",
-            "date": " • Aug 23, 2022"
+            "title": "Parav's Quiz",
+            "content": "import getpass, sys from multiprocessing.resource_sharer import stop def question_and_answer(prompt): print(&quot;Question: &quot; + prompt) msg = input() print(&quot;Answer: &quot; + msg) def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg questions = 6 correct = 0 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) print(&quot;You will be asked &quot; + str(questions) + &quot; questions.&quot;) rsp = question_with_response(&quot;Are you ready to take a test?&quot;) if rsp == &quot;yes&quot;: print(&quot;Great, here is your first question!&quot;) else: print(&quot;Okay, come back when you&#39;re ready...&quot;) sys.exit() rsp = question_with_response(&quot;What command is used to include other functions that are developed?&quot;) if rsp == &quot;import&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;What command in this example is used to evaluate a response?&quot;) if rsp == &quot;if&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?&quot;) if rsp == &quot;expression&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;Grouping a sequence of commands is called _____ _____.&quot;) if rsp == &quot;procedural abstraction&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;What is the command for a string concatenation?&quot;) if rsp == &quot;+&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;What can be found below the code cell in Jupyter notebook?&quot;) if rsp == &quot;output&quot;: print(rsp + &quot;is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) print(getpass.getuser() + &quot; you scored &quot; + str(correct) +&quot;/&quot; + str(questions)) print() . Hello, parav running /Library/Developer/CommandLineTools/usr/bin/python3 You will be asked 6 questions. Question: Are you ready to take a test? Great, here is your first question! Question: What command is used to include other functions that are developed? is incorrect! Question: What command in this example is used to evaluate a response? is incorrect! Question: Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition? is incorrect! Question: Grouping a sequence of commands is called _____ _____. is incorrect! Question: What is the command for a string concatenation? is incorrect! Question: What can be found below the code cell in Jupyter notebook? is incorrect! parav you scored 0/6 .",
+            "url": "https://paravsalaniwal.github.io/firstrepo/jupyter/2022/08/24/quiz.html",
+            "relUrl": "/jupyter/2022/08/24/quiz.html",
+            "date": " • Aug 24, 2022"
         }
         
     
@@ -73,13 +73,13 @@
   
 
   
-  
 
   
 
   
   
 
+  
   
 
   

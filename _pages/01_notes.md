@@ -6,6 +6,6 @@ permalink: /notes/
 
 | Class |
 |-|
-| AP Chemistry |
+| [AP Chemistry]({{site.baseurl}}/2022/08/26/APchem.html) |
 | Honors Humanities |
 | AP Calculus |

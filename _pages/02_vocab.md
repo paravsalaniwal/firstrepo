@@ -2,7 +2,7 @@
 layout: page
 title: Vocab
 permalink: /vocab/
-
+---
 # Vocab Table
 
 | **Term** | **Definition** |

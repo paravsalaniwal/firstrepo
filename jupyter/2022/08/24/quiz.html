@@ -67,7 +67,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/firstrepo/search/">Search</a><a class="page-link" href="/firstrepo/notes/">Notes</a><a class="page-link" href="/firstrepo/vocab/">Vocab</a><a class="page-link" href="/firstrepo/about/">About Me</a><a class="page-link" href="/firstrepo/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/firstrepo/notes/">Notes</a><a class="page-link" href="/firstrepo/vocab/">Vocab</a><a class="page-link" href="/firstrepo/about/">About Me</a><a class="page-link" href="/firstrepo/search/">Search</a><a class="page-link" href="/firstrepo/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -173,6 +173,7 @@ window.onload = wrap_img;
     <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"'import' was the correct answer."</span><span class="p">)</span>
 
 <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"What command in this example is used to evaluate a response?"</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"if"</span><span class="p">:</span>
@@ -180,6 +181,8 @@ window.onload = wrap_img;
     <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"'if' was the correct answer."</span><span class="p">)</span>
+
 
 <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"Each 'if' command contains an '_________' to determine a true or false condition?"</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"expression"</span><span class="p">:</span>
@@ -187,6 +190,7 @@ window.onload = wrap_img;
     <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"'expression' was the correct answer."</span><span class="p">)</span>
 
 <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"Grouping a sequence of commands is called _____ _____."</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"procedural abstraction"</span><span class="p">:</span>
@@ -194,6 +198,7 @@ window.onload = wrap_img;
     <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"'procedural abstraction' was the correct answer."</span><span class="p">)</span>
 
 <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"What is the command for a string concatenation?"</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"+"</span><span class="p">:</span>
@@ -201,6 +206,7 @@ window.onload = wrap_img;
     <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"'+' was the correct answer."</span><span class="p">)</span>
 
 <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"What can be found below the code cell in Jupyter notebook?"</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"output"</span><span class="p">:</span>
@@ -208,9 +214,9 @@ window.onload = wrap_img;
     <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"'output' was the correct answer."</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">" you scored "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct</span><span class="p">)</span> <span class="o">+</span><span class="s2">"/"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">" you scored "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct</span><span class="p">)</span> <span class="o">+</span><span class="s2">"/"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span> <span class="o">+</span> <span class="s2">", you received a "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">((</span><span class="n">correct</span><span class="o">/</span><span class="n">questions</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"%"</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -228,19 +234,22 @@ You will be asked 6 questions.
 Question: Are you ready to take a test?
 Great, here is your first question!
 Question: What command is used to include other functions that are developed?
- is incorrect!
+import is correct!
 Question: What command in this example is used to evaluate a response?
- is incorrect!
+if is correct!
 Question: Each 'if' command contains an '_________' to determine a true or false condition?
- is incorrect!
+command is incorrect!
+'expression' was the correct answer.
 Question: Grouping a sequence of commands is called _____ _____.
- is incorrect!
+l is incorrect!
+'procedural abstraction' was the correct answer.
 Question: What is the command for a string concatenation?
  is incorrect!
+'+' was the correct answer.
 Question: What can be found below the code cell in Jupyter notebook?
  is incorrect!
-parav you scored 0/6
-
+'output' was the correct answer.
+parav you scored 2/6, you received a 33.33333333333333%
 </pre>
 </div>
 </div>

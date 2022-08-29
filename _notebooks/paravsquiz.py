@@ -1,4 +1,5 @@
 import getpass, sys
+from multiprocessing.resource_sharer import stop
 
 def question_and_answer(prompt):
     print("Question: " + prompt)
@@ -20,6 +21,7 @@ if rsp == "yes":
     print("Great, here is your first question!")
 else:
     print("Okay, come back when you're ready...")
+    sys.exit()
 
 rsp = question_with_response("What command is used to include other functions that are developed?")
 if rsp == "import":
@@ -27,6 +29,7 @@ if rsp == "import":
     correct += 1
 else:
     print(rsp + " is incorrect!")
+    print("'import' was the correct answer.")
 
 rsp = question_with_response("What command in this example is used to evaluate a response?")
 if rsp == "if":
@@ -34,6 +37,8 @@ if rsp == "if":
     correct += 1
 else:
     print(rsp + " is incorrect!")
+    print("'if' was the correct answer.")
+
 
 rsp = question_with_response("Each 'if' command contains an '_________' to determine a true or false condition?")
 if rsp == "expression":
@@ -41,6 +46,7 @@ if rsp == "expression":
     correct += 1
 else:
     print(rsp + " is incorrect!")
+    print("'expression' was the correct answer.")
 
 rsp = question_with_response("Grouping a sequence of commands is called _____ _____.")
 if rsp == "procedural abstraction":
@@ -48,6 +54,7 @@ if rsp == "procedural abstraction":
     correct += 1
 else:
     print(rsp + " is incorrect!")
+    print("'procedural abstraction' was the correct answer.")
 
 rsp = question_with_response("What is the command for a string concatenation?")
 if rsp == "+":
@@ -55,13 +62,14 @@ if rsp == "+":
     correct += 1
 else:
     print(rsp + " is incorrect!")
+    print("'+' was the correct answer.")
 
 rsp = question_with_response("What can be found below the code cell in Jupyter notebook?")
 if rsp == "output":
-    print(rsp + "is correct!")
+    print(rsp + " is correct!")
     correct += 1
 else:
     print(rsp + " is incorrect!")
+    print("'output' was the correct answer.")
 
-print(getpass.getuser() + " you scored " + str(correct) +"/" + str(questions))
-print()
+print(getpass.getuser() + " you scored " + str(correct) +"/" + str(questions) + ", you received a " + str((correct/questions)*100) + "%")

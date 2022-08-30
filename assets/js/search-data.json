@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Alumnipanel",
-            "content": "CSP Alumni Panel notes . How did you realize you wanted to do your major and taking AP CSA/CSP classes? . Logical thinking background helped with coding and solving problems . | Reflected on what he wanted to do as he entered the CompSci major . | . What is the biggest challenge you’ve encountered with CompSci? . Keeping motivated is an obstacle you have to move past because of all the errors in code that may make you frustrated . | There’s lots of people that are going to be better than you, but don’t be stressed out about trying to reach them and be the best you can be to satisfy yourself . | The temptation of copy codes from online and your peers because it can just be seen as a checklist of assignments that you need to complete, although it is about how well you understand it and try to push your way to do more than just a checklist . | It can be really demotivating when you have to start a brand new code as it can take lots of time and struggles to complete . | . Are there any PBL (project based learning) scenarios in College computer science classes? . Yes, one of the best scenario is studying in groups because especially in comp sci, you will face lots of errors that you won’t understand how to solve yourself, but others may be able to help you with their knowledge . | . How have you applied CS in your major if you are not majoring in CS? . For statistics, you have to program using MatLabs and other sources . | . For existing college students have you had a job with a school or professor? . Tutoring positions (work with professors) . | Code Ninja (teaching younger kids) . | Northrop Grumman (robotics projects) . | UCSD Professor (machine learning) . | .",
-            "url": "https://paravsalaniwal.github.io/firstrepo/2022/08/29/alumnipanel.html",
-            "relUrl": "/2022/08/29/alumnipanel.html",
+            "title": "My Jupyter Notebook",
+            "content": "print (&quot;Hello World!&quot;) . Hello World! .",
+            "url": "https://paravsalaniwal.github.io/firstrepo/2022/08/29/myfirstnb.html",
+            "relUrl": "/2022/08/29/myfirstnb.html",
             "date": " • Aug 29, 2022"
         }
         
@@ -13,11 +13,11 @@
   
     
         ,"post1": {
-            "title": "My Jupyter Notebook",
-            "content": "print (&quot;Hello World!&quot;) . Hello World! .",
-            "url": "https://paravsalaniwal.github.io/firstrepo/2022/08/28/myfirstnb.html",
-            "relUrl": "/2022/08/28/myfirstnb.html",
-            "date": " • Aug 28, 2022"
+            "title": "Alumnipanel",
+            "content": "CSP Alumni Panel takeaways . How did you realize you wanted to do your major and taking AP CSA/CSP classes? . Logical thinking background helped with coding and solving problems . | Reflected on what he wanted to do as he entered the CompSci major . | . What is the biggest challenge you’ve encountered with CompSci? . Keeping motivated is an obstacle you have to move past because of all the errors in code that may make you frustrated . | There’s lots of people that are going to be better than you, but don’t be stressed out about trying to reach them and be the best you can be to satisfy yourself . | The temptation of copy codes from online and your peers because it can just be seen as a checklist of assignments that you need to complete, although it is about how well you understand it and try to push your way to do more than just a checklist . | It can be really demotivating when you have to start a brand new code as it can take lots of time and struggles to complete . | . Are there any PBL (project based learning) scenarios in College computer science classes? . Yes, one of the best scenario is studying in groups because especially in comp sci, you will face lots of errors that you won’t understand how to solve yourself, but others may be able to help you with their knowledge . | . How have you applied CS in your major if you are not majoring in CS? . For statistics, you have to program using MatLabs and other sources . | . For existing college students have you had a job with a school or professor? . Tutoring positions (work with professors) . | Code Ninja (teaching younger kids) . | Northrop Grumman (robotics projects) . | UCSD Professor (machine learning) . | . Summary: These college students helped me understand how computer science is such an important skill to learn for not just a computer science major, but also engineering, math major, science major, and lots more. With how the world has evolved to use technology, computer science has just become more used and prominent in the world. I learned that you will face lots of challenges through computer science but you must push yourself and work through it with the help of your peers. .",
+            "url": "https://paravsalaniwal.github.io/firstrepo/2022/08/29/alumnipanel.html",
+            "relUrl": "/2022/08/29/alumnipanel.html",
+            "date": " • Aug 29, 2022"
         }
         
     

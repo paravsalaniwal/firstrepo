@@ -482,4 +482,40 @@ pre code { font-size: 15px !important; }
 
 p code { font-size: 19px; }
 
+html, body, input, textarea, select, button { color: rgba(255, 255, 255, 0.87) !important; background-color: #FF9F21 !important; }
+
+a { color: #4bbaff !important; }
+
+a:hover { color: rgba(255, 255, 255, 0.87) !important; }
+
+.site-title, .site-title:visited, .site-nav, .page-link { color: rgba(255, 255, 255, 0.87) !important; }
+
+.site-nav { background-color: #FF9F21; border-color: #ffac40; }
+
+* { scrollbar-color: #FF9F21 #ffac40; }
+
+pre, code { border-color: #ffac40; background-color: #ffa42c; }
+
+.page-description { color: rgba(255, 255, 255, 0.69); }
+
+.post-meta { color: rgba(255, 255, 255, 0.38); }
+
+.post-content p, .post-content li { color: rgba(255, 255, 255, 0.69); }
+
+.btn { background-color: #ffa42c !important; color: rgba(255, 255, 255, 0.87) !important; border-color: #ffac40 !important; }
+
+.btn:hover { background-color: #FF9F21 !important; }
+
+table th { background-color: #ffa42c; border-color: #ffac40; color: rgba(255, 255, 255, 0.87); }
+
+table td { background-color: #FF9F21; border-color: #ffac40; color: rgba(255, 255, 255, 0.69); }
+
+.flash { color: #FF9F21 !important; filter: brightness(80%); }
+
+canvas { filter: invert(100%); }
+
+.post-list > li > div { box-shadow: none !important; background-color: #ffa42c; border: none !important; }
+
+li .post-meta-description { color: rgba(255, 255, 255, 0.69) !important; }
+
 /*# sourceMappingURL=style.css.map */

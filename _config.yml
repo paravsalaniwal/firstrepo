@@ -6,7 +6,7 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: fastpages
+title: 📍
 description: An easy to use blogging platform with support for Jupyter Notebooks.
 github_username: paravsalaniwal
 # you can comment the below line out if your repo name is not different than your baseurl
@@ -82,7 +82,7 @@ html_escape:
 
 # Everything below here should be left alone. Modifications may break fastpages
 future: true
-theme: hacker@v0.2.0
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-gist
@@ -102,8 +102,7 @@ paginate: 15
 paginate_path: /page:num/
 
 remote_theme: pages-themes/hacker@v0.2.0
-plugins:
-- jekyll-remote-theme
+gem "github-pages", group: :jekyll_plugins
 
 titles_from_headings:
   enabled:     true

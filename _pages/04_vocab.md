@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Vocab
+title: Vocab 🔤
 permalink: /vocab/
 ---
 #### Vocab Table

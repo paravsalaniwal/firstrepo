@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Notes
+title: Notes 📝
 permalink: /notes/
 ---
 

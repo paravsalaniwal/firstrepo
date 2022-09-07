@@ -4,9 +4,9 @@
         "post0": {
             "title": "My Jupyter Notebook",
             "content": "print (&quot;Hello World!&quot;) . Hello World! .",
-            "url": "https://paravsalaniwal.github.io/firstrepo/2022/09/05/myfirstnb.html",
-            "relUrl": "/2022/09/05/myfirstnb.html",
-            "date": " • Sep 5, 2022"
+            "url": "https://paravsalaniwal.github.io/firstrepo/2022/09/06/myfirstnb.html",
+            "relUrl": "/2022/09/06/myfirstnb.html",
+            "date": " • Sep 6, 2022"
         }
         
     
@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Observations",
-            "content": "Theme Changed . This is a screenshot of my fastpage home page theme changed. . . Observations . My _pages links are not working so I cannot search, click on my different subjects, click on the about me, or click on tags. | However, Everything else seems to be working correctly | .",
+            "content": "Theme Changed . This is a screenshot of my fastpage home page theme changed. . Observations . Without entering the line of gem code, I was not able to successfully push my changes | .",
             "url": "https://paravsalaniwal.github.io/firstrepo/markdown/class%20activities/2022/09/05/WebpageLayout.html",
             "relUrl": "/markdown/class%20activities/2022/09/05/WebpageLayout.html",
             "date": " • Sep 5, 2022"
@@ -135,15 +135,6 @@
   
 
   
-      ,"page1": {
-          "title": "Vocab",
-          "content": "Vocab Table . Term Definition . Github | web-based version-control and collaboration platform for software developers | . Jupyter Notebook | the original web application for creating and sharing computational documents | . VSCode | a streamlined code editor with support for development operations like debugging, task running, and version control | . Python | a high-level general-purpose programming language | . Markdown | a lightweight markup language that you can use to add formatting elements to plaintext text documents | . Shell Script | text file that contains a sequence of commands for a UNIX-based operating system | . Code | or a system of rules written in a particular programming language | . Input | data that is entered into or received by a computer | . Output | data that the computer sends | . Repository | a central place in which an aggregation of data is kept and maintained | . Commit | the making of a set of tentative changes permanent | . Push | the delivery of information on the Web that is initiated by the information server | . Pull | to request data from another program or computer | . Bash | a command line interpreter that typically runs in a text window where user can interpret commands to carry out various actions | . Bin | compressed binary files that are used for varied purposes by many computer applications | .",
-          "url": "https://paravsalaniwal.github.io/firstrepo/vocab/",
-          "relUrl": "/vocab/",
-          "date": ""
-      }
-      
-  
 
   
       ,"page2": {
@@ -156,6 +147,15 @@
       
   
 
+  
+      ,"page3": {
+          "title": "Vocab",
+          "content": "Vocab Table . Term Definition . Github | web-based version-control and collaboration platform for software developers | . Jupyter Notebook | the original web application for creating and sharing computational documents | . VSCode | a streamlined code editor with support for development operations like debugging, task running, and version control | . Python | a high-level general-purpose programming language | . Markdown | a lightweight markup language that you can use to add formatting elements to plaintext text documents | . Shell Script | text file that contains a sequence of commands for a UNIX-based operating system | . Code | or a system of rules written in a particular programming language | . Input | data that is entered into or received by a computer | . Output | data that the computer sends | . Repository | a central place in which an aggregation of data is kept and maintained | . Commit | the making of a set of tentative changes permanent | . Push | the delivery of information on the Web that is initiated by the information server | . Pull | to request data from another program or computer | . Bash | a command line interpreter that typically runs in a text window where user can interpret commands to carry out various actions | . Bin | compressed binary files that are used for varied purposes by many computer applications | .",
+          "url": "https://paravsalaniwal.github.io/firstrepo/vocab/",
+          "relUrl": "/vocab/",
+          "date": ""
+      }
+      
   
 
   

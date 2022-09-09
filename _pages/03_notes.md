@@ -2,7 +2,6 @@
 - layout: page
 - title: Notes 📝
 - permalink: /notes/
-- categories: [markdown]
 ---
 
 | Class |

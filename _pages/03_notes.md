@@ -1,7 +1,7 @@
 ---
 - layout: page
 - title: Notes 📝
-- permalink: /markdown/notes/
+- permalink: /notes/
 - categories: [markdown]
 ---
 

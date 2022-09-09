@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Welcome to Parav Salaniwal's first post!"
+categories: [markdown]
 ---
 # Welcome to my post!
 

@@ -1,7 +1,8 @@
 ---
-layout: page
-title: Vocab 🔤
-permalink: /vocab/
+- layout: page
+- title: Vocab 🔤
+- permalink: /markdown/vocab/
+- categories: [markdown]
 ---
 #### Vocab Table
 

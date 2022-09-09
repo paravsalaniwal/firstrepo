@@ -1,7 +1,8 @@
 ---
-layout: page
-title: Notes 📝
-permalink: /notes/
+- layout: page
+- title: Notes 📝
+- permalink: /markdown/notes/
+- categories: [markdown]
 ---
 
 | Class |

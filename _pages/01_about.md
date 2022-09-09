@@ -1,7 +1,8 @@
 ---
-layout: page
-title: About Me 🙍‍♂️
-permalink: /about/
+- layout: page
+- title: About Me 🙍‍♂️
+- permalink: /markdown/about/
+- categories: [markdown]
 ---
 
 This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].

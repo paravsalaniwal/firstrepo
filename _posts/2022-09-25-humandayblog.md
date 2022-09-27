@@ -26,3 +26,4 @@ author: Parav Salaniwal
 ## Takeaways
 Most students that undergo stress, depression, and anxiety because of school work typically are the ones that do not use their time in class wisely thus, leading to less time to do things outside of class that can help make one less stressed. Using the time given in class will let a student become successful, less stressed, and happier. When you use the your time wisely and plan out a schedule of class work and leisurely activities. Making goals to chase can help you become more productive and waste less time. 
 
+

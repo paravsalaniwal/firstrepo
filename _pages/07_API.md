@@ -4,4 +4,4 @@ permalink: /api/
 title: API 💻
 ---
 
-| [API]({{site.baseurl}}/2022/10/17/weather/) |
+| [API]({{site.baseurl}}/2022/10/17/quotes/) |

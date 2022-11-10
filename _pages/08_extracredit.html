@@ -1,0 +1,23 @@
+---
+layout: default
+title: "Clock"
+categories: [markdown]
+hide: true
+permalink: /clock/
+---
+
+<h1>id="clock"</h1>
+
+<script>
+  // Clock Control
+  // clockElement global element set for convenience
+  let clockElement = document.getElementById('clock')
+  // Execute clock function on load
+  clock();
+  // Clock update executes on each interval set by timer
+  function clock() {
+      let date = new Date();
+      clockElement.textContent = date.toLocaleString();
+  }
+  // Clock refresh timer, a reoccurring event
+  setInterval(clock, 1000);</script>

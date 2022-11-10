@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Clock | 📍</title>
+<title>Clock ⏰ | 📍</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Clock" />
+<meta property="og:title" content="Clock ⏰" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Parav Salaniwal’s fastpages" />
 <meta property="og:description" content="Parav Salaniwal’s fastpages" />
@@ -15,9 +15,9 @@
 <meta property="og:site_name" content="📍" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Clock" />
+<meta property="twitter:title" content="Clock ⏰" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Parav Salaniwal’s fastpages","headline":"Clock","url":"https://paravsalaniwal.github.io/firstrepo/clock/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Parav Salaniwal’s fastpages","headline":"Clock ⏰","url":"https://paravsalaniwal.github.io/firstrepo/clock/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/firstrepo/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://paravsalaniwal.github.io/firstrepo/feed.xml" title="📍" /><link rel="shortcut icon" type="image/x-icon" href="/firstrepo/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -64,27 +64,31 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/firstrepo/markdown/about/">About Me 🙍‍♂️</a><a class="page-link" href="/firstrepo/schedule/">Schedule 🗓</a><a class="page-link" href="/firstrepo/markdown/notes/">Notes 📝</a><a class="page-link" href="/firstrepo/markdown/vocab/">Vocab 🔤</a><a class="page-link" href="/firstrepo/search/">Search 🔎</a><a class="page-link" href="/firstrepo/categories/">Tags 🏷</a><a class="page-link" href="/firstrepo/api/">API 💻</a><a class="page-link" href="/firstrepo/clock/">Clock</a></div>
+        <div class="trigger"><a class="page-link" href="/firstrepo/markdown/about/">About Me 🙍‍♂️</a><a class="page-link" href="/firstrepo/schedule/">Schedule 🗓</a><a class="page-link" href="/firstrepo/markdown/notes/">Notes 📝</a><a class="page-link" href="/firstrepo/markdown/vocab/">Vocab 🔤</a><a class="page-link" href="/firstrepo/search/">Search 🔎</a><a class="page-link" href="/firstrepo/categories/">Tags 🏷</a><a class="page-link" href="/firstrepo/api/">API 💻</a><a class="page-link" href="/firstrepo/clock/">Clock ⏰</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <h1 id="clock"></h1>
-
-<script>
-  // Clock Control
-  // clockElement global element set for convenience
-  let clockElement = document.getElementById('clock')
-  // Execute clock function on load
+        <div style="display: flex; align-items: center; justify-content: center;">
+    <h1 id="date"></h1>
+    <h2 id="time"></h1>
+  </div>
+  
+  <script>
+  let timeElement = document.getElementById('time')
+  let dateElement = document.getElementById('date')
+  
   clock();
-  // Clock update executes on each interval set by timer
+  
   function clock() {
-      let date = new Date();
-      clockElement.textContent = date.toLocaleString();
+    let date = new Date();
+    const date_time = date.toLocaleString().split(",");
+    dateElement.textContent = "Date: " + date_time[0];
+    timeElement.textContent = "Time: " + date_time[1].replace(/\s/g, '');
   }
-  // Clock refresh timer, a reoccurring event
-  setInterval(clock, 1000);</script>
-
+  
+  setInterval(clock, 1000);
+  </script>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/firstrepo/"></data>

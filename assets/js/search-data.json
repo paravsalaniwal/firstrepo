@@ -4,9 +4,9 @@
         "post0": {
             "title": "My Jupyter Notebook",
             "content": "print (&quot;Hello World!&quot;) . Hello World! .",
-            "url": "https://paravsalaniwal.github.io/firstrepo/jupyter/2022/11/06/myfirstnb.html",
-            "relUrl": "/jupyter/2022/11/06/myfirstnb.html",
-            "date": " • Nov 6, 2022"
+            "url": "https://paravsalaniwal.github.io/firstrepo/jupyter/2022/11/09/myfirstnb.html",
+            "relUrl": "/jupyter/2022/11/09/myfirstnb.html",
+            "date": " • Nov 9, 2022"
         }
         
     
@@ -229,19 +229,16 @@
   
 
   
-
+      ,"page7": {
+          "title": "Clock",
+          "content": "id=&quot;clock&quot; .",
+          "url": "https://paravsalaniwal.github.io/firstrepo/clock/",
+          "relUrl": "/clock/",
+          "date": ""
+      }
+      
   
 
-  
-  
-
-  
-  
-
-  
-  
-
-  
   
 
   
@@ -250,7 +247,21 @@
   
 
   
-      ,"page15": {
+  
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+      ,"page16": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://paravsalaniwal.github.io/firstrepo/robots.txt",

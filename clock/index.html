@@ -84,7 +84,7 @@ window.onload = wrap_img;
     let date = new Date();
     const date_time = date.toLocaleString().split(",");
     dateElement.textContent = "Date: " + date_time[0];
-    timeElement.textContent = "Time: " + date_time[0].replace(/\s/g, '');
+    timeElement.textContent = "Time: " + date_time[1].replace(/\s/g, '');
   }
   
   setInterval(clock, 1000);

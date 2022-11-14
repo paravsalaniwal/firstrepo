@@ -240,18 +240,12 @@
   
 
   
-      ,"page7": {
-          "title": "Clock ⏰",
-          "content": ". &lt;/h1&gt; &lt;/div&gt; .",
-          "url": "https://paravsalaniwal.github.io/firstrepo/clock/",
-          "relUrl": "/clock/",
-          "date": ""
-      }
-      
+
   
 
   
 
+  
   
 
   
@@ -272,7 +266,7 @@
   
 
   
-      ,"page16": {
+      ,"page17": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://paravsalaniwal.github.io/firstrepo/robots.txt",

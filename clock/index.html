@@ -85,7 +85,7 @@ window.onload = wrap_img;
   let dateElement = document.getElementById('date')
   let counterElement = document.getElementById('counter')
 
-  let count = 0
+  let count = -1
 
   clock();
 
@@ -101,7 +101,7 @@ window.onload = wrap_img;
   function increment() {
     count += 1;
 
-    counterElement.textContent = "Backend Counter: " + count
+    counterElement.textContent = "Counter: " + count
   }
 
   setInterval(clock, 1000);

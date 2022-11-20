@@ -30,16 +30,16 @@ title: Binary Calculator
               position: top;
             }
             .lgreen {
-              background: lightgreen;
-              color: brown;
+              background: lightblack !important;
+              color: orange !important;
               display: inline;
               width: 22%;
               height: 36px;
               font-size: 18px;
             }
             .dgreen {
-              background: darkgreen;
-              color: white;
+              background: lightblack !important;
+              color: orange !important;
               display: inline;
               width: 22%;
               height: 36px;
@@ -50,13 +50,14 @@ title: Binary Calculator
               position: bottom;
             }
             .operator {
-              background: black;
-              color: red;
+              background: black !important;
+              color: orange !important;
               height: 36px;
               width: 22%;
               font-size 18px;
             }
         </style>
+        <!-- Had to learn to use the !important function to work the color styling-->
         <meta charset="utf-8">
         </head>
     <body>

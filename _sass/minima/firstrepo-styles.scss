@@ -1,0 +1,144 @@
+$high-emph: #eef2ff; 
+$orange: #FF8300;
+$blue: #4C4C4C;
+$blue-hover: #2563eb;
+$black: #18181b;
+$grey : #cec1c1;
+$overlay: #f5f5f4;
+$overlay-light: #d1d5db;
+
+* {
+    transition: all 0.2s ease-in-out;
+    scrollbar-color: $grey $overlay-light;
+}
+
+html,
+body,
+input,
+textarea,
+select {
+    background-color: $high-emph !important;
+}
+.site-title,
+.site-title:visited,
+.site-nav,
+.page-link {
+    color: $red !important;
+    font-weight: bold;
+}
+
+.site-nav {
+    background-color: $black;
+    border-color: $black;
+}
+
+pre,
+code {
+    border-color: $overlay-light;
+    background-color: $overlay;
+    color: rgb(247, 247, 247);
+}
+
+.page-description {
+    color: $black;
+}
+
+.post-meta {
+    color: $black;
+}
+
+.post-content p,
+.post-content li {
+    color: $black;
+}
+
+.btn {
+    background-color: $overlay !important;
+    color: $high-emph !important;
+    border-color: $overlay-light !important;
+}
+
+.btn:hover {
+    background-color: $grey !important;
+}
+
+table th {
+    border-color: $overlay-light;
+    color: $black;
+}
+
+table td {
+    background-color: $grey;
+    border-color: $overlay-light;
+    color: $black;
+}
+
+.flash {
+    color: $grey !important;
+    filter: brightness(80%);
+}
+
+canvas {
+    filter: invert(100%);
+}
+
+.post-list > li > div {
+    box-shadow: none !important;
+    background-color: $overlay;
+    border: none !important;
+}
+
+li .post-meta-description {
+    color: $black !important;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    background-color: $black !important;
+}
+
+a {
+    color: $blue !important;
+}
+
+a:hover {
+    color: $blue-hover !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+}
+
+@import url("https://rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+* {
+    font-family: "Inter", sans-serif !important;
+}
+@supports (font-variation-settings: normal) {
+    * {
+        font-family: "Inter var", sans-serif !important;
+    }
+}
+
+code,
+pre * {
+    font-family: "IBM Plex Mono", monospace !important;
+}
+h1,
+h2 {
+    font-weight: bold !important;
+}
+
+.highlight {
+    background-color: #000000 !important;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+button {
+    background: $overlay !important;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+}

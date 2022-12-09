@@ -41,3 +41,8 @@ categories: [markdown]
 | 2D List | a collection of data cells, all of the same type, which can be given a single name |
 | Dictionary | a branch of science that deals with the theory of computation or the design of computers |
 | Class | a template definition of the method s and variable s in a particular kind of object |
+| Algorithms | a procedure used for solving a problem or performing a computation |
+| Sequence | A set of logical steps carried out in order |
+| Selection | a programming construct where a section of code is run only if a condition is met |
+| Iteration | a process where the design of a product or application is improved by repeated review and testing |
+| Expression | a syntactic entity in a programming language that may be evaluated to determine its value |

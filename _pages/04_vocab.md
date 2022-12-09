@@ -22,4 +22,15 @@ categories: [markdown]
 | Push | the delivery of information on the Web that is initiated by the information server |
 | Pull | to request data from another program or computer |
 | Bash | a command line interpreter that typically runs in a text window where user can interpret commands to carry out various actions |
-| Bin | compressed binary files that are used for varied purposes by many computer applications |
+| Bits | the smallest unit of data that a computer can process and store |
+| Bytes | a unit of data that is eight binary digits long |
+| Hexadecimal | a numbering system with base 16 |
+| Unassigned Integer | just like integers (whole numbers) but have the property that they don't have a + or - sign associated with them |
+| Signed integer | a 32-bit datum that encodes an integer in the range [-2147483648 to 2147483647] |
+| Floating Point | a positive or negative whole number with a decimal point |
+| Boolean | a logical data type that can have only the values true or false |
+| ASCII | the most common character encoding format for text data in computers and on the internet |
+| Unicode | a modern standard for text representation that defines each of the letters and symbols commonly used in today's digital and print media |
+| RGB | a system for representing the colors to be used on a computer display |
+| Lossy | a data encoding and compression technique that deliberately discards some data in the compression process |
+| Lossless | restores and rebuilds file data in its original form after the file is decompressed |

@@ -36,3 +36,8 @@ categories: [markdown]
 | Lossless | restores and rebuilds file data in its original form after the file is decompressed |
 | Variable | a value that can change, depending on conditions or on information passed to the program |
 | Data Types | a classification that specifies which type of value a variable has and what type of mathematical, relational or logical operations can be applied to it without causing an error |
+| Assignment operators | a statement in computer programming that is used to set a value to a variable nam |
+| Lists | an abstract data type that represents a finite number of ordered values, where the same value may occur more than once |
+| 2D List | a collection of data cells, all of the same type, which can be given a single name |
+| Dictionary | a branch of science that deals with the theory of computation or the design of computers |
+| Class | a template definition of the method s and variable s in a particular kind of object |

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Grading
+title: Grading 📊
 permalink: /markdown/grading/
 categories: [markdown]
 ---

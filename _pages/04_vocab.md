@@ -34,3 +34,5 @@ categories: [markdown]
 | RGB | a system for representing the colors to be used on a computer display |
 | Lossy | a data encoding and compression technique that deliberately discards some data in the compression process |
 | Lossless | restores and rebuilds file data in its original form after the file is decompressed |
+| Variable | a value that can change, depending on conditions or on information passed to the program |
+| Data Types | a classification that specifies which type of value a variable has and what type of mathematical, relational or logical operations can be applied to it without causing an error |

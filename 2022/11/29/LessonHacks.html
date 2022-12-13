@@ -1349,9 +1349,9 @@ The highest number(score):
 <span class="n">desired_grade</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your desired overall grade as a percentage: "</span><span class="p">))</span>
 
 <span class="n">grade_needed</span> <span class="o">=</span> <span class="n">grade_needed</span><span class="p">(</span><span class="n">current_grade</span><span class="p">,</span> <span class="n">final_grade_weight</span><span class="p">,</span> <span class="n">desired_grade</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">((</span><span class="n">current_grade</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">((</span><span class="n">final_grade_weight</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">((</span><span class="n">desired_grade</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Your current grade is: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">current_grade</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The final exam weight is: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">final_grade_weight</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Your desired grade is: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">desired_grade</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You need to get a grade of </span><span class="si">{</span><span class="n">grade_needed</span> <span class="o">*</span> <span class="mi">100</span><span class="si">}</span><span class="s2">% on the final exam."</span><span class="p">)</span>
 </pre></div>
 
@@ -1365,10 +1365,10 @@ The highest number(score):
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>95.0
-25.0
-90.0
-You need to get a grade of 75.00000000000004% on the final exam.
+<pre>Your current grade is: 94.0
+The final exam weight is: 20.0
+Your desired grade is: 90.0
+You need to get a grade of 74.00000000000001% on the final exam.
 </pre>
 </div>
 </div>

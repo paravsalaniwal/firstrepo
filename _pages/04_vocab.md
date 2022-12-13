@@ -4,7 +4,7 @@ title: Vocab 🔤
 permalink: /markdown/vocab/
 categories: [markdown]
 ---
-#### Vocab Table
+## Basic Vocab
 
 | **Term** | **Definition** |
 |-|-|
@@ -22,6 +22,11 @@ categories: [markdown]
 | Push | the delivery of information on the Web that is initiated by the information server |
 | Pull | to request data from another program or computer |
 | Bash | a command line interpreter that typically runs in a text window where user can interpret commands to carry out various actions |
+
+## Unit 2 Vocab
+
+| **Term** | **Definition** |
+|-|-|
 | Bits | the smallest unit of data that a computer can process and store |
 | Bytes | a unit of data that is eight binary digits long |
 | Hexadecimal | a numbering system with base 16 |
@@ -34,6 +39,11 @@ categories: [markdown]
 | RGB | a system for representing the colors to be used on a computer display |
 | Lossy | a data encoding and compression technique that deliberately discards some data in the compression process |
 | Lossless | restores and rebuilds file data in its original form after the file is decompressed |
+
+## Unit 3 Vocab
+
+| **Term** | **Definition** |
+|-|-|
 | Variable | a value that can change, depending on conditions or on information passed to the program |
 | Data Types | a classification that specifies which type of value a variable has and what type of mathematical, relational or logical operations can be applied to it without causing an error |
 | Assignment operators | a statement in computer programming that is used to set a value to a variable nam |

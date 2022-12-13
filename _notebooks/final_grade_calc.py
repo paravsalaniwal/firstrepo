@@ -1,5 +1,7 @@
 def grade_needed(current_grade, final_grade_weight, desired_grade):
 
+# Enter all values as percentages
+
   current_grade /= 100
   final_grade_weight /= 100
   desired_grade /= 100

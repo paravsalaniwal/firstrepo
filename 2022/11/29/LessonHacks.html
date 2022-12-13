@@ -98,7 +98,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      12 min read
     
 </span></p>
 
@@ -170,6 +170,15 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h2"><a href="#Homework">Homework </a></li>
 <li class="toc-entry toc-h2"><a href="#Hacks-2">Hacks 2 </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Lessons-12-and-13">Lessons 12 and 13 </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Hacks-1">Hacks 1 </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Additional-Code-(for-fun)">Additional Code (for fun) </a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul><!--
@@ -1293,6 +1302,138 @@ The highest number(score):
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Lessons-12-and-13">
+<a class="anchor" href="#Lessons-12-and-13" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lessons 12 and 13<a class="anchor-link" href="#Lessons-12-and-13"> </a>
+</h1>
+<p>Notes:</p>
+<ul>
+<li>A procedure is a named group of programming instructions that may have parameters and return values.</li>
+<li>Arguments specify the values of the parameters when procedure is called.</li>
+<li>A procedure call interrupts the sequential execution of statements causing the program to execute the statements within the procedure before continuing.</li>
+<li>If the procedure just returns a block of statements, you call the procedure by referring to the procedure name, and inputting the arguments.</li>
+<li>There are 2 different types of procedures- ones that return a value and those that simply execute a block of statements</li>
+<li>Picking a descriptive name is important in case you revisit the code later on</li>
+<li>Steps of developing procedure: picking name, thinking of parameters, making a flowchart or writing procedure in pseudocode, and actually developing the procedure.</li>
+<li>A type of procedural abstraction is one which provides a name for a process and allows a procedure to be used only knowing what it does and not how it does it</li>
+<li>Subdivision of a program into separate subprograms is called modularity</li>
+<li>A procedural abstraction may extract shared features to generalize functionality instead of duplicating code. </li>
+<li>Procedural abstraction is naming and calling a prewritten procedure</li>
+</ul>
+<h2 id="Hacks-1">
+<a class="anchor" href="#Hacks-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks 1<a class="anchor-link" href="#Hacks-1"> </a>
+</h2>
+<p>This code below is a final grade calculator. Enter values as percentages.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">grade_needed</span><span class="p">(</span><span class="n">current_grade</span><span class="p">,</span> <span class="n">final_grade_weight</span><span class="p">,</span> <span class="n">desired_grade</span><span class="p">):</span>
+
+  <span class="n">current_grade</span> <span class="o">/=</span> <span class="mi">100</span>
+  <span class="n">final_grade_weight</span> <span class="o">/=</span> <span class="mi">100</span>
+  <span class="n">desired_grade</span> <span class="o">/=</span> <span class="mi">100</span>
+  <span class="k">return</span> <span class="p">(</span><span class="n">desired_grade</span> <span class="o">-</span> <span class="n">current_grade</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">final_grade_weight</span><span class="p">))</span> <span class="o">/</span> <span class="n">final_grade_weight</span>
+
+<span class="n">current_grade</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your current grade as a percentage: "</span><span class="p">))</span>
+<span class="n">final_grade_weight</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the weight of the final exam as a percentage: "</span><span class="p">))</span>
+<span class="n">desired_grade</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your desired overall grade as a percentage: "</span><span class="p">))</span>
+
+<span class="n">grade_needed</span> <span class="o">=</span> <span class="n">grade_needed</span><span class="p">(</span><span class="n">current_grade</span><span class="p">,</span> <span class="n">final_grade_weight</span><span class="p">,</span> <span class="n">desired_grade</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">((</span><span class="n">current_grade</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">((</span><span class="n">final_grade_weight</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">((</span><span class="n">desired_grade</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You need to get a grade of </span><span class="si">{</span><span class="n">grade_needed</span> <span class="o">*</span> <span class="mi">100</span><span class="si">}</span><span class="s2">% on the final exam."</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>95.0
+25.0
+90.0
+You need to get a grade of 75.00000000000004% on the final exam.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Additional-Code-(for-fun)">
+<a class="anchor" href="#Additional-Code-(for-fun)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Additional Code (for fun)<a class="anchor-link" href="#Additional-Code-(for-fun)"> </a>
+</h3>
+<p>This code below will let a user input as many assignments needed to complete. Input the word "done" once you are done listing.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">create_checklist</span><span class="p">():</span>
+
+  <span class="n">checklist</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">assignment</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter an assignment (or 'done' to finish): "</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">assignment</span> <span class="o">==</span> <span class="s2">"done"</span><span class="p">:</span>
+      <span class="k">break</span>
+    <span class="n">checklist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">assignment</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">checklist</span>
+
+<span class="n">checklist</span> <span class="o">=</span> <span class="n">create_checklist</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Here is your checklist:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">checklist</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Here is your checklist:
+['math hw', 'chem pogil', 'comp sci hacks', '3d animation catch up', 'history newspaper']
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 

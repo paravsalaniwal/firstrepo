@@ -13,4 +13,4 @@ categories: [markdown]
 | [Alumni Panel]({{site.baseurl}}/2022/08/29/alumnipanel.html) |
 | [CollegeBoard Final]({{site.baseurl}}/2022/11/10/final.html) |
 | [Class Lessons]({{site.baseurl}}/2022/11/29/LessonHacks.html) |
-| [Business Panel]({{site.baseurl}}/2022/08/29/businesspanel.html) |
+| [Business Panel]({{site.baseurl}}/2022/12/13/businesspanel.html) |

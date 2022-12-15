@@ -5,8 +5,8 @@ permalink: /markdown/lessons/
 categories: [markdown]
 ---
 
-| **Lesson** | **Grade** |
-| - | - |
+| Lesson | Grade |
+|---|---|
 | [Lesson 1 and 2](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html#Lessons-1-and-2) | 0.80 |
 | [Lesson 3 and 4](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html#Lessons-3-and-4) | 0.90 |
 | [Lesson 5-7](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html#Lessons-5,-6,-and-7) | 1.00 |
@@ -16,6 +16,7 @@ categories: [markdown]
 | [Lesson 14 and 15](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html#Lessons-14-and-15) | 0.90 |
 | [Lesson 16](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html#Lesson-16) | - |
 | [Lesson 17 and 18](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html#Lessons-17-and-18) | - |
+
 All lessons notes and hacks can be found [here](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html)
 
 # Vocabulary:

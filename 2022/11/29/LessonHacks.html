@@ -98,7 +98,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      15 min read
+      17 min read
     
 </span></p>
 
@@ -189,6 +189,12 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Hacks-2a">Hacks 2a </a></li>
 <li class="toc-entry toc-h2"><a href="#Hacks-2b">Hacks 2b </a></li>
 <li class="toc-entry toc-h2"><a href="#Hacks-3">Hacks 3 </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Lesson-16">Lesson 16 </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Hacks-1">Hacks 1 </a></li>
+<li class="toc-entry toc-h2"><a href="#Hacks-2">Hacks 2 </a></li>
 </ul>
 </li>
 </ul><!--
@@ -1764,6 +1770,135 @@ You need to get a grade of 74.00000000000001% on the final exam.
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Lesson-16">
+<a class="anchor" href="#Lesson-16" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lesson 16<a class="anchor-link" href="#Lesson-16"> </a>
+</h1>
+<p>Notes:</p>
+<ul>
+<li>A simulation is a tested scenario used for viewing results/outputs to prepare for them in real world situations</li>
+<li>These can be used for practical things such as building structures, testing car crashes, and other things before engaging in them in the real world</li>
+<li>These simulations can have the option of obeying real world physics (Gravity, collision) or they can go against these norms since this is a fictitious scenario, and couldn't happen in real life</li>
+</ul>
+<h2 id="Hacks-1">
+<a class="anchor" href="#Hacks-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks 1<a class="anchor-link" href="#Hacks-1"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">min_temp</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10</span>
+<span class="n">max_temp</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">min_wind</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">max_wind</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">min_precip</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">max_precip</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">num_days</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="k">for</span> <span class="n">day</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_days</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+  <span class="n">temp</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">min_temp</span><span class="p">,</span> <span class="n">max_temp</span><span class="p">)</span>
+  <span class="n">wind</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">min_wind</span><span class="p">,</span> <span class="n">max_wind</span><span class="p">)</span>
+  <span class="n">precip</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">min_precip</span><span class="p">,</span> <span class="n">max_precip</span><span class="p">)</span>
+
+  <span class="nb">print</span><span class="p">(</span><span class="s2">"Forecast for day </span><span class="si">{}</span><span class="s2">:"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">day</span><span class="p">))</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">"  Temperature: </span><span class="si">{:.1f}</span><span class="s2"> C"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">temp</span><span class="p">))</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">"  Wind speed: </span><span class="si">{:.1f}</span><span class="s2"> km/h"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">wind</span><span class="p">))</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">"  Precipitation: </span><span class="si">{:.1f}</span><span class="s2">%"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">precip</span><span class="p">))</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">""</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Forecast for day 1:
+  Temperature: -6.0 C
+  Wind speed: 4.2 km/h
+  Precipitation: 20.9%
+
+Forecast for day 2:
+  Temperature: 21.3 C
+  Wind speed: 10.9 km/h
+  Precipitation: 86.0%
+
+Forecast for day 3:
+  Temperature: 18.9 C
+  Wind speed: 17.8 km/h
+  Precipitation: 49.8%
+
+Forecast for day 4:
+  Temperature: 24.2 C
+  Wind speed: 9.7 km/h
+  Precipitation: 42.9%
+
+Forecast for day 5:
+  Temperature: 3.9 C
+  Wind speed: 8.6 km/h
+  Precipitation: 65.3%
+
+Forecast for day 6:
+  Temperature: -6.8 C
+  Wind speed: 0.8 km/h
+  Precipitation: 85.1%
+
+Forecast for day 7:
+  Temperature: 6.7 C
+  Wind speed: 18.6 km/h
+  Precipitation: 74.0%
+
+Forecast for day 8:
+  Temperature: -3.3 C
+  Wind speed: 15.8 km/h
+  Precipitation: 90.9%
+
+Forecast for day 9:
+  Temperature: 11.0 C
+  Wind speed: 8.5 km/h
+  Precipitation: 93.2%
+
+Forecast for day 10:
+  Temperature: 21.4 C
+  Wind speed: 9.9 km/h
+  Precipitation: 40.6%
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hacks-2">
+<a class="anchor" href="#Hacks-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks 2<a class="anchor-link" href="#Hacks-2"> </a>
+</h2>
+<p><img src="https://user-images.githubusercontent.com/111609656/207753915-5d6bd3a5-9e90-467c-9487-3f9f47bbe816.png" alt=""></p>
+<p>Madden NFL is a video game that simulates American football. The game is designed to recreate the experience of playing a real football game, with accurate representations of teams, players, and stadiums, as well as detailed gameplay mechanics that mimic the rules and strategies of the sport. Players can control individual players on the field and make decisions on offense, defense, and special teams, with the goal of outscoring their opponent and winning the game. The game uses advanced algorithms and artificial intelligence to generate realistic outcomes and challenges for players, providing an immersive and engaging simulation of the sport of American football.</p>
+
+</div>
+</div>
+</div>
 </div>
 
 

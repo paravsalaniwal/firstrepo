@@ -6,7 +6,7 @@ categories: [markdown]
 ---
 
 | **Lesson** | **Grade** |
-|---|---|
+| - | - |
 | [Lesson 1 and 2](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html#Lessons-1-and-2) | 0.80 |
 | [Lesson 3 and 4](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html#Lessons-3-and-4) | 0.90 |
 | [Lesson 5-7](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html#Lessons-5,-6,-and-7) | 1.00 |

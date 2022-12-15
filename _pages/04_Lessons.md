@@ -1,10 +1,24 @@
 ---
 layout: page
-title: Vocab 🔤
-permalink: /markdown/vocab/
+title: Lessons 
+permalink: /markdown/lessons/
 categories: [markdown]
 ---
-## Basic Vocab
+
+|![Lesson 1 and 2](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html#Lessons-1-and-2)|0.80|
+|![Lesson 3 and 4](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html#Lessons-3-and-4)|0.90|
+|![Lesson 5-7](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html#Lessons-5,-6,-and-7)|1.00|
+|![Lesson 8 and 10](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html#Lessons-8-and-10)|0.85|
+|![Lesson 9 and 11](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html#Lessons-9-and-11)|0.92|
+|![Lesson 12 and 13](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html#Lessons-12-and-13)|1.00|
+|![Lesson 14 and 15](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html#Lessons-14-and-15)|0.90|
+|Lesson 16|-|
+|Lesson 17 and 18|-|
+All lessons notes and hacks can be found ![here](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html)
+
+# Vocabulary:
+
+**Basic Vocab**
 
 | **Term** | **Definition** |
 |-|-|
@@ -23,7 +37,8 @@ categories: [markdown]
 | Pull | to request data from another program or computer |
 | Bash | a command line interpreter that typically runs in a text window where user can interpret commands to carry out various actions |
 
-## Unit 2 Vocab
+
+**Unit 2 Vocab**
 
 | **Term** | **Definition** |
 |-|-|
@@ -40,7 +55,8 @@ categories: [markdown]
 | Lossy | a data encoding and compression technique that deliberately discards some data in the compression process |
 | Lossless | restores and rebuilds file data in its original form after the file is decompressed |
 
-## Unit 3 Vocab
+
+**Unit 3 Vocab**
 
 | **Term** | **Definition** |
 |-|-|

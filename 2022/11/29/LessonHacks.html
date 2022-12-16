@@ -98,7 +98,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      17 min read
+      20 min read
     
 </span></p>
 
@@ -195,6 +195,14 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h2"><a href="#Hacks-1-D8">Hacks 1 D8 </a></li>
 <li class="toc-entry toc-h2"><a href="#Hacks-2-D8">Hacks 2 D8 </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Lesson-17-and-18-Hacks">Lesson 17 and 18 Hacks </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Hacks-1-D9">Hacks 1 D9 </a></li>
+<li class="toc-entry toc-h2"><a href="#Hacks-2-D9">Hacks 2 D9 </a></li>
+<li class="toc-entry toc-h2"><a href="#Hacks-3-D9">Hacks 3 D9 </a></li>
+<li class="toc-entry toc-h2"><a href="#Hacks-4-D9">Hacks 4 D9 </a></li>
 </ul>
 </li>
 </ul><!--
@@ -1899,6 +1907,132 @@ Forecast for day 10:
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Lesson-17-and-18-Hacks">
+<a class="anchor" href="#Lesson-17-and-18-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lesson 17 and 18 Hacks<a class="anchor-link" href="#Lesson-17-and-18-Hacks"> </a>
+</h1>
+<p>Notes:</p>
+<ul>
+<li>Algorithm efficiency is the ability of an algorithm to solve a problem in an efficient way</li>
+<li>A decision problem is a problem in computer science and mathematics that can be solved by a yes-no answer, also known as a binary answer</li>
+<li>There are two types of decision problems that Collegeboard goes over:
+Decidable Problems
+Undecidable Problems</li>
+<li>A decidable problem is an algorithm that can always have an output of yes or no given any input. It is always correct.</li>
+<li>The code keeps adding 1 to the variable number until number is no longer an integer(This is not the python data type "integer", it's the integer in number theory).</li>
+<li>It states that it is not always possible to correctly determine whether a code halts or runs forever.</li>
+<li>Note that while a computer may take a long time to run a section of code, it does not mean that the computer is going to run forever.</li>
+<li>Humans are able to solve some undecidable problems. The entire Halting Problem example was to prove that computers cannot solve undecidable problems.</li>
+</ul>
+<h2 id="Hacks-1-D9">
+<a class="anchor" href="#Hacks-1-D9" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks 1 D9<a class="anchor-link" href="#Hacks-1-D9"> </a>
+</h2>
+<p>One situation in which a computer might run into an undecidable problem is when it is asked to determine whether a given program will halt or run indefinitely. This problem, known as the Halting Problem, is considered undecidable because there is no algorithm that can consistently determine whether a given program will halt or run indefinitely for all possible inputs.The Halting Problem is a classic example of an undecidable problem because it demonstrates the inherent limitations of computation. In order to determine whether a program will halt, a computer would need to be able to analyze the program and its input, and then make a prediction about its future behavior. However, because programs can be arbitrarily complex and can exhibit unpredictable behavior, it is impossible for a computer to accurately predict whether a given program will halt or run indefinitely. To illustrate this point, consider a program that takes an input and then checks whether that input is a valid proof of the Halting Problem itself. If the input is a valid proof, then the program will halt; if the input is not a valid proof, then the program will run indefinitely. Because there is no way to determine whether a given input is a valid proof of the Halting Problem, it is impossible for a computer to accurately predict whether this program will halt or run indefinitely for all possible inputs.</p>
+<h2 id="Hacks-2-D9">
+<a class="anchor" href="#Hacks-2-D9" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks 2 D9<a class="anchor-link" href="#Hacks-2-D9"> </a>
+</h2>
+<p><img src="https://user-images.githubusercontent.com/111609656/208051213-41b36239-8896-4465-97f5-d89f4e5aa41c.png" alt="">
+<img src="https://user-images.githubusercontent.com/111609656/208051743-a320a83e-eebc-45af-a82b-aa760eb60489.png" alt=""></p>
+<p>Algorithm 2 significantly outperformed the first algorithm. While the first algorithm took longer to complete and the time increased as the value of x increased, the time taken by algorithm 2 was always less than 10 and did not depend on the value of x.</p>
+<h2 id="Hacks-3-D9">
+<a class="anchor" href="#Hacks-3-D9" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks 3 D9<a class="anchor-link" href="#Hacks-3-D9"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">gcd</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">a</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">gcd</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">%</span> <span class="n">b</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">270</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">192</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">gcd</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>6
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hacks-4-D9">
+<a class="anchor" href="#Hacks-4-D9" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks 4 D9<a class="anchor-link" href="#Hacks-4-D9"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 

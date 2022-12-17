@@ -15,7 +15,7 @@ categories: [markdown]
 | [Lesson 12 and 13](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html#Lessons-12-and-13) | 0.95 |
 | [Lesson 14 and 15](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html#Lessons-14-and-15) | 0.90 |
 | [Lesson 16](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html#Lesson-16) | 0.90 |
-| [Lesson 17 and 18](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html#Lessons-17-and-18) | - |
+| [Lesson 17 and 18](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html#Lessons-17-and-18) | 0.95 |
 
 All lessons notes and hacks can be found [here](https://paravsalaniwal.github.io/firstrepo/2022/11/29/LessonHacks.html)
 

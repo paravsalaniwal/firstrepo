@@ -28,3 +28,13 @@ title: CPT 2 Grading
 | Procedural Abstraction | 1 | 1 | Describes how the function is used and how it works. |
 | Algorithm Implementation | 1 | 1 | The response demonstrates how the algorithm could be reproduced and explains iteration, sequencing, and selection. Additionally, two parameters have been established. |
 | Testing | 1 | 1 | This response describes two separate situations and provides examples to show how different inputs lead to different outputs. satisfies all demands. |
+
+| **Submission 4 Grading** | Student Scoring | CB Grading | Additional Comments |
+| Program Purpose and Function | 1 | 1 | Response satisfies all requirements and includes input and output justifications, a goal (to test critical thinking), and an overall function. |
+| Data Abstraction | 0 | 0 | The student has named a list (guesses) and described its items, but she has not explained the list's general function or goal. The Collegeboard claims that because this response simply indicates that the list's data is not being used and that just its length is accessed, its purpose is not made clear and hence it does not meet their criteria. |
+| Managing Complexity | 0 | 0 | The response is unsatisfactory because it doesn't discuss alternative ways the code could have been constructed. The list, according to Collegeboard, is merely being utilized as a counter and could be swapped out for a single counter variable. This would imply that the learner is not entirely aware of the code's concept or how it may be improved. |
+| Procedural Abstraction | 1 | 1 | The answer is well-informed since it describes how the function operates and how it adds to the program's overall functioning. Additionally, the student created a procedure (isitcorrect) using a parameter. This demonstrates that the student has a solid grasp of the code and its functionality within the application. |
+| Algorithm Implementation | 1 | 1 | Because the response offers justifications for iteration, sequencing, and selection, I agree with the Collegeboard's conclusion that it is a good response. |
+| Testing | 1 | 0 | Instead than responding to two different parameters that result in different code execution, the response described the criteria being tested. CB added that the procedure call's arguments should have particular values. |
+
+Make sure to fulfill every condition since if you just fulfill 5 of the 6 requirements, you will receive a 0. I should evaluate my code and be as explicit as I can in my written response to ensure this. A majority of the marks are awarded for the ability to describe the intent and functioning of one's code, thus avoid writing much or too little.

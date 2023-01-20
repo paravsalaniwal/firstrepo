@@ -2,7 +2,7 @@
 toc: true
 layout: post
 comments: true
-title: CPT 2 Grading
+title: CPT Grading
 ---
 
 # Student 1

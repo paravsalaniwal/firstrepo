@@ -1,0 +1,10 @@
+---
+toc: true
+layout: post
+comments: true
+title: Project Blog
+---
+
+We must complete all project requirements, including appropriateness and the demonstration of programming abilities through a written report and a video, as part of the College Board performance assignments. To demonstrate mastery of the project and the AP CSP curriculum, this includes demonstrating the program's function and purpose, managing complexity, applying algorithms and procedures, testing, and providing thorough descriptions. For our CPT group project, we have been developing a website that resembles an arcade where users may connect and play chess or tic-tac-toe with other players. It will contain a variety of gaming elements, including moves, victories, and user impacts. Additionally, there will be a need that individuals sign in before playing so that their profile can reflect their victories and losses.
+For our CPT group project, we have been developing a website that resembles an arcade where users may connect and play chess or tic-tac-toe with other players. It will contain a variety of gaming elements, including moves, victories, and user impacts. Additionally, there will be a need that individuals sign in before playing so that their profile can reflect their victories and losses.
+I will be concentrating on the website's game development as my personal contribution to this project. I'll make sure to score well on each and every component of the CPT rubric, and I believe I'm doing well in that regard. I've already decided on the program's functionality and goal, and I'll be specific about it in both my write-up and my video. In addition, I'll be able to test it, and after building the score and time tracker page's backend and making sure it works properly, I'll be able to go into more detail about the algorithms used, how complexity was managed using lists, and how my backend is secure and makes use of a variety of complex programming methodologies. In the video, I'll demonstrate how your profile will change depending on what object you click.

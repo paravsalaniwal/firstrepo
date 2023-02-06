@@ -15,3 +15,4 @@ categories: [markdown]
 | [Class Lessons]({{site.baseurl}}/2022/11/29/LessonHacks.html) |
 | [Business Panel]({{site.baseurl}}/2022/12/13/businesspanel.html) |
 | [Big Idea 5.1/5.2 Notes]({{site.baseurl}}/2023/01/31/5.1and5.2Notes.html) |
+| [Big Idea 5.3/5.4 Notes]({{site.baseurl}}/2023/02/06/5.3and5.4Notes.html) |

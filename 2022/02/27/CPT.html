@@ -1,0 +1,48 @@
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Self CPT</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-02-27T00:00:00-06:00" itemprop="datePublished">
+        Feb 27, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><strong>3.A.i</strong>: The purpose of my program is to create a friendly and competitive way to play Battleship with your friends and people online.</p>
+
+<p><strong>3.A.ii</strong>: My game allows the player to click on any square on the battleship grid and then have the game tell you if you hit, missed, or sunk a ship. After the user keeps guessing until they sink all 3 ships, the game will tell the user how many attempts it took for them to sink al 3. Then their score will be used to help them input their data in the leaderboard and will be stored. The leaderboard will adjust using update and delete to make sure the leaderboard stays up to date with all users.</p>
+
+<p><strong>3.A.iii</strong>: The inputs are all clicks by the player and they can have different outputs such as hit, miss, or sunk based on the randomized placements of the ships. If you click on a square which does not have a ship on it, it will show a big ‘X’ and let the user know that it was a miss. If you click on a square which does have a ship on it, it will show a ship diagram and let the user know it was a hit. And if 3 ships in a row were to be hit, then it would let the user know that the ship has been sunk. If you have already clicked on a square that has been previously clicked, then it will let the user know that they have already attempted this square and will make sure not to count it towards their score.</p>
+
+<p><strong>3.B.i</strong>
+<img width="904" alt="image" src="https://user-images.githubusercontent.com/111609656/221962286-863b29c4-32b7-4627-914c-40eb238832f5.png" /></p>
+
+<p><strong>3.B.ii</strong>
+<img width="546" alt="image" src="https://user-images.githubusercontent.com/111609656/221962419-5f860829-b15f-405b-b596-1d8d7cef8f75.png" /></p>
+
+<p><strong>3.B.iii</strong>: The name of the variable being used in this is usernameInput and scoreInput which will takes the users score and then it will adjust with the leaderboard when inputted which can be organized as lowScore, middleScore, highScore if eligible.</p>
+
+<p><strong>3.B.iv</strong>: The data that is being stored in local storage as score represents the number of guesses that the user took to sink all 3 ships. This is important to the functionality of the program as it is able to do the update with the leaderboard and use the score that the user had recieved from the game into the leaderboard which will allow them to compete with other players.</p>
+
+<p><strong>3.C.i</strong>: 
+<img width="666" alt="image" src="https://user-images.githubusercontent.com/111609656/221964088-ddc46fc1-268e-4e76-8a21-4e598f139d79.png" /></p>
+
+<p><strong>3.C.ii</strong>: The procedure here is generateShip and generateShipLocations. As the id of the name shows, this function is able to return 3 randomly placed ships in the 7 by 7 grid. It is called in the procedure ship() as it is needed for the important role of randomly repositioning and resizing the ships.</p>
+
+<p><strong>3.D.i</strong>: 
+<img width="666" alt="image" src="https://user-images.githubusercontent.com/111609656/221964088-ddc46fc1-268e-4e76-8a21-4e598f139d79.png" /></p>
+
+<p><strong>3.D.ii</strong>: The first call is in the function to randomize the ship’s row in the grid, which is called when the site is loaded. This call takes takes the size of the ships and uses the array given to help place the ship in a random place each time.</p>
+
+<p><strong>3.D.iii</strong>: Then it uses generateShipLocations to call in the generateShip variable and use that to place them. It makes sure using the height, width of the gridboxes to make sure all 3 ships can fit and be connected in a straight line (vertical or horizontal).</p>
+
+  </div><a class="u-url" href="/firstrepo/2022/02/27/CPT.html" hidden></a>
+</article>

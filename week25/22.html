@@ -10,17 +10,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Lab will perform alterations on images, manipulate RGB values, and reduce the number of pixels. College Board requires you to learn about Lossy and Lossless compression." />
 <meta property="og:description" content="Lab will perform alterations on images, manipulate RGB values, and reduce the number of pixels. College Board requires you to learn about Lossy and Lossless compression." />
-<link rel="canonical" href="https://paravsalaniwal.github.io/firstrepo/2023/03/07/AP-unit2-2.html" />
-<meta property="og:url" content="https://paravsalaniwal.github.io/firstrepo/2023/03/07/AP-unit2-2.html" />
+<link rel="canonical" href="https://paravsalaniwal.github.io/firstrepo/week25/22" />
+<meta property="og:url" content="https://paravsalaniwal.github.io/firstrepo/week25/22" />
 <meta property="og:site_name" content="📍" />
-<meta property="og:image" content="https://paravsalaniwal.github.io/firstrepo/images/python.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-03-07T00:00:00-06:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://paravsalaniwal.github.io/firstrepo/images/python.png" />
+<meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Unit 2.2 Data Compression, Images" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-07T00:00:00-06:00","datePublished":"2023-03-07T00:00:00-06:00","description":"Lab will perform alterations on images, manipulate RGB values, and reduce the number of pixels. College Board requires you to learn about Lossy and Lossless compression.","headline":"Unit 2.2 Data Compression, Images","image":"https://paravsalaniwal.github.io/firstrepo/images/python.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://paravsalaniwal.github.io/firstrepo/2023/03/07/AP-unit2-2.html"},"url":"https://paravsalaniwal.github.io/firstrepo/2023/03/07/AP-unit2-2.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-07T00:00:00-06:00","datePublished":"2023-03-07T00:00:00-06:00","description":"Lab will perform alterations on images, manipulate RGB values, and reduce the number of pixels. College Board requires you to learn about Lossy and Lossless compression.","headline":"Unit 2.2 Data Compression, Images","mainEntityOfPage":{"@type":"WebPage","@id":"https://paravsalaniwal.github.io/firstrepo/week25/22"},"url":"https://paravsalaniwal.github.io/firstrepo/week25/22"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/firstrepo/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://paravsalaniwal.github.io/firstrepo/feed.xml" title="📍" /><link rel="shortcut icon" type="image/x-icon" href="/firstrepo/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -104,40 +102,13 @@ window.onload = wrap_img;
     
 
     
-      
-        <div class="pb-5 d-flex flex-justify-center">
-          <div class="px-2">
-
-    <a href="https://github.com/paravsalaniwal/firstrepo/tree/master/_notebooks/2023-03-07-AP-unit2-2.ipynb" role="button" target="_blank">
-<img class="notebook-badge-image" src="/firstrepo/assets/badges/github.svg" alt="View On GitHub">
-    </a>
-</div>
-
-          <div class="px-2">
-    <a href="https://mybinder.org/v2/gh/paravsalaniwal/firstrepo/master?filepath=_notebooks%2F2023-03-07-AP-unit2-2.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/firstrepo/assets/badges/binder.svg" alt="Open In Binder"/>
-    </a>
-</div>
-
-          <div class="px-2">
-    <a href="https://colab.research.google.com/github/paravsalaniwal/firstrepo/blob/master/_notebooks/2023-03-07-AP-unit2-2.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/firstrepo/assets/badges/colab.svg" alt="Open In Colab"/>
-    </a>
-</div>
-          <div class="px-2">
-  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fparavsalaniwal%2Ffirstrepo%2Fblob%2Fmaster%2F_notebooks%2F2023-03-07-AP-unit2-2.ipynb" target="_blank">
-      <img class="notebook-badge-image" src="/firstrepo/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
-  </a>
-</div>
-
-        </div>
       </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h2"><a href="#Enumerate-"Data"-Big-Idea-from-College-Board">Enumerate &quot;Data&quot; Big Idea from College Board </a></li>
 <li class="toc-entry toc-h2"><a href="#Image-Files-and-Size">Image Files and Size </a></li>
-<li class="toc-entry toc-h2"><a href="#Displaying-images-in-Python-Jupyter-notebook">Displaying images in Python Jupyter notebook </a>
+<li class="toc-entry toc-h2"><a href="#Python-Libraries-and-Concepts-used-for-Jupyter-and-Files/Directories">Python Libraries and Concepts used for Jupyter and Files/Directories </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#IPython">IPython </a></li>
 <li class="toc-entry toc-h3"><a href="#pathlib">pathlib </a></li>
@@ -167,6 +138,14 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://user-images.githubusercontent.com/111464932/223202910-614f77d9-0b29-41f0-b704-dba2bd1119cf.png" alt="happy face"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id='Enumerate-"Data"-Big-Idea-from-College-Board'>
 <a class="anchor" href="#Enumerate-" data aria-hidden="true"><span class="octicon octicon-link"></span></a>Enumerate "Data" Big Idea from College Board<a class="anchor-link" href="#Enumerate-%22Data%22-Big-Idea-from-College-Board"> </a>
 </h2>
@@ -191,9 +170,8 @@ window.onload = wrap_img;
 <a class="anchor" href="#Image-Files-and-Size" aria-hidden="true"><span class="octicon octicon-link"></span></a>Image Files and Size<a class="anchor-link" href="#Image-Files-and-Size"> </a>
 </h2>
 <blockquote>
-<p>Here are some <a href="https://github.com/nighthawkcoders/nighthawk_csp/tree/master/starter/static/img">Images Files</a>.  Download these files, load them into <code>images</code> directory under <strong>_notebooks</strong> in your Blog.</p>
+<p>Here are some <a href="https://github.com/nighthawkcoders/nighthawk_csp/tree/master/starter/static/img">Images Files</a>.  Download these files, load them into <code>images</code> directory under <strong>_notebooks</strong> in your Blog.   - <a href="https://github.com/nighthawkcoders/APCSP/blob/master/_notebooks/images/clouds-impression.png">Clouds Impression</a></p>
 <ul>
-<li><a href="https://github.com/nighthawkcoders/APCSP/blob/master/_notebooks/images/clouds-impression.png">Clouds Impression</a></li>
 <li><a href="https://github.com/nighthawkcoders/APCSP/blob/master/_notebooks/images/lassen-volcano.jpg">Lassen Volcano</a></li>
 <li><a href="https://github.com/nighthawkcoders/APCSP/blob/master/_notebooks/images/green-square-16.png">Green Square</a></li>
 </ul>
@@ -211,11 +189,11 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Displaying-images-in-Python-Jupyter-notebook">
-<a class="anchor" href="#Displaying-images-in-Python-Jupyter-notebook" aria-hidden="true"><span class="octicon octicon-link"></span></a>Displaying images in Python Jupyter notebook<a class="anchor-link" href="#Displaying-images-in-Python-Jupyter-notebook"> </a>
+<h2 id="Python-Libraries-and-Concepts-used-for-Jupyter-and-Files/Directories">
+<a class="anchor" href="#Python-Libraries-and-Concepts-used-for-Jupyter-and-Files/Directories" aria-hidden="true"><span class="octicon octicon-link"></span></a>Python Libraries and Concepts used for Jupyter and Files/Directories<a class="anchor-link" href="#Python-Libraries-and-Concepts-used-for-Jupyter-and-Files/Directories"> </a>
 </h2>
 <blockquote>
-<p>Python Libraries and Concepts used for Jupyter and Files/Directories</p>
+<p>Introduction to displaying images in Jupyter notebook</p>
 </blockquote>
 <h3 id="IPython">
 <a class="anchor" href="#IPython" aria-hidden="true"><span class="octicon octicon-link"></span></a>IPython<a class="anchor-link" href="#IPython"> </a>
@@ -691,7 +669,15 @@ window.onload = wrap_img;
 
 
 
-  </div><a class="u-url" href="/firstrepo/2023/03/07/AP-unit2-2.html" hidden></a>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="paravsalaniwal/firstrepo"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/firstrepo/week25/22" hidden></a>
 </article>
 
       </div>

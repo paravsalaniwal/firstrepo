@@ -1447,19 +1447,19 @@ Please also refer to the documentation for alternative solver options:
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>   Player Names  Receiving Yards  Receiving TDs
-0       JJettas             1809              8
-1       Cheetah             1710              7
-2         Kelce             1338             12
-3         Diggs             1429             11
-4        Ekeler              722              5
-5        Ceedee             1359              9
-6       Amon-ra             1161              6
-7        Godwin             1023              3
-8           Tae             1516             14
-9       Pittman              925              4
-10      Devonta             1126              7
-11           DK             1048              6
+<pre>   Player Names  Receiving Yards  Receiving TDs  Receiving Targets
+0       JJettas             1809              8                184
+1       Cheetah             1710              7                170
+2         Kelce             1338             12                152
+3         Diggs             1429             11                154
+4        Ekeler              722              5                127
+5        Ceedee             1359              9                156
+6       Amon-ra             1161              6                146
+7        Godwin             1023              3                142
+8           Tae             1516             14                180
+9       Pittman              925              4                141
+10      Devonta             1126              7                136
+11           DK             1048              6                141
 </pre>
 </div>
 </div>
@@ -1550,6 +1550,51 @@ Please also refer to the documentation for alternative solver options:
 3         Diggs             11
 2         Kelce             12
 8           Tae             14
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Most Receiving Targets in 2022"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">'Player Names'</span><span class="p">,</span> <span class="s1">'Receiving Targets'</span><span class="p">]]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'Receiving Targets'</span><span class="p">]))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Most Receiving Targets in 2022
+   Player Names  Receiving Targets
+4        Ekeler                127
+10      Devonta                136
+9       Pittman                141
+11           DK                141
+7        Godwin                142
+6       Amon-ra                146
+2         Kelce                152
+3         Diggs                154
+5        Ceedee                156
+1       Cheetah                170
+8           Tae                180
+0       JJettas                184
 </pre>
 </div>
 </div>

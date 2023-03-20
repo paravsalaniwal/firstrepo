@@ -97,7 +97,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      8 min read
     
 </span></p>
 
@@ -183,9 +183,19 @@ window.onload = wrap_img;
 </blockquote>
 <p>Describe Schema, here is resource <a href="https://www.sqlite.org/index.html">Resource</a>- What is a database schema?</p>
 <ul>
+<li>The structure of the database with the data organized into a blueprint.<ul>
 <li>What is the purpose of identity Column in SQL database?</li>
+</ul>
+</li>
+<li>Key values are created in identity columns and provide for the identification and uniqueness of rows.<ul>
 <li>What is the purpose of a primary key in SQL database?</li>
+</ul>
+</li>
+<li>gives each row a special value that makes it possible to identify it.<ul>
 <li>What are the Data Types in SQL table?</li>
+</ul>
+</li>
+<li>virtually any data type, including strings, text, pictures, lists, and dictionary classes.</li>
 </ul>
 
 </div>
@@ -259,10 +269,22 @@ window.onload = wrap_img;
 <p>Uses SQL SELECT statement to read data</p>
 </blockquote>
 <ul>
-<li>What is a connection object?  After you google it, what do you think it does?</li>
-<li>Same for cursor object?</li>
-<li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</li>
-<li>Is "results" an object?  How do you know?</li>
+<li>What is a connection object?  After you google it, what do you think it does?<ul>
+<li>An individual session with a data source is represented by a connection object. Its goal is to establish a live link with a data source.</li>
+</ul>
+</li>
+<li>Same for cursor object?<ul>
+<li>It is utilized to establish a connection for SQL query execution.</li>
+</ul>
+</li>
+<li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?<ul>
+<li>Both of them contain a large number of special and function variables.</li>
+</ul>
+</li>
+<li>Is "results" an object?  How do you know?<ul>
+<li>As a result of the data and the variables it includes, "results" is an object.</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -336,8 +358,14 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL INSERT to add row</p>
 <ul>
-<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?</li>
-<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
+<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?<ul>
+<li>When the SQL database is tiny, this creation is better and can perform more functions, but it is substantially poorer. Because it performs better with less data in this instance, the alternative option is preferable.</li>
+</ul>
+</li>
+<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?<ul>
+<li>This initializes the user object using the data while the User init enters data into the table.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -414,9 +442,18 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL UPDATE to modify password</p>
 <ul>
-<li>What does the hacked part do?</li>
-<li>Explain try/except, when would except occur?</li>
-<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
+<li>What does the hacked part do?<ul>
+<li>When the password is fewer than two characters, the hacked portion is visible. The passwrod is changed to a new one.</li>
+</ul>
+</li>
+<li>Explain try/except, when would except occur?<ul>
+<li>Coders can test error code using try and except. If there is a try error, except happens.</li>
+</ul>
+</li>
+<li>What code seems to be repeated in each of these examples to point, why is it repeated?<ul>
+<li>Conn and cursor definitions appear to be redundant, and cursor uses the INSERT, UPDATE, DELETE, and SELECT SQL procedures.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -494,8 +531,14 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses a delete function to remove a user based on a user input of the id.</p>
 <ul>
-<li>Is DELETE a dangerous operation?  Why?</li>
-<li>In the print statemements, what is the "f" and what does {uid} do?</li>
+<li>Is DELETE a dangerous operation?  Why?<ul>
+<li>DELETE is a risky operation because if used incorrectly, it can completely erase all of the database's records and data.</li>
+</ul>
+</li>
+<li>In the print statemements, what is the "f" and what does {uid} do?<ul>
+<li>It is an f-string, or string format, because f is used. The placeholder "uid" denotes the variable that will be utilized within the string.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -569,8 +612,14 @@ window.onload = wrap_img;
 <blockquote>
 <p>CRUD and Schema interactions from one location by running menu. Observe input at the top of VSCode, observe output underneath code cell.</p>
 <ul>
-<li>Why does the menu repeat?</li>
-<li>Could you refactor this menu?  Make it work with a List?</li>
+<li>Why does the menu repeat?<ul>
+<li>Because it is a source of recursion, the menu repeats itself. Until the user decides to stop, it remains working and doing the tedious processes.</li>
+</ul>
+</li>
+<li>Could you refactor this menu?  Make it work with a List?<ul>
+<li>Loops could be used to reorganize this menu, and a list might even work.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 

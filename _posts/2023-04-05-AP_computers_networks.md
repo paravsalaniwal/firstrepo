@@ -9,7 +9,6 @@ categories: []
 type: ap
 week: 29
 ---
-
 ## Requirements
 > Work through College Board Unit 4... blog, add definitions, and pictures.  Be creative, for instance make a story of Computing and Networks that is related to your PBL experiences this year.
 
@@ -18,24 +17,21 @@ week: 29
 > As we have learned, a computer needs aa program to do something smart.  The sequence of a program initiates a series of actions with the computers Central Processing Unit (CPU). This component is essentially a binary machine focussing on program instructions provided.  The CPU retrieives and stores the data it acts upon in Random Access Memory (RAM). Between the CPU, RAM, and Storage Devices a computer can work with many programs and large amounts of data.
 
 List specification of your Computer, or Computers if working as Pair/Trio
-- Processor GHz:
-- Memory in GB:
-- Storage in GB:
-- OS:
+- Processor GHz: 3.2 GHz
+- Memory in GB: 8 GB
+- Storage in GB: 256 GB
+- OS: macOS Ventura 13.2.1
 
 Define or describe usage of Computer using Computer Programs. Pictures are preferred over a lot of text.  Use your experience.
-- Input devices
-- Output devices
-- Program File
-- Program Code
-- Processes
-- Ports
-- Data File
-- Inspect Running Code
-- Inspect Variables
-
-
-![Computer Hardware]({{site.baseurl}}/images/cpu.jpeg)
+- Input devices - Allows a way for the user communicate to the computer
+- Output devices - Creates a way for the computer to communicate with the user
+- Program File - a program-running file that the computer can execute
+- Program Code - When a program file is run, the computer is instructed what to do by the program's code, which also makes that the program file performs as planned.
+- Processes - a situation where one or more threads are running a program
+- Ports - A server's ability to manage incoming requests from client devices via the internet is enabled by an endpoint.
+- Data File - a file with information or data in a certain format
+- Inspect Running Code - reveals the activities taking place in the browser's background.
+- Inspect Variables - examining the changes in the values of specific variables that might be causing issues with the code
 
 
 ### The Internet
@@ -62,6 +58,13 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 > Watch/review College Board Daily Video 4.1.2
 
 - Complete True of False Questions
+  - True
+  - False
+  - False
+  - True
+  - False
+  - False
+  - True
 
 - Essential Knowledge
     - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprierary) communication protocols.
@@ -81,8 +84,8 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 
 - Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas
 
-![Full Stack]({{site.baseurl}}/images/fullstack.png)
-
+![Full Stack Illustration](https://user-images.githubusercontent.com/111609656/232393921-adf03a41-9d46-4238-af62-efe3b2715e3d.png)
+> Done as Trio
 
 - Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is trasported of the network.   For College Board and future Computer Knowledge you should become familiar with the following ...
 
@@ -114,12 +117,12 @@ The "network" layer is responsible for ***routing data packets between networks*
 > Watch both Daily videos for 4.2
 
 - Complete the network activity, summarize your understanding of fault tolerance.
-
+Fault tolerance is when there is more than one path to each device in a network because it offers a “backup” option of something in the network goes down.
 
 ### Parallel and Distributed Computing
 > Review previous lecture on Parallel Computing and watch Daily vidoe 4.3.  Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks...
 
-- What is naturally Distributed in Frontend/Backend archeticture?  
+- What is naturally Distributed in Frontend/Backend archeticture? Since the frontend and the backend are often on distinct physical computers, the computing is dispersed naturally in this type of design. Since each component may be scaled independently to handle the burden, this enables superior scalability, fault-tolerance, and performance.
 
 - Analyze this command in Docker: ```ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"```.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an [article](https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7)
 

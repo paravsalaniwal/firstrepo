@@ -95,7 +95,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      6 min read
     
 </span></p>
 
@@ -190,9 +190,9 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Data-types--there-are-8-JS-data-types.">Data types- there are 8 JS data types.<a class="anchor-link" href="#Data-types--there-are-8-JS-data-types."> </a></h3><ul>
-<li>List a few data types that you already know
-&gt;
-&gt;<blockquote>
+<li>List a few data types that you already know<blockquote><p>Boolean
+Strings
+Integers</p>
 </blockquote>
 </li>
 </ul>
@@ -226,23 +226,12 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-evalmachine.&lt;anonymous&gt;:1
-let text = &#34;Mort&#34;;
-^
 
-SyntaxError: Identifier &#39;text&#39; has already been declared
-    at evalmachine.&lt;anonymous&gt;:1:1
-    at Script.runInThisContext (vm.js:96:20)
-    at Object.runInThisContext (vm.js:303:38)
-    at run ([eval]:1020:15)
-    at onRunRequest ([eval]:864:18)
-    at onMessage ([eval]:828:13)
-    at process.emit (events.js:182:13)
-    at emit (internal/child_process.js:812:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)</pre>
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;Mort&#39;</pre>
 </div>
+
 </div>
 
 </div>
@@ -271,23 +260,12 @@ SyntaxError: Identifier &#39;text&#39; has already been declared
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-evalmachine.&lt;anonymous&gt;:1
-let text2 = &#39;Yeung&#39;;
-^
 
-SyntaxError: Identifier &#39;text2&#39; has already been declared
-    at evalmachine.&lt;anonymous&gt;:1:1
-    at Script.runInThisContext (vm.js:96:20)
-    at Object.runInThisContext (vm.js:303:38)
-    at run ([eval]:1020:15)
-    at onRunRequest ([eval]:864:18)
-    at onMessage ([eval]:828:13)
-    at process.emit (events.js:182:13)
-    at emit (internal/child_process.js:812:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)</pre>
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;Yeung&#39;</pre>
 </div>
+
 </div>
 
 </div>
@@ -299,7 +277,10 @@ SyntaxError: Identifier &#39;text2&#39; has already been declared
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="2.-Number:-can-be-integers-or-decimals.">2. Number: can be integers or decimals.<a class="anchor-link" href="#2.-Number:-can-be-integers-or-decimals."> </a></h4>
-<pre><code>    - You can also have exponential notation for large/small numbers </code></pre>
+<pre><code>    - You can also have exponential notation for large/small numbers 
+    - Has special mathematical values
+    - Ability to be defined by variables
+    - Can use "number" object</code></pre>
 
 </div>
 </div>
@@ -307,7 +288,10 @@ SyntaxError: Identifier &#39;text2&#39; has already been declared
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="3.-Bigint:-used-to-store-integer-values-that-are-too-big-to-be-represented-by-a-normal-JS-number">3. Bigint: used to store integer values that are too big to be represented by a normal JS number<a class="anchor-link" href="#3.-Bigint:-used-to-store-integer-values-that-are-too-big-to-be-represented-by-a-normal-JS-number"> </a></h4>
-<pre><code>    - JavaScript integers are only accurate up to 15 digits</code></pre>
+<pre><code>    - JavaScript integers are only accurate up to 15 digits
+    - Not applicable with bitwise operators
+    - Created by appending "n" to a number
+    - BigInt can be compared</code></pre>
 
 </div>
 </div>
@@ -319,11 +303,11 @@ SyntaxError: Identifier &#39;text2&#39; has already been declared
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="kd">let</span> <span class="nx">number</span> <span class="o">=</span> <span class="mi">1234567890123456789012345n</span><span class="p">;</span>
-<span class="kd">let</span> <span class="nx">Largenum</span> <span class="o">=</span> <span class="nx">BigInt</span><span class="p">(</span><span class="mf">1234567890123456789012345</span><span class="p">)</span>
+<div class=" highlight hl-javascript"><pre><span></span><span class="kr">const</span> <span class="nx">c</span> <span class="o">=</span> <span class="mf">12389012345</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">BigC</span> <span class="o">=</span> <span class="nx">BigInt</span><span class="p">(</span><span class="mf">789012345123</span><span class="p">);</span>
 
-<span class="kd">let</span> <span class="nx">typeLargenum</span> <span class="o">=</span> <span class="k">typeof</span> <span class="nx">Largenum</span><span class="p">;</span>
-<span class="nx">typeLargenum</span>
+<span class="kr">const</span> <span class="nx">typeBigC</span> <span class="o">=</span> <span class="k">typeof</span> <span class="nx">BigC</span><span class="p">;</span>
+<span class="nx">typeBigC</span>
 </pre></div>
 
     </div>
@@ -335,42 +319,14 @@ SyntaxError: Identifier &#39;text2&#39; has already been declared
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-evalmachine.&lt;anonymous&gt;:1
-let number = 1234567890123456789012345n;
-^
 
-SyntaxError: Identifier &#39;number&#39; has already been declared
-    at evalmachine.&lt;anonymous&gt;:1:1
-    at Script.runInThisContext (vm.js:96:20)
-    at Object.runInThisContext (vm.js:303:38)
-    at run ([eval]:1020:15)
-    at onRunRequest ([eval]:864:18)
-    at onMessage ([eval]:828:13)
-    at process.emit (events.js:182:13)
-    at emit (internal/child_process.js:812:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)</pre>
-</div>
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;bigint&#39;</pre>
 </div>
 
 </div>
-</div>
 
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="nx">Largenum</span>
-</pre></div>
-
-    </div>
 </div>
 </div>
 
@@ -379,7 +335,11 @@ SyntaxError: Identifier &#39;number&#39; has already been declared
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="4.-Boolean:-true-or-false,-used-in-conditional-testing">4. Boolean: true or false, used in conditional testing<a class="anchor-link" href="#4.-Boolean:-true-or-false,-used-in-conditional-testing"> </a></h4>
+<h4 id="4.-Boolean:-true-or-false,-used-in-conditional-testing">4. Boolean: true or false, used in conditional testing<a class="anchor-link" href="#4.-Boolean:-true-or-false,-used-in-conditional-testing"> </a></h4><ul>
+<li>Used for comparision values</li>
+<li>Used for else, if, elif operations</li>
+</ul>
+
 </div>
 </div>
 </div>
@@ -459,7 +419,11 @@ SyntaxError: Identifier &#39;number&#39; has already been declared
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="5.-Undefined:-a-variable-without-a-value,-has-the-value-undefined/empty-values">5. Undefined: a variable without a value, has the value undefined/empty values<a class="anchor-link" href="#5.-Undefined:-a-variable-without-a-value,-has-the-value-undefined/empty-values"> </a></h4>
+<h4 id="5.-Undefined:-a-variable-without-a-value,-has-the-value-undefined/empty-values">5. Undefined: a variable without a value, has the value undefined/empty values<a class="anchor-link" href="#5.-Undefined:-a-variable-without-a-value,-has-the-value-undefined/empty-values"> </a></h4><ul>
+<li>Variable without assignment</li>
+<li>When variable not declared it's not undefined and will give "ReferenceError"</li>
+</ul>
+
 </div>
 </div>
 </div>
@@ -501,7 +465,9 @@ SyntaxError: Identifier &#39;number&#39; has already been declared
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="6.-Null:-represents-the-intentional-absence-of-any-object-value">6. Null: represents the intentional absence of any object value<a class="anchor-link" href="#6.-Null:-represents-the-intentional-absence-of-any-object-value"> </a></h4>
-<pre><code>    - variable is empty at the moment and may have a value later</code></pre>
+<pre><code>    - variable is empty at the moment and may have a value later
+    - false value
+    - null is absence</code></pre>
 
 </div>
 </div>
@@ -523,6 +489,21 @@ SyntaxError: Identifier &#39;number&#39; has already been declared
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>false
+false
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -557,6 +538,20 @@ SyntaxError: Identifier &#39;number&#39; has already been declared
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Symbol()
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -575,6 +570,20 @@ SyntaxError: Identifier &#39;number&#39; has already been declared
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{ [Symbol()]: &#39;Hello World&#39; }
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -615,11 +624,30 @@ SyntaxError: Identifier &#39;number&#39; has already been declared
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="kr">const</span> <span class="nx">dogs</span> <span class="o">=</span> <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Elly&quot;</span><span class="p">,</span> <span class="nx">breed</span><span class="o">:</span><span class="s2">&quot;Rottweiler&quot;</span><span class="p">,</span> <span class="nx">age</span><span class="o">:</span><span class="mf">4</span><span class="p">,</span> <span class="nx">color</span><span class="o">:</span><span class="s2">&quot;black&quot;</span><span class="p">}</span>
-<span class="nx">dogs</span>
+<div class=" highlight hl-javascript"><pre><span></span><span class="kr">const</span> <span class="nx">doggy</span> <span class="o">=</span> <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Coco&quot;</span><span class="p">,</span> <span class="nx">breed</span><span class="o">:</span><span class="s2">&quot;Mini Australian Sheperd&quot;</span><span class="p">,</span> <span class="nx">age</span><span class="o">:</span><span class="mf">2</span><span class="p">,</span> <span class="nx">color</span><span class="o">:</span><span class="s2">&quot;Brown and White&quot;</span><span class="p">}</span>
+<span class="nx">doggy</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{ name: &#39;Coco&#39;,
+  breed: &#39;Mini Australian Sheperd&#39;,
+  age: 2,
+  color: &#39;Brown and White&#39; }</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -645,6 +673,22 @@ SyntaxError: Identifier &#39;number&#39; has already been declared
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[ &#39;Love Story&#39;, &#39;Blank Space&#39;, &#39;I Knew You Were Trouble&#39; ]</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -675,6 +719,22 @@ SyntaxError: Identifier &#39;number&#39; has already been declared
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>13</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -842,10 +902,14 @@ SyntaxError: Identifier &#39;number&#39; has already been declared
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="JavaScript-in-HTML--Questions">JavaScript in HTML- Questions<a class="anchor-link" href="#JavaScript-in-HTML--Questions"> </a></h1><ol>
-<li>Where do you store the JavaScript Code?</li>
-<li>How do you import a JS file into HTML?</li>
-<li>What is onClick?</li>
-<li>What tag do you use to write JavaScript code?</li>
+<li>Where do you store the JavaScript Code?
+Javascript Code is stored within the <code>&lt;script&gt;</code> tags in HTML code. JavaScript files are stored with a .js extension</li>
+<li>How do you import a JS file into HTML?
+A JS file can be imported using the src attribute inside script tag. An example would be <code>&lt;script src="JavaScript.JS==js"&gt;&lt;/script&gt;</code></li>
+<li>What is onClick?
+JavaScript's onClick event only fires off when a user clicks on an element, like a button or a line of text. Usually, it triggers a response from a function or some other action. When a button is clicked, for instance, the color changes (much like the toggle between light and dark mode on the SASS lesson).</li>
+<li>What tag do you use to write JavaScript code?
+<code>&lt;script&gt;...&lt;/script&gt;</code></li>
 </ol>
 
 </div>
@@ -862,6 +926,69 @@ SyntaxError: Identifier &#39;number&#39; has already been declared
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="kd">let</span> <span class="nx">score</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">coin</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">());</span>
+
+<span class="kr">const</span> <span class="nx">guess</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;Heads or Tails? Enter 0 for Heads, 1 for Tails:&quot;</span><span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">guess</span> <span class="o">===</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Game cancelled.&quot;</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">guess</span> <span class="o">===</span> <span class="s2">&quot;&quot;</span> <span class="o">||</span> <span class="nb">isNaN</span><span class="p">(</span><span class="nx">guess</span><span class="p">)</span> <span class="o">||</span> <span class="nx">guess</span> <span class="o">&lt;</span> <span class="mf">0</span> <span class="o">||</span> <span class="nx">guess</span> <span class="o">&gt;</span> <span class="mf">1</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Invalid input. Please enter 0 for Heads, 1 for Tails.&quot;</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">guess</span> <span class="o">==</span> <span class="nx">coin</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Correct! The coin landed on &quot;</span> <span class="o">+</span> <span class="p">(</span><span class="nx">coin</span> <span class="o">==</span> <span class="mf">0</span> <span class="o">?</span> <span class="s2">&quot;Heads&quot;</span> <span class="o">:</span> <span class="s2">&quot;Tails&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span><span class="p">);</span>
+    <span class="nx">score</span><span class="o">++</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Sorry, the coin landed on &quot;</span> <span class="o">+</span> <span class="p">(</span><span class="nx">coin</span> <span class="o">==</span> <span class="mf">0</span> <span class="o">?</span> <span class="s2">&quot;Heads&quot;</span> <span class="o">:</span> <span class="s2">&quot;Tails&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Your score is &quot;</span> <span class="o">+</span> <span class="p">((</span><span class="nx">score</span> <span class="o">/</span> <span class="mf">1</span><span class="p">)</span> <span class="o">*</span> <span class="mf">100</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;%.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// code works in a js playground tester</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+evalmachine.&lt;anonymous&gt;:1
+let score = 0;
+^
+
+SyntaxError: Identifier &#39;score&#39; has already been declared
+    at evalmachine.&lt;anonymous&gt;:1:1
+    at Script.runInThisContext (vm.js:96:20)
+    at Object.runInThisContext (vm.js:303:38)
+    at run ([eval]:1020:15)
+    at onRunRequest ([eval]:864:18)
+    at onMessage ([eval]:828:13)
+    at process.emit (events.js:182:13)
+    at emit (internal/child_process.js:812:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 

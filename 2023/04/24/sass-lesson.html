@@ -95,7 +95,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -143,7 +143,7 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Why-SASS?">Why SASS?<a class="anchor-link" href="#Why-SASS?"> </a></h1><p>SASS is an improvement on CSS in that there are methods of abstraction. It is a <strong><em>__</em></strong> language that is <strong>_</strong> into CSS, which means that <strong><strong>__</strong></strong>, which is what your web browser can read.</p>
+<h1 id="Why-SASS?">Why SASS?<a class="anchor-link" href="#Why-SASS?"> </a></h1><p>SASS is an improvement on CSS in that there are methods of abstraction. It is a stylesheet language that is compiled into CSS, which means that Sass will translate the Sass code you wrote into CSS, which is what your web browser can read.</p>
 <h1 id="SASS-vs-SCSS">SASS vs SCSS<a class="anchor-link" href="#SASS-vs-SCSS"> </a></h1><p>As you learn about Sass, you might notice something called Scss. They are basically the same thing except that Scss uses curly braces and semicolons to distinguish between lines. Sass uses indentation and newlines instead.</p>
 <p>We will be teaching the Scss syntax because it is more commonly used.</p>
 
@@ -165,7 +165,10 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Nesting">Nesting<a class="anchor-link" href="#Nesting"> </a></h1><p>Take notes here</p>
+<h1 id="Nesting">Nesting<a class="anchor-link" href="#Nesting"> </a></h1><ul>
+<li>The same element may be shared by several separate selectors and objects.</li>
+<li>You can write the styling code in a heirarchy by using nesting.</li>
+</ul>
 
 </div>
 </div>
@@ -185,12 +188,11 @@ window.onload = wrap_img;
 
 <pre><code>.a {
     .b {
-        color: green;
-    }
+    color: green;
+
     .c {
-        color: blue;
-    }
-}</code></pre>
+    color: blue;
+}}}</code></pre>
 
 </div>
 </div>
@@ -198,14 +200,23 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Extend/Inheritance">Extend/Inheritance<a class="anchor-link" href="#Extend/Inheritance"> </a></h1><p>What are some similarities that the buttons share? What are the differences?</p>
-<p>Take notes here</p>
+<ul>
+<li>The width and height of each button are the same.</li>
+<li>Additionally, the font size and color are identical.</li>
+<li>The button spacing is likewise comparable.</li>
+<li>The buttons' backgrounds have various hues.</li>
+</ul>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Mixin">Mixin<a class="anchor-link" href="#Mixin"> </a></h1><p>Take notes here</p>
+<h1 id="Mixin">Mixin<a class="anchor-link" href="#Mixin"> </a></h1><ul>
+<li>generates a reusable code template</li>
+<li>can also accept parameters, allowing for the use of dynamic styling</li>
+<li><code>@mixin</code> is used to create a mixin, and @include is used to call it.</li>
+</ul>
 
 </div>
 </div>
@@ -219,14 +230,43 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Function">Function<a class="anchor-link" href="#Function"> </a></h1><p>Take notes here</p>
+
+<pre><code>@mixin color-and-font($color, $font-size) {
+  background-color: $color;
+  color: $color;
+  font-size: $font-size;
+}
+.my-class {
+  @include color-and-font(#008000, 16px);
+}</code></pre>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Import">Import<a class="anchor-link" href="#Import"> </a></h1><p>Take notes here</p>
+<h1 id="Function">Function<a class="anchor-link" href="#Function"> </a></h1><ul>
+<li>can be produced using @function in SASS.</li>
+<li>It has the same format as a Python function, functionName(Parameters).</li>
+<li>Additionally, brackets should follow, just like in a JavaScript function.</li>
+<li>by including the function name in parenthesis when calling them.<ul>
+<li>Define the arguments that the function will accept as parameters between parenthesis.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Import">Import<a class="anchor-link" href="#Import"> </a></h1><ul>
+<li>Code written in SASS can be imported into one file from numerous files.</li>
+<li>Make a directory called "_sass", for instance.</li>
+<li>Here, you can generate numerous files, including 'style.scss' and 'color.scss'
+Use the command <code>@import "style"</code> to import the code from 'style.scss' into 'color.scss'.
+There must be quotation marks around the function name and the '.scss' is not required.</li>
+</ul>
 
 </div>
 </div>
@@ -243,6 +283,62 @@ window.onload = wrap_img;
 <li><p>Extra credit: Research other SASS features and blog about what you learned or add to your SASS project with any extra features not covered in this lesson. More points will be given if both are done.</p>
 </li>
 </ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>B</li>
+<li>A</li>
+<li>C</li>
+<li>B</li>
+<li>D</li>
+<li>B</li>
+<li>B</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Variables:</p>
+<ul>
+<li>permits users to specify values</li>
+<li>is useful for specifying things like colors, font sizes, margins, padding values, and more.</li>
+</ul>
+<p><strong>Partial SASS files:</strong></p>
+<ul>
+<li>Partial SASS files that contain small code segments</li>
+<li>Name with an underscore like partial.scss</li>
+<li>A much more efficient way to organize code</li>
+<li>Can be incorporated in multiple other files</li>
+<li>Examples of <strong>control directives</strong> are:</li>
+<li>@if, @for, and @each.</li>
+<li>These allow us to create loops and conditional statements, as well as iteration.</li>
+</ul>
+<p>Using <strong>modules</strong>:</p>
+<ul>
+<li>SASS code can be divided into multiple files @use.</li>
+<li>loads a different SASS module file.</li>
+<li>You can access its variables, mixins, and functions.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://paravsalaniwal.github.io/firstrepo/2023/04/28/SASSHacks.html">Hack Link</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://user-images.githubusercontent.com/111609656/235287972-13d35191-275a-4d02-97f0-e4145dd00cfc.png" alt="Code" /></p>
 
 </div>
 </div>

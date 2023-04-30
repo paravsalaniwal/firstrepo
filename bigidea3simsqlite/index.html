@@ -95,7 +95,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      24 min read
+      29 min read
     
 </span></p>
 
@@ -231,6 +231,9 @@ window.onload = wrap_img;
 <li>What are Lists?<ul>
 <li>Lists are an ordered sequence of elements, where each element is a variable</li>
 <li>Unlike dictionaries, lists' keys are all integers that describe the order of the list</li>
+<li>Elements can be easily added and removed - 'append()', 'insert()', 'remove()', and 'pop()'</li>
+<li>Has elements in a list can be accessed using index numbers</li>
+<li>Contains built in functions such as 'len()', 'min()', 'max()', and 'sum()'</li>
 </ul>
 </li>
 </ul>
@@ -238,8 +241,10 @@ window.onload = wrap_img;
 <ul>
 <li>Playlist of songs</li>
 <li>names of students in a class</li>
+<li>contacts on your phone</li>
+<li>Shopping list</li>
 <li>
-<p>contacts on your phone</p>
+<p>Sports roster</p>
 </li>
 <li>
 <p>Each element of a string is referenced by an index (which is a number) and they generally start 0 but for the AP Exam it starts at 1.</p>
@@ -266,7 +271,8 @@ window.onload = wrap_img;
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Answer the following questions about the code block below:</p>
 <ul>
-<li>Why do you think lists are helpful? What word does College Board like to use to describe the function of lists?</li>
+<li>Why do you think lists are helpful? What word does College Board like to use to describe the function of lists?
+Lists are useful because they make coding simpler to comprehend and use, which reduces complexity. We can use built-in functions that help us do tasks much more rapidly by using lists. As complicated data structures are simplified by lists, Collegeboard frequently uses the word "abstraction" to describe this function.</li>
 </ul>
 
 </div>
@@ -398,7 +404,7 @@ person {'name': 'Sri Kotturi', 'age': 16, 'score': 90.0, 'langs': ['Python', 'Ja
 <ul>
 <li>num1 is 4096, it is num2 and num3 multiplied</li>
 <li>num2 is 455, it is num1 and num3 added up and divided by 9</li>
-<li>num3 is 1, it is num1 </li>
+<li>num3 is 1, it is num1 mod 5</li>
 </ul>
 
 </div>
@@ -452,14 +458,16 @@ person {'name': 'Sri Kotturi', 'age': 16, 'score': 90.0, 'langs': ['Python', 'Ja
 <h1 id="Selection">
 <a class="anchor" href="#Selection" aria-hidden="true"><span class="octicon octicon-link"></span></a>Selection<a class="anchor-link" href="#Selection"> </a>
 </h1>
-<p>Selection refers to the process of <strong>__</strong> in a program based on certain conditions. It is normally done with conditional statements.</p>
+<p>Selection refers to the process of making decisions in a program based on certain conditions. It is normally done with conditional statements.</p>
+<ul>
+<li>Allows coders to create programs that make decisions based on input or other factors and respond</li>
+</ul>
 <h2 id="Conditionals">
 <a class="anchor" href="#Conditionals" aria-hidden="true"><span class="octicon octicon-link"></span></a>Conditionals<a class="anchor-link" href="#Conditionals"> </a>
 </h2>
 <p>What is a conditional?:</p>
 <ul>
-<li>Statement that allows code to execute different instructions if a certain condition is <strong><strong>_</strong></strong>
-</li>
+<li>Statement that allows code to execute different instructions if a certain condition is true or false</li>
 <li>Allows program to make decisions based on data and input</li>
 </ul>
 <p>What are the main types of conditional statements?:</p>
@@ -527,7 +535,7 @@ person {'name': 'Sri Kotturi', 'age': 16, 'score': 90.0, 'langs': ['Python', 'Ja
 <a class="anchor" href="#Elif" aria-hidden="true"><span class="octicon octicon-link"></span></a>Elif<a class="anchor-link" href="#Elif"> </a>
 </h3>
 <ul>
-<li>The elif statement can check <strong>___</strong> conditions in a sequence, and execute a certain block of code if any of the conditions are true. </li>
+<li>The elif statement can check multiple conditions in a sequence, and execute a certain block of code if any of the conditions are true.</li>
 <li>
 <p>If (condition) then (consequence A), elif (condition) then (consequence B), else (consequence C)</p>
 </li>
@@ -584,7 +592,7 @@ person {'name': 'Sri Kotturi', 'age': 16, 'score': 90.0, 'langs': ['Python', 'Ja
 </h2>
 <p>What is a nested conditional?:</p>
 <ul>
-<li>Conditional statement inside another <strong>___</strong> statement</li>
+<li>Conditional statement inside another conditional statement</li>
 <li>Allows to check for more complex condition where one condition depends on another</li>
 </ul>
 <h3 id="Nested-Conditional-Statements">
@@ -643,7 +651,7 @@ person {'name': 'Sri Kotturi', 'age': 16, 'score': 90.0, 'langs': ['Python', 'Ja
 <h2 id="Indentation">
 <a class="anchor" href="#Indentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Indentation<a class="anchor-link" href="#Indentation"> </a>
 </h2>
-<p>When using conditionals and nested conditionals in Python, it is important to pay attention to the <strong><strong><strong>___</strong></strong></strong> in the code. The code inside the if, elif, and else blocks must be indented so they are nested wihtin the outer statements. This way, Python knows which code belongs to which block.</p>
+<p>When using conditionals and nested conditionals in Python, it is important to pay attention to the level of indentation in the code. The code inside the if, elif, and else blocks must be indented so they are nested wihtin the outer statements. This way, Python knows which code belongs to which block.</p>
 
 </div>
 </div>
@@ -655,8 +663,8 @@ person {'name': 'Sri Kotturi', 'age': 16, 'score': 90.0, 'langs': ['Python', 'Ja
 <a class="anchor" href="#Binary-Search" aria-hidden="true"><span class="octicon octicon-link"></span></a>Binary Search<a class="anchor-link" href="#Binary-Search"> </a>
 </h2>
 <p>What is binary search and what is it used for?:</p>
-<hr>
 <ul>
+<li>Searching algorithm</li>
 <li>Find and select a specific element in a sorted list of elements</li>
 </ul>
 <p>How does binary search work?:</p>
@@ -761,10 +769,48 @@ I guessed your number 23!
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">options</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"rock"</span><span class="p">,</span> <span class="s2">"paper"</span><span class="p">,</span> <span class="s2">"scissors"</span><span class="p">]</span>
+
+<span class="n">user_choice</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Choose rock, paper, or scissors: "</span><span class="p">)</span>
+
+<span class="n">computer_choice</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">user_choice</span> <span class="o">==</span> <span class="n">computer_choice</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Tie!"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">user_choice</span> <span class="o">==</span> <span class="s2">"rock"</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">computer_choice</span> <span class="o">==</span> <span class="s2">"paper"</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"You lose! Paper covers rock."</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"You win! Rock smashes scissors."</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">user_choice</span> <span class="o">==</span> <span class="s2">"paper"</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">computer_choice</span> <span class="o">==</span> <span class="s2">"scissors"</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"You lose! Scissors cut paper."</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"You win! Paper covers rock."</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">computer_choice</span> <span class="o">==</span> <span class="s2">"rock"</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"You lose! Rock smashes scissors."</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"You win! Scissors cut paper."</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Tie!
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -778,44 +824,48 @@ I guessed your number 23!
 <a class="anchor" href="#Introduction-to-Algorithms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction to Algorithms<a class="anchor-link" href="#Introduction-to-Algorithms"> </a>
 </h1>
 <ul>
-<li>an algorithm is a <strong><strong>__</strong></strong> that describes how to solve a problem or perform a specific task using a computer program. </li>
+<li>an algorithm is a set of instructions that describes how to solve a problem or perform a specific task using a computer program.</li>
 <li>It is a precise sequence of computational steps that take an input and produce an output</li>
 </ul>
 <h2 id="How-do-Algorithms-relate-to-data-structures?">
 <a class="anchor" href="#How-do-Algorithms-relate-to-data-structures?" aria-hidden="true"><span class="octicon octicon-link"></span></a>How do Algorithms relate to data structures?<a class="anchor-link" href="#How-do-Algorithms-relate-to-data-structures?"> </a>
 </h2>
 <ul>
-<li>Algorithms often rely on specific data structures to <strong><strong><strong>__</strong></strong></strong>. </li>
+<li>Algorithms often rely on specific data structures to solve problems efficiently.</li>
 <li>Sorting algorithms require a data structure such as an array or a linked list to store and manipulate data.</li>
-<li>Searching algorithms such as binary search require data structures like <strong><strong>___</strong></strong> to organize and search through data.</li>
+<li>Searching algorithms such as binary search require data structures like arrays or trees to organize and search through data.</li>
 </ul>
 <h2 id="Important-Terms">
 <a class="anchor" href="#Important-Terms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Important Terms<a class="anchor-link" href="#Important-Terms"> </a>
 </h2>
 <p><strong>What is an algorithm?</strong></p>
 <ul>
-<li>it is a <strong>___</strong> set of instructions that accomplishes a specific task</li>
+<li>it is a finite set of instructions that accomplishes a specific task</li>
+<li>Step-by-step process that takes an input, performs steps, and produces output</li>
 </ul>
 <p><strong>Sequencing</strong></p>
 <ul>
-<li>means that there is an <strong>_</strong> in which to do things</li>
+<li>means that there is an order in which to do things</li>
+<li>It is the order in which steps or instructions are executed by the program</li>
 </ul>
 <p><strong>Selection</strong></p>
 <ul>
-<li>Helps to choose <strong><strong><strong>_</strong></strong></strong> based off of a decision that the programmer wants to make</li>
+<li>Helps to choose two different outcomes based off of a decision that the programmer wants to make</li>
+<li>Typically achieved through conditional statements</li>
 </ul>
 <p><strong>Iteration</strong></p>
 <ul>
 <li>Repeat something until the condition is met. (also referred to as repetition)</li>
+<li>Allows a program to perform the same or similar operations on data, or to perform certain tasks until desired outcome</li>
 </ul>
 <h2 id="Calling-and-Developing-Procedures">
 <a class="anchor" href="#Calling-and-Developing-Procedures" aria-hidden="true"><span class="octicon octicon-link"></span></a>Calling and Developing Procedures<a class="anchor-link" href="#Calling-and-Developing-Procedures"> </a>
 </h2>
 <ul>
-<li>A procedure is a <strong><strong>___</strong></strong> that performs a specific task.</li>
+<li>A procedure is a sequence of instructions that performs a specific task.</li>
 <li>To call a procedure, you need to know its name and any arguments it requires.</li>
 <li>When a procedure is called, the program jumps to its instruction and starts executing it.</li>
-<li>The arguments passed to a procedure can be used within the procedure to <strong><strong><strong><strong>__</strong></strong></strong></strong>.</li>
+<li>The arguments passed to a procedure can be used within the procedure to perform tasks or calculations..</li>
 <li>After the procedure has completed its task, it returns control back to the calling program.</li>
 </ul>
 
@@ -862,8 +912,8 @@ I guessed your number 23!
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>The result of the procedure can be <strong><strong><em>__</em></strong></strong>, printed to the screen, or used in any other way that is required by the program.</li>
-<li>Procedures can be defined within the same program <strong><strong>___</strong></strong>, and can be reused across multiple parts of the program.</li>
+<li>The result of the procedure can be stored in a variable, printed to the screen, or used in any other way that is required by the program.</li>
+<li>Procedures can be defined within the same program or in external files, and can be reused across multiple parts of the program.</li>
 <li>To avoid errors and improve code readability, it's important to define and call procedures with proper syntax and conventions that are appropriate for the programming language you're using.</li>
 </ul>
 
@@ -919,11 +969,11 @@ I guessed your number 23!
 <a class="anchor" href="#Algorithmic-Efficiency" aria-hidden="true"><span class="octicon octicon-link"></span></a>Algorithmic Efficiency<a class="anchor-link" href="#Algorithmic-Efficiency"> </a>
 </h2>
 <ul>
-<li>Algorithmic efficiency refers to the amount of <strong><strong>__</strong></strong> needed to execute an algorithm.</li>
-<li>The efficiency of an algorithm can be measured in terms of its <strong><strong><strong><strong><strong><strong><strong>__</strong></strong></strong></strong></strong></strong></strong>.<ul>
+<li>Algorithmic efficiency refers to the amount of time and resources needed to execute an algorithm.</li>
+<li>The efficiency of an algorithm can be measured in terms of its time complexity and space complexity.<ul>
 <li>Time complexity refers to the amount of time required by an algorithm to complete its task as a function of its input size.</li>
-<li>Space complexity refers to the <strong><strong>___</strong></strong> required by an algorithm to complete its task as a function of its input size.</li>
-<li>can be analyzed using <strong><strong>__</strong></strong>, which provides an upper bound on the worst-case time and space complexity of the algorithm.</li>
+<li>Space complexity refers to the amount of memory required by an algorithm to complete its task as a function of its input size.</li>
+<li>can be analyzed using Big O notation, which provides an upper bound on the worst-case time and space complexity of the algorithm.</li>
 </ul>
 </li>
 </ul>
@@ -932,7 +982,10 @@ I guessed your number 23!
 <pre><code>- O(N)
 - O(N*log(N))
 - O(N * Sqrt(N))
-- O(N*N)</code></pre>
+- O(N*N)
+
+</code></pre>
+<p>The time complexity will be O(N*N) because there is a nested for loop - or two for loops consecutively - which causes the time complexity of N to be squared.</p>
 
 </div>
 </div>
@@ -954,28 +1007,6 @@ I guessed your number 23!
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/Users/parav/vscode/firstrepo/_notebooks/2023-04-25-studenttemplate.ipynb Cell 25</span> in <span class="ansi-cyan-fg">&lt;cell line: 2&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/parav/vscode/firstrepo/_notebooks/2023-04-25-studenttemplate.ipynb#X33sZmlsZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> a = 0
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell:/Users/parav/vscode/firstrepo/_notebooks/2023-04-25-studenttemplate.ipynb#X33sZmlsZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span> for i in range(N):
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/parav/vscode/firstrepo/_notebooks/2023-04-25-studenttemplate.ipynb#X33sZmlsZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span>   for j in reversed(range(i, N)):
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/parav/vscode/firstrepo/_notebooks/2023-04-25-studenttemplate.ipynb#X33sZmlsZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span>     a = a + i + j
-
-<span class="ansi-red-fg">NameError</span>: name 'N' is not defined</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -987,7 +1018,8 @@ I guessed your number 23!
 <li>n</li>
 <li>(n+1)</li>
 <li>n(n-1)</li>
-<li>n(n+1)</li>
+<li>n(n+1)
+n(n+1) n(n+1) because there are two for loops, and therefore n is iterated through twice. There is also the +1 becaue each time, a value is added by 1.</li>
 </ul>
 
 </div>
@@ -1010,28 +1042,6 @@ I guessed your number 23!
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/Users/parav/vscode/firstrepo/_notebooks/2023-04-25-studenttemplate.ipynb Cell 27</span> in <span class="ansi-cyan-fg">&lt;cell line: 2&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/parav/vscode/firstrepo/_notebooks/2023-04-25-studenttemplate.ipynb#X35sZmlsZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> value = 0
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell:/Users/parav/vscode/firstrepo/_notebooks/2023-04-25-studenttemplate.ipynb#X35sZmlsZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span> for i in range(n): #iterates "n" times, with "i" taking on values from 0 to n-1.
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/parav/vscode/firstrepo/_notebooks/2023-04-25-studenttemplate.ipynb#X35sZmlsZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span>   for j in range(i): # iterates "i" times, with "j" taking on values from 0 to i-1.
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/parav/vscode/firstrepo/_notebooks/2023-04-25-studenttemplate.ipynb#X35sZmlsZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span>     value=value+1
-
-<span class="ansi-red-fg">NameError</span>: name 'n' is not defined</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -1039,8 +1049,8 @@ I guessed your number 23!
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Efficiency can be improved by <strong><strong><strong>_</strong></strong></strong> or by using more efficient data structures and algorithms.<ul>
-<li>Some common techniques for improving efficiency include reducing the <strong><strong>___</strong></strong>, caching results, and <strong><strong>___</strong></strong>.</li>
+<li>Efficiency can be improved by optimizing algorithms or by using more efficient data structures and algorithms.<ul>
+<li>Some common techniques for improving efficiency include reducing the size of the input data, caching results, and parallelizing tasks.</li>
 <li>Understanding algorithmic efficiency is important in software development, as it can impact the performance of applications and their ability to scale with larger data sets.</li>
 </ul>
 </li>
@@ -1055,8 +1065,8 @@ I guessed your number 23!
 <h1 id="Iteration-and-Simulations">
 <a class="anchor" href="#Iteration-and-Simulations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Iteration and Simulations<a class="anchor-link" href="#Iteration-and-Simulations"> </a>
 </h1>
-<p>Simulations are <strong><strong><strong><strong>_</strong></strong></strong></strong> or systems that use mathematical algorithms and computer programs simulate the real behavior and aspects of the subject being modeled.</p>
-<p>Simulations are most often used to model <strong><strong><strong>__</strong></strong></strong> that would be difficult to test in real life, such as modeling the spread of diseases in certain ecosystems or testing the functionality of a potential product before it is made.</p>
+<p>Simulations are models of real-world phenomena or systems that use mathematical algorithms and computer programs simulate the real behavior and aspects of the subject being modeled.</p>
+<p>Simulations are most often used to model complex or time-consuming things that would be difficult to test in real life, such as modeling the spread of diseases in certain ecosystems or testing the functionality of a potential product before it is made.</p>
 <p>In this lesson, we will be looking at lists, iteration, and random values through the lens of simulations.</p>
 <p><strong>PLEASE RUN THE CODE BELOW BEFORE INTERACTING WITH THE CODE SEGMENTS IN THIS SECTION!</strong></p>
 
@@ -1120,7 +1130,7 @@ I guessed your number 23!
 <a class="anchor" href="#For-Loops" aria-hidden="true"><span class="octicon octicon-link"></span></a>For Loops<a class="anchor-link" href="#For-Loops"> </a>
 </h3>
 <p>For loops are probably the most well-known type of iterative loop used in code. Most of us know about the <code>for variable in list</code> format.</p>
-<p>One helpful tool not a lot of people know about is the <code>enumerate()</code> function. When used in conjunction with a for loop, you can always have <strong><strong>_</strong></strong> and value of each selected list entry.</p>
+<p>One helpful tool not a lot of people know about is the <code>enumerate()</code> function. When used in conjunction with a for loop, you can always have access to the index and value of each selected list entry.</p>
 
 </div>
 </div>
@@ -1143,6 +1153,27 @@ I guessed your number 23!
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>This entry's index is 0, but its value is 3.
+The difference between the value and the index is 3.
+This entry's index is 1, but its value is 5.
+The difference between the value and the index is 4.
+This entry's index is 2, but its value is 68.
+The difference between the value and the index is 66.
+This entry's index is 3, but its value is 203.
+The difference between the value and the index is 200.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -1150,7 +1181,7 @@ I guessed your number 23!
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>QUESTION: How is the <code>key, num in enumerate(list)</code> format similar to the format used when applying a <code>for</code> loop to a dictionary?</p>
-<p>Answer: <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><em>__</em></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p>
+<p>Answer: A for loop iterates over the keys and values of a dictionary when it is applied. Similar to how dictionaries' keys and values iterate through their entries, this format does the same with its index and values.</p>
 <h4 id="List-Comprehension">
 <a class="anchor" href="#List-Comprehension" aria-hidden="true"><span class="octicon octicon-link"></span></a>List Comprehension<a class="anchor-link" href="#List-Comprehension"> </a>
 </h4>
@@ -1180,6 +1211,20 @@ I guessed your number 23!
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>['Ace of Diamonds']
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -1213,6 +1258,22 @@ I guessed your number 23!
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>5</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -1256,8 +1317,9 @@ I guessed your number 23!
 <h3 id="While-Loops">
 <a class="anchor" href="#While-Loops" aria-hidden="true"><span class="octicon octicon-link"></span></a>While Loops<a class="anchor-link" href="#While-Loops"> </a>
 </h3>
-<p>While loops aren't used in the program, but they offer a <strong><strong><em>__</em></strong></strong> a set of instructions in a program. The procedure below the <code>while [condition]</code> line will occur until the condition is made not true.</p>
+<p>While loops aren't used in the program, but they offer a different way to repeat a set of instructions in a program. The procedure below the <code>while [condition]</code> line will occur until the condition is made not true.</p>
 <p><strong>Student Interaction</strong>: How could this <code>build</code> function be altered to function with a <strong>while loop</strong> within it?</p>
+<p>A while loop could be used to run only when val is in the range 2 and 15, like while val&lt;15 and while val&gt;2.</p>
 
 </div>
 </div>
@@ -1324,7 +1386,7 @@ I guessed your number 23!
 <h2 id="Random-Values">
 <a class="anchor" href="#Random-Values" aria-hidden="true"><span class="octicon octicon-link"></span></a>Random Values<a class="anchor-link" href="#Random-Values"> </a>
 </h2>
-<p>Because unpredictable randomness occurs in the real world, it's important to have a way to represent it. Simulations are <strong><strong><strong>_</strong></strong></strong>, which could be in the form of random number generation or other methods like <code>shuffle</code>.</p>
+<p>Because unpredictable randomness occurs in the real world, it's important to have a way to represent it. Simulations are able to use randomization, which could be in the form of random number generation or other methods like <code>shuffle</code>.</p>
 <p>Card decks are a great example of how random values can be used to represent real-world scenarios. In the card simulation, the <code>random</code> module's <code>shuffle</code> function is used to quite literally shuffle the deck, seen below.</p>
 
 </div>
@@ -1351,7 +1413,7 @@ I guessed your number 23!
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Often, random selection methods use functions like <code>______</code> or <code>________</code> as ways to select certain indexes in lists, or might use the random numbers in some other way.</p>
+<p>Often, random selection methods use functions like <code>randint</code> or <code>randrange</code> as ways to select certain indexes in lists, or might use the random numbers in some other way.</p>
 <h2 id="QUESTION:-Without-shuffling-the-card-order-of-the-deck,-can-you-think-of-a-way-that-the-aforementioned-random-module-functions-could-be-used-to-get-a-random-card-from-the-deck?-Do-so-in-the-code-cell-below.">
 <a class="anchor" href="#QUESTION:-Without-shuffling-the-card-order-of-the-deck,-can-you-think-of-a-way-that-the-aforementioned-random-module-functions-could-be-used-to-get-a-random-card-from-the-deck?-Do-so-in-the-code-cell-below." aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>QUESTION:</strong> Without shuffling the card order of the deck, can you think of a way that the aforementioned <code>random</code> module functions could be used to get a random card from the deck? Do so in the code cell below.<a class="anchor-link" href="#QUESTION:-Without-shuffling-the-card-order-of-the-deck,-can-you-think-of-a-way-that-the-aforementioned-random-module-functions-could-be-used-to-get-a-random-card-from-the-deck?-Do-so-in-the-code-cell-below."> </a>
 </h2>
@@ -1367,10 +1429,30 @@ I guessed your number 23!
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 
-<span class="c1">#find another random function that could pull a random card from a deck of UNSORTED cards</span>
+<span class="n">suits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Hearts"</span><span class="p">,</span> <span class="s2">"Diamonds"</span><span class="p">,</span> <span class="s2">"Clubs"</span><span class="p">,</span> <span class="s2">"Spades"</span><span class="p">]</span>
+<span class="n">ranks</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Ace"</span><span class="p">,</span> <span class="s2">"2"</span><span class="p">,</span> <span class="s2">"3"</span><span class="p">,</span> <span class="s2">"4"</span><span class="p">,</span> <span class="s2">"5"</span><span class="p">,</span> <span class="s2">"6"</span><span class="p">,</span> <span class="s2">"7"</span><span class="p">,</span> <span class="s2">"8"</span><span class="p">,</span> <span class="s2">"9"</span><span class="p">,</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"Jack"</span><span class="p">,</span> <span class="s2">"Queen"</span><span class="p">,</span> <span class="s2">"King"</span><span class="p">]</span>
+<span class="n">deck</span> <span class="o">=</span> <span class="p">[(</span><span class="n">rank</span><span class="p">,</span> <span class="n">suit</span><span class="p">)</span> <span class="k">for</span> <span class="n">suit</span> <span class="ow">in</span> <span class="n">suits</span> <span class="k">for</span> <span class="n">rank</span> <span class="ow">in</span> <span class="n">ranks</span><span class="p">]</span>
+
+<span class="n">random_card</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">deck</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Random card from the deck:"</span><span class="p">,</span> <span class="n">random_card</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Random card from the deck: ('Jack', 'Hearts')
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -1403,17 +1485,47 @@ I guessed your number 23!
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># (Concert attendance? Wind speeds? Interactions between subjects in large environments?)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 
-<span class="c1"># Think about the sort of things that could be saved in lists, dictionaries, etc.</span>
-<span class="c1"># (Even better if you can take advantage of the specific features of multiple types of data sets!)</span>
+<span class="n">num_rolls</span> <span class="o">=</span> <span class="mi">10000</span>  <span class="c1">#number of times to roll the dice</span>
+<span class="n">frequencies</span> <span class="o">=</span> <span class="p">{</span><span class="n">i</span><span class="p">:</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">13</span><span class="p">)}</span>  <span class="c1">#dictionary to keep track of frequencies</span>
 
-<span class="c1"># What kind of iteration happens in the real world?</span>
-<span class="c1"># What occurs repeatedly, even over a long period of time?</span>
-<span class="c1"># You could model the results of a disease spreading through a population without it taking IRL years.</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_rolls</span><span class="p">):</span>
+    <span class="n">dice_1</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+    <span class="n">dice_2</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">dice_1</span> <span class="o">+</span> <span class="n">dice_2</span>
+    <span class="n">frequencies</span><span class="p">[</span><span class="n">total</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="c1">#print the frequencies of each possible sum</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">13</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Sum of </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2"> occurred </span><span class="si">{</span><span class="n">frequencies</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s2"> times out of </span><span class="si">{</span><span class="n">num_rolls</span><span class="si">}</span><span class="s2"> rolls"</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Sum of 2 occurred 280 times out of 10000 rolls
+Sum of 3 occurred 555 times out of 10000 rolls
+Sum of 4 occurred 827 times out of 10000 rolls
+Sum of 5 occurred 1056 times out of 10000 rolls
+Sum of 6 occurred 1384 times out of 10000 rolls
+Sum of 7 occurred 1632 times out of 10000 rolls
+Sum of 8 occurred 1423 times out of 10000 rolls
+Sum of 9 occurred 1134 times out of 10000 rolls
+Sum of 10 occurred 852 times out of 10000 rolls
+Sum of 11 occurred 582 times out of 10000 rolls
+Sum of 12 occurred 275 times out of 10000 rolls
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -1426,7 +1538,7 @@ I guessed your number 23!
 <h1 id="Databases">
 <a class="anchor" href="#Databases" aria-hidden="true"><span class="octicon octicon-link"></span></a>Databases<a class="anchor-link" href="#Databases"> </a>
 </h1>
-<p>We have already gone over databases in this class, but here is a refresher. A database contains data that's <strong><strong><em>__</em></strong></strong>. The information in this database can then be <strong>__</strong> from the database and can be used in a program.</p>
+<p>We have already gone over databases in this class, but here is a refresher. A database contains data that's stored in columns and rows. The information in this database can then be pulled from the database and can be used in a program.</p>
 <h2 id="Setting-Up-the-Database">
 <a class="anchor" href="#Setting-Up-the-Database" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setting Up the Database<a class="anchor-link" href="#Setting-Up-the-Database"> </a>
 </h2>
@@ -1643,9 +1755,9 @@ I guessed your number 23!
 <p>Setters and Getters are important methods used when writing code for databases.</p>
 <ul>
 <li>
-<strong>Setter</strong>: a method that allows us to <strong>___</strong> the value of an attribute in a class.</li>
+<strong>Setter</strong>: a method that allows us to set or change the value of an attribute in a class.</li>
 <li>
-<strong>Getter</strong>: a method that allows us to <strong><em>__</em></strong> an attribute in a given class.</li>
+<strong>Getter</strong>: a method that allows us to access an attribute in a given class.</li>
 </ul>
 <h3 id="Setter-Example">
 <a class="anchor" href="#Setter-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setter Example<a class="anchor-link" href="#Setter-Example"> </a>
@@ -1710,7 +1822,7 @@ I guessed your number 23!
 <ul>
 <li>it acts as a messenger that allows programs to access data from the others </li>
 <li>it connects all information </li>
-<li>for a database, an api <strong><strong>_</strong></strong> the data requested in code for the user </li>
+<li>for a database, an api retrieves the data requested in code for the user</li>
 </ul>
 
 </div>
@@ -1815,6 +1927,22 @@ I guessed your number 23!
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Created user with username "Mr. Cards".
+Created user with username "Kard Kowntre".
+Created user with username "Un Bea Table".
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -1856,8 +1984,119 @@ I guessed your number 23!
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># If you've already run the db.init_app(app) function while in this notebook,</span>
-<span class="c1"># don't do it again until you've closed it!</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">base64</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy.exc</span> <span class="kn">import</span> <span class="n">IntegrityError</span>
+
+<span class="c1"># Define the User class to manage actions in the 'users' table</span>
+<span class="k">class</span> <span class="nc">Game</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">__tablename__</span> <span class="o">=</span> <span class="s1">'games'</span>  <span class="c1"># table name is plural, class name is singular</span>
+
+    <span class="c1"># Define the User schema with "vars" from object</span>
+    <span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">_name</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">_score</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">_wins</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="c1"># constructor of a User object, initializes the instance variables within object (self)</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">score</span><span class="p">,</span> <span class="n">wins</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_score</span> <span class="o">=</span> <span class="n">score</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_wins</span> <span class="o">=</span> <span class="n">wins</span>
+
+    <span class="c1"># a name getter method, extracts name from object</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span>
+    
+    <span class="c1"># a setter function, allows name to be updated after initial object creation</span>
+    <span class="nd">@name</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+    
+    <span class="c1"># a getter method, extracts score from object</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">score</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_score</span>
+    
+    <span class="c1"># a setter function, allows score to be updated after initial object creation</span>
+    <span class="nd">@score</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">score</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">score</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_score</span> <span class="o">=</span> <span class="n">score</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">wins</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_wins</span>
+    
+    <span class="nd">@wins</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">wins</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">wins</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_wins</span> <span class="o">=</span> <span class="n">wins</span>
+    
+    <span class="c1"># output content using str(object) in human readable form, uses getter</span>
+    <span class="c1"># output content using json dumps, this is ready for API response</span>
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+
+    <span class="c1"># CRUD create/add a new record to the table</span>
+    <span class="c1"># returns self or None on error</span>
+    <span class="k">def</span> <span class="nf">create</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># creates a person object from User(db.Model) class, passes initializers</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>  <span class="c1"># add prepares to persist person object to Users table</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>  <span class="c1"># SqlAlchemy "unit of work pattern" requires a manual commit</span>
+            <span class="k">return</span> <span class="bp">self</span>
+        <span class="k">except</span> <span class="n">IntegrityError</span><span class="p">:</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">remove</span><span class="p">()</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s2">"id"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+            <span class="s2">"name"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+            <span class="s2">"score"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">score</span><span class="p">,</span>
+            <span class="s2">"wins"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">wins</span>
+        <span class="p">}</span>
+
+
+    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">score</span><span class="p">,</span> <span class="n">wins</span><span class="p">):</span>
+        <span class="sd">"""only updates values with length"""</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="k">if</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">score</span> <span class="o">=</span> <span class="n">score</span>
+        <span class="k">if</span> <span class="n">wins</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">wins</span> <span class="o">=</span> <span class="n">wins</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+
+<span class="sd">"""Database Creation and Testing """</span>
+<span class="k">def</span> <span class="nf">initGame</span><span class="p">():</span>
+    <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
+        <span class="sd">"""Create database and tables"""</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">create_all</span><span class="p">()</span>
+        <span class="sd">"""Tester data for table"""</span>
+        <span class="n">u1</span> <span class="o">=</span> <span class="n">Game</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="n">score</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">wins</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">u2</span> <span class="o">=</span> <span class="n">Game</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"Bob"</span><span class="p">,</span> <span class="n">score</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">wins</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">u3</span> <span class="o">=</span> <span class="n">Game</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"Tim"</span><span class="p">,</span> <span class="n">score</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">wins</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">u4</span> <span class="o">=</span> <span class="n">Game</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"Robert"</span><span class="p">,</span> <span class="n">score</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">wins</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+        <span class="n">users</span> <span class="o">=</span> <span class="p">[</span><span class="n">u1</span><span class="p">,</span> <span class="n">u2</span><span class="p">,</span> <span class="n">u3</span><span class="p">,</span> <span class="n">u4</span><span class="p">]</span>
+
+        <span class="sd">"""Builds sample user/note(s) data"""</span>
+        <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">users</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">user</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Created user with name "</span><span class="si">{</span><span class="n">user</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1">".'</span><span class="p">)</span>
+            <span class="k">except</span> <span class="n">IntegrityError</span><span class="p">:</span>
+                <span class="sd">'''fails with bad or duplicate data'''</span>
+                <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">remove</span><span class="p">()</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Records exist, duplicate email, or error: </span><span class="si">{</span><span class="n">user</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1886,6 +2125,14 @@ I guessed your number 23!
 <li>Create a menu that allows a user to make an entry in your database (CRUD functions within it)</li>
 <li>You can establish a relationship between two classes/tables in your database (see the relationship between the User and Note classes in the Nighthawk Coders flask repository)</li>
 </ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://user-images.githubusercontent.com/111609656/235339797-06c3089c-fec6-4048-a7bf-2db3086be548.png" alt=""></p>
 
 </div>
 </div>

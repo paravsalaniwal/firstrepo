@@ -16,7 +16,7 @@ Overflow errors occur when an arithmetic operation results in a value outside th
 With these inputs, the OR gate will produce an output of true and the first AND gate will produce an output of true. Since both inputs to the second AND gate will be true, the circuit will have an output of true.
 
 ## Question 62
-![](https://user-images.githubusercontent.com/111609656/235596318-1694bfd4-0997-4b96-ac34-db87c68e9438.png")
+![](https://user-images.githubusercontent.com/111609656/235598212-91e6093c-9565-46ec-ba86-cf1526938c3f.png)
 Since x OR y evaluates to true, the body of the IF statement is executed. Since x is true, true is displayed.
 
 ## Question 63

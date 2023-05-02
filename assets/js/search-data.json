@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "MCQ 2020 Corrections",
-            "content": "Total Score . .",
+            "content": "Total Score . . Question 4 . Overflow errors occur when an arithmetic operation results in a value outside the range of numbers that can be represented by a fixed number of bits. . Question 5 . With these inputs, the OR gate will produce an output of true and the first AND gate will produce an output of true. Since both inputs to the second AND gate will be true, the circuit will have an output of true. . Question 62 . Since x OR y evaluates to true, the body of the IF statement is executed. Since x is true, true is displayed. . Question 63 . In order to perform the desired calculation, the selling price, the genre, and the quantity available are needed. The title is not needed. . Question 66 . This line should be removed. Every integer from start to end should be checked, so currentNum should only be incremented inside the loop but outside the body of the IF statement. .",
             "url": "https://paravsalaniwal.github.io/firstrepo/2023/05/01/MCQ2020Corrections.html",
             "relUrl": "/2023/05/01/MCQ2020Corrections.html",
             "date": " • May 1, 2023"

@@ -95,7 +95,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      15 min read
     
 </span></p>
 
@@ -150,6 +150,11 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h1"><a href="#Write-notes-below">Write notes below </a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a></li>
+<li class="toc-entry toc-h2"><a href="#Has-Full-Stack-Requirements">Has Full Stack Requirements </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Frontend-Runtime-Link">Frontend Runtime Link </a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul><!--
@@ -222,7 +227,7 @@ Delete: Option for deleting every film, also takes in a name to delete that film
 
 <span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 <span class="c1"># Connect to the SQLite database using SQLite3</span>
-<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'films.db'</span><span class="p">)</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'instance/films.db'</span><span class="p">)</span>
 
 <span class="c1"># Create a cursor object to execute SQL commands</span>
 <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
@@ -262,7 +267,7 @@ Delete: Option for deleting every film, also takes in a name to delete that film
     <span class="n">trailer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the link movie/tv show trailer: "</span><span class="p">)</span>
 
     <span class="c1"># Connect to the database and create a cursor to execute SQL commands</span>
-    <span class="n">database</span> <span class="o">=</span> <span class="s1">'films.db'</span>
+    <span class="n">database</span> <span class="o">=</span> <span class="s1">'instance/films.db'</span>
     <span class="n">connection</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
     <span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 
@@ -293,7 +298,7 @@ Delete: Option for deleting every film, also takes in a name to delete that film
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Better Call Saul has been added to the list of movies.
+<pre>Kung Fu Panda has been added to the list of movies.
 </pre>
 </div>
 </div>
@@ -313,7 +318,7 @@ Delete: Option for deleting every film, also takes in a name to delete that film
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">read</span><span class="p">(</span><span class="nb">id</span><span class="p">):</span>
     <span class="c1"># Connect to the database and create a cursor to execute SQL commands</span>
-    <span class="n">database</span> <span class="o">=</span> <span class="s1">'films.db'</span>
+    <span class="n">database</span> <span class="o">=</span> <span class="s1">'instance/films.db'</span>
     <span class="n">connection</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
     <span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 
@@ -346,7 +351,7 @@ Delete: Option for deleting every film, also takes in a name to delete that film
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>1. Breaking Bad, 1594, 3, English, https://ricekrispies.com, Snap, Crackle, Pop
+<pre>1. Kung Fu Panda, 2008, 4, English, https://www.youtube.com/watch?v=NRc-ze7Wrxw, Kung Fu Panda 1 2 3 4
 </pre>
 </div>
 </div>
@@ -654,6 +659,22 @@ Delete: Option for deleting every film, also takes in a name to delete that film
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>UI/UX creation and maintenance utilizing HTML, CSS, and JavaScript is known as frontend development.
+ensuring the website/app is simple to use and appealing to the eye</p>
+<p>PHP, Ruby, Python, or other server-side programming languages are used for backend development.
+handling database management, server-side operations, and data processing
+Ensuring data management, scalability, and security</p>
+<p>Frontend developers use fetching functionality to retrieve data from a server via AJAX, the Fetch API, or third-party libraries like Axios.</p>
+<p>Create, Read, Update, and Delete are known as CRUD operations when applied to data in a database or online application.
+CRUD functionality is implemented by backend developers.
+used in web development to manage data and user input</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Hacks">
 <a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
 </h2>
@@ -672,6 +693,260 @@ Delete: Option for deleting every film, also takes in a name to delete that film
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Has-Full-Stack-Requirements">
+<a class="anchor" href="#Has-Full-Stack-Requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Has Full Stack Requirements</strong><a class="anchor-link" href="#Has-Full-Stack-Requirements"> </a>
+</h2>
+<ul>
+<li>Has frontend/backend developments</li>
+<li>Uses input fields for the user in which when the submit button is clicked, leaderboard is updated</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Frontend-Runtime-Link">
+<a class="anchor" href="#Frontend-Runtime-Link" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://youtu.be/wsxk0s3gpig">Frontend Runtime Link</a><a class="anchor-link" href="#Frontend-Runtime-Link"> </a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Currently the tngc.nighthawkcodescrums.gq is down completely, but I tested before and code does work as shown in video</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://tngc.nighthawkcodescrums.gq/api/battleship_users/"</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+<span class="n">entries</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+    <span class="n">entry</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">"username"</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s2">"username"</span><span class="p">],</span>
+        <span class="s2">"score"</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s2">"score"</span><span class="p">],</span>
+    <span class="p">}</span>
+    <span class="n">entries</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">entry</span><span class="p">)</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">entries</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">SSLEOFError</span>                               Traceback (most recent call last)
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py:703</span>, in <span class="ansi-cyan-fg">HTTPConnectionPool.urlopen</span><span class="ansi-blue-fg">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, **response_kw)</span>
+<span class="ansi-green-intense-fg ansi-bold">    702</span> # Make the request on the httplib connection object.
+<span class="ansi-green-fg">--&gt; 703</span> httplib_response = self._make_request(
+<span class="ansi-green-intense-fg ansi-bold">    704</span>     conn,
+<span class="ansi-green-intense-fg ansi-bold">    705</span>     method,
+<span class="ansi-green-intense-fg ansi-bold">    706</span>     url,
+<span class="ansi-green-intense-fg ansi-bold">    707</span>     timeout=timeout_obj,
+<span class="ansi-green-intense-fg ansi-bold">    708</span>     body=body,
+<span class="ansi-green-intense-fg ansi-bold">    709</span>     headers=headers,
+<span class="ansi-green-intense-fg ansi-bold">    710</span>     chunked=chunked,
+<span class="ansi-green-intense-fg ansi-bold">    711</span> )
+<span class="ansi-green-intense-fg ansi-bold">    713</span> # If we're going to release the connection in ``finally:``, then
+<span class="ansi-green-intense-fg ansi-bold">    714</span> # the response doesn't need to know about the connection. Otherwise
+<span class="ansi-green-intense-fg ansi-bold">    715</span> # it will also try to release it and we'll have a double-release
+<span class="ansi-green-intense-fg ansi-bold">    716</span> # mess.
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py:386</span>, in <span class="ansi-cyan-fg">HTTPConnectionPool._make_request</span><span class="ansi-blue-fg">(self, conn, method, url, timeout, chunked, **httplib_request_kw)</span>
+<span class="ansi-green-intense-fg ansi-bold">    385</span> try:
+<span class="ansi-green-fg">--&gt; 386</span>     self._validate_conn(conn)
+<span class="ansi-green-intense-fg ansi-bold">    387</span> except (SocketTimeout, BaseSSLError) as e:
+<span class="ansi-green-intense-fg ansi-bold">    388</span>     # Py2 raises this as a BaseSSLError, Py3 raises it as socket timeout.
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py:1040</span>, in <span class="ansi-cyan-fg">HTTPSConnectionPool._validate_conn</span><span class="ansi-blue-fg">(self, conn)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1039</span> if not getattr(conn, "sock", None):  # AppEngine might not have  `.sock`
+<span class="ansi-green-fg">-&gt; 1040</span>     conn.connect()
+<span class="ansi-green-intense-fg ansi-bold">   1042</span> if not conn.is_verified:
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py:414</span>, in <span class="ansi-cyan-fg">HTTPSConnection.connect</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    412</span>     context.load_default_certs()
+<span class="ansi-green-fg">--&gt; 414</span> self.sock = ssl_wrap_socket(
+<span class="ansi-green-intense-fg ansi-bold">    415</span>     sock=conn,
+<span class="ansi-green-intense-fg ansi-bold">    416</span>     keyfile=self.key_file,
+<span class="ansi-green-intense-fg ansi-bold">    417</span>     certfile=self.cert_file,
+<span class="ansi-green-intense-fg ansi-bold">    418</span>     key_password=self.key_password,
+<span class="ansi-green-intense-fg ansi-bold">    419</span>     ca_certs=self.ca_certs,
+<span class="ansi-green-intense-fg ansi-bold">    420</span>     ca_cert_dir=self.ca_cert_dir,
+<span class="ansi-green-intense-fg ansi-bold">    421</span>     ca_cert_data=self.ca_cert_data,
+<span class="ansi-green-intense-fg ansi-bold">    422</span>     server_hostname=server_hostname,
+<span class="ansi-green-intense-fg ansi-bold">    423</span>     ssl_context=context,
+<span class="ansi-green-intense-fg ansi-bold">    424</span>     tls_in_tls=tls_in_tls,
+<span class="ansi-green-intense-fg ansi-bold">    425</span> )
+<span class="ansi-green-intense-fg ansi-bold">    427</span> # If we're using all defaults and the connection
+<span class="ansi-green-intense-fg ansi-bold">    428</span> # is TLSv1 or TLSv1.1 we throw a DeprecationWarning
+<span class="ansi-green-intense-fg ansi-bold">    429</span> # for the host.
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/ssl_.py:449</span>, in <span class="ansi-cyan-fg">ssl_wrap_socket</span><span class="ansi-blue-fg">(sock, keyfile, certfile, cert_reqs, ca_certs, server_hostname, ssl_version, ciphers, ssl_context, ca_cert_dir, key_password, ca_cert_data, tls_in_tls)</span>
+<span class="ansi-green-intense-fg ansi-bold">    448</span> if send_sni:
+<span class="ansi-green-fg">--&gt; 449</span>     ssl_sock = _ssl_wrap_socket_impl(
+<span class="ansi-green-intense-fg ansi-bold">    450</span>         sock, context, tls_in_tls, server_hostname=server_hostname
+<span class="ansi-green-intense-fg ansi-bold">    451</span>     )
+<span class="ansi-green-intense-fg ansi-bold">    452</span> else:
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/ssl_.py:493</span>, in <span class="ansi-cyan-fg">_ssl_wrap_socket_impl</span><span class="ansi-blue-fg">(sock, ssl_context, tls_in_tls, server_hostname)</span>
+<span class="ansi-green-intense-fg ansi-bold">    492</span> if server_hostname:
+<span class="ansi-green-fg">--&gt; 493</span>     return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+<span class="ansi-green-intense-fg ansi-bold">    494</span> else:
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/ssl.py:500</span>, in <span class="ansi-cyan-fg">SSLContext.wrap_socket</span><span class="ansi-blue-fg">(self, sock, server_side, do_handshake_on_connect, suppress_ragged_eofs, server_hostname, session)</span>
+<span class="ansi-green-intense-fg ansi-bold">    494</span> def wrap_socket(self, sock, server_side=False,
+<span class="ansi-green-intense-fg ansi-bold">    495</span>                 do_handshake_on_connect=True,
+<span class="ansi-green-intense-fg ansi-bold">    496</span>                 suppress_ragged_eofs=True,
+<span class="ansi-green-intense-fg ansi-bold">    497</span>                 server_hostname=None, session=None):
+<span class="ansi-green-intense-fg ansi-bold">    498</span>     # SSLSocket class handles server_hostname encoding before it calls
+<span class="ansi-green-intense-fg ansi-bold">    499</span>     # ctx._wrap_socket()
+<span class="ansi-green-fg">--&gt; 500</span>     return self.sslsocket_class._create(
+<span class="ansi-green-intense-fg ansi-bold">    501</span>         sock=sock,
+<span class="ansi-green-intense-fg ansi-bold">    502</span>         server_side=server_side,
+<span class="ansi-green-intense-fg ansi-bold">    503</span>         do_handshake_on_connect=do_handshake_on_connect,
+<span class="ansi-green-intense-fg ansi-bold">    504</span>         suppress_ragged_eofs=suppress_ragged_eofs,
+<span class="ansi-green-intense-fg ansi-bold">    505</span>         server_hostname=server_hostname,
+<span class="ansi-green-intense-fg ansi-bold">    506</span>         context=self,
+<span class="ansi-green-intense-fg ansi-bold">    507</span>         session=session
+<span class="ansi-green-intense-fg ansi-bold">    508</span>     )
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/ssl.py:1040</span>, in <span class="ansi-cyan-fg">SSLSocket._create</span><span class="ansi-blue-fg">(cls, sock, server_side, do_handshake_on_connect, suppress_ragged_eofs, server_hostname, context, session)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1039</span>             raise ValueError("do_handshake_on_connect should not be specified for non-blocking sockets")
+<span class="ansi-green-fg">-&gt; 1040</span>         self.do_handshake()
+<span class="ansi-green-intense-fg ansi-bold">   1041</span> except (OSError, ValueError):
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/ssl.py:1309</span>, in <span class="ansi-cyan-fg">SSLSocket.do_handshake</span><span class="ansi-blue-fg">(self, block)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1308</span>         self.settimeout(None)
+<span class="ansi-green-fg">-&gt; 1309</span>     self._sslobj.do_handshake()
+<span class="ansi-green-intense-fg ansi-bold">   1310</span> finally:
+
+<span class="ansi-red-fg">SSLEOFError</span>: EOF occurred in violation of protocol (_ssl.c:1129)
+
+During handling of the above exception, another exception occurred:
+
+<span class="ansi-red-fg">MaxRetryError</span>                             Traceback (most recent call last)
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py:489</span>, in <span class="ansi-cyan-fg">HTTPAdapter.send</span><span class="ansi-blue-fg">(self, request, stream, timeout, verify, cert, proxies)</span>
+<span class="ansi-green-intense-fg ansi-bold">    488</span> if not chunked:
+<span class="ansi-green-fg">--&gt; 489</span>     resp = conn.urlopen(
+<span class="ansi-green-intense-fg ansi-bold">    490</span>         method=request.method,
+<span class="ansi-green-intense-fg ansi-bold">    491</span>         url=url,
+<span class="ansi-green-intense-fg ansi-bold">    492</span>         body=request.body,
+<span class="ansi-green-intense-fg ansi-bold">    493</span>         headers=request.headers,
+<span class="ansi-green-intense-fg ansi-bold">    494</span>         redirect=False,
+<span class="ansi-green-intense-fg ansi-bold">    495</span>         assert_same_host=False,
+<span class="ansi-green-intense-fg ansi-bold">    496</span>         preload_content=False,
+<span class="ansi-green-intense-fg ansi-bold">    497</span>         decode_content=False,
+<span class="ansi-green-intense-fg ansi-bold">    498</span>         retries=self.max_retries,
+<span class="ansi-green-intense-fg ansi-bold">    499</span>         timeout=timeout,
+<span class="ansi-green-intense-fg ansi-bold">    500</span>     )
+<span class="ansi-green-intense-fg ansi-bold">    502</span> # Send the request.
+<span class="ansi-green-intense-fg ansi-bold">    503</span> else:
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py:785</span>, in <span class="ansi-cyan-fg">HTTPConnectionPool.urlopen</span><span class="ansi-blue-fg">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, **response_kw)</span>
+<span class="ansi-green-intense-fg ansi-bold">    783</span>     e = ProtocolError("Connection aborted.", e)
+<span class="ansi-green-fg">--&gt; 785</span> retries = retries.increment(
+<span class="ansi-green-intense-fg ansi-bold">    786</span>     method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+<span class="ansi-green-intense-fg ansi-bold">    787</span> )
+<span class="ansi-green-intense-fg ansi-bold">    788</span> retries.sleep()
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/retry.py:592</span>, in <span class="ansi-cyan-fg">Retry.increment</span><span class="ansi-blue-fg">(self, method, url, response, error, _pool, _stacktrace)</span>
+<span class="ansi-green-intense-fg ansi-bold">    591</span> if new_retry.is_exhausted():
+<span class="ansi-green-fg">--&gt; 592</span>     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+<span class="ansi-green-intense-fg ansi-bold">    594</span> log.debug("Incremented Retry for (url='%s'): %r", url, new_retry)
+
+<span class="ansi-red-fg">MaxRetryError</span>: HTTPSConnectionPool(host='tngc.nighthawkcodescrums.gq', port=443): Max retries exceeded with url: /api/battleship_users/ (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+
+During handling of the above exception, another exception occurred:
+
+<span class="ansi-red-fg">SSLError</span>                                  Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/parav/vscode/firstrepo/_notebooks/2023-04-28-frontendBackend.ipynb Cell 22</span> in <span class="ansi-cyan-fg">&lt;cell line: 6&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/parav/vscode/firstrepo/_notebooks/2023-04-28-frontendBackend.ipynb#X30sZmlsZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span> import pandas as pd
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/parav/vscode/firstrepo/_notebooks/2023-04-28-frontendBackend.ipynb#X30sZmlsZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span> url = "https://tngc.nighthawkcodescrums.gq/api/battleship_users/"
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell:/Users/parav/vscode/firstrepo/_notebooks/2023-04-28-frontendBackend.ipynb#X30sZmlsZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span> response = requests.get(url)
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/parav/vscode/firstrepo/_notebooks/2023-04-28-frontendBackend.ipynb#X30sZmlsZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span> data = response.json()
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/parav/vscode/firstrepo/_notebooks/2023-04-28-frontendBackend.ipynb#X30sZmlsZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span> df = pd.DataFrame()
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/requests/api.py:73</span>, in <span class="ansi-cyan-fg">get</span><span class="ansi-blue-fg">(url, params, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">     62</span> def get(url, params=None, **kwargs):
+<span class="ansi-green-intense-fg ansi-bold">     63</span>     r"""Sends a GET request.
+<span class="ansi-green-intense-fg ansi-bold">     64</span> 
+<span class="ansi-green-intense-fg ansi-bold">     65</span>     :param url: URL for the new :class:`Request` object.
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">     70</span>     :rtype: requests.Response
+<span class="ansi-green-intense-fg ansi-bold">     71</span>     """
+<span class="ansi-green-fg">---&gt; 73</span>     return request("get", url, params=params, **kwargs)
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/requests/api.py:59</span>, in <span class="ansi-cyan-fg">request</span><span class="ansi-blue-fg">(method, url, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">     55</span> # By using the 'with' statement we are sure the session is closed, thus we
+<span class="ansi-green-intense-fg ansi-bold">     56</span> # avoid leaving sockets open which can trigger a ResourceWarning in some
+<span class="ansi-green-intense-fg ansi-bold">     57</span> # cases, and look like a memory leak in others.
+<span class="ansi-green-intense-fg ansi-bold">     58</span> with sessions.Session() as session:
+<span class="ansi-green-fg">---&gt; 59</span>     return session.request(method=method, url=url, **kwargs)
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py:587</span>, in <span class="ansi-cyan-fg">Session.request</span><span class="ansi-blue-fg">(self, method, url, params, data, headers, cookies, files, auth, timeout, allow_redirects, proxies, hooks, stream, verify, cert, json)</span>
+<span class="ansi-green-intense-fg ansi-bold">    582</span> send_kwargs = {
+<span class="ansi-green-intense-fg ansi-bold">    583</span>     "timeout": timeout,
+<span class="ansi-green-intense-fg ansi-bold">    584</span>     "allow_redirects": allow_redirects,
+<span class="ansi-green-intense-fg ansi-bold">    585</span> }
+<span class="ansi-green-intense-fg ansi-bold">    586</span> send_kwargs.update(settings)
+<span class="ansi-green-fg">--&gt; 587</span> resp = self.send(prep, **send_kwargs)
+<span class="ansi-green-intense-fg ansi-bold">    589</span> return resp
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py:701</span>, in <span class="ansi-cyan-fg">Session.send</span><span class="ansi-blue-fg">(self, request, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    698</span> start = preferred_clock()
+<span class="ansi-green-intense-fg ansi-bold">    700</span> # Send the request
+<span class="ansi-green-fg">--&gt; 701</span> r = adapter.send(request, **kwargs)
+<span class="ansi-green-intense-fg ansi-bold">    703</span> # Total elapsed time of the request (approximately)
+<span class="ansi-green-intense-fg ansi-bold">    704</span> elapsed = preferred_clock() - start
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py:563</span>, in <span class="ansi-cyan-fg">HTTPAdapter.send</span><span class="ansi-blue-fg">(self, request, stream, timeout, verify, cert, proxies)</span>
+<span class="ansi-green-intense-fg ansi-bold">    559</span>         raise ProxyError(e, request=request)
+<span class="ansi-green-intense-fg ansi-bold">    561</span>     if isinstance(e.reason, _SSLError):
+<span class="ansi-green-intense-fg ansi-bold">    562</span>         # This branch is for urllib3 v1.22 and later.
+<span class="ansi-green-fg">--&gt; 563</span>         raise SSLError(e, request=request)
+<span class="ansi-green-intense-fg ansi-bold">    565</span>     raise ConnectionError(e, request=request)
+<span class="ansi-green-intense-fg ansi-bold">    567</span> except ClosedPoolError as e:
+
+<span class="ansi-red-fg">SSLError</span>: HTTPSConnectionPool(host='tngc.nighthawkcodescrums.gq', port=443): Max retries exceeded with url: /api/battleship_users/ (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 

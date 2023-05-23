@@ -1,0 +1,76 @@
+---
+layout: base
+permalink: /JSproject/
+title: JS Project 💻
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Code Editor</title>
+  <style>
+    .pane {
+      width: 50%;
+      height: 300px;
+      overflow: scroll;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Online Code Editor</h1>
+    <select id="languageSelect" onchange="changeLanguage()">
+      <option value="html">HTML</option>
+      <option value="css">CSS</option>
+      <option value="js">JavaScript</option>
+    </select>
+    <button onclick="runCode()">Run</button>
+  </div>
+  <div class="pane">
+    <textarea id="code" rows="10" cols="50"></textarea>
+  </div>
+  <div class="pane">
+    <h2>Output</h2>
+    <iframe id="output"></iframe>
+  </div>
+
+  <script>
+    function changeLanguage() {
+      const languageSelect = document.getElementById("languageSelect");
+      const codeTextarea = document.getElementById("code");
+
+      // Clear the code textarea
+      codeTextarea.value = "";
+
+      // Set the placeholder based on the selected language
+      const selectedLanguage = languageSelect.value;
+      codeTextarea.placeholder = `Enter your ${selectedLanguage} code here...`;
+    }
+
+    function runCode() {
+      const codeTextarea = document.getElementById("code");
+      const output = document.getElementById("output");
+      const selectedLanguage = document.getElementById("languageSelect").value;
+
+      // Clear the output iframe
+      output.contentDocument.body.innerHTML = "";
+
+      // Evaluate the code based on the selected language
+      try {
+        if (selectedLanguage === "html") {
+          output.contentDocument.body.innerHTML = codeTextarea.value;
+        } else if (selectedLanguage === "css") {
+          const style = document.createElement("style");
+          style.innerHTML = codeTextarea.value;
+          output.contentDocument.head.appendChild(style);
+        } else if (selectedLanguage === "js") {
+          const script = document.createElement("script");
+          script.innerHTML = codeTextarea.value;
+          output.contentDocument.body.appendChild(script);
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    }
+  </script>
+</body>
+</html>

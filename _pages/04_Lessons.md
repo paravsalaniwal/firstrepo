@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Lessons 
+title: Lessons 👨🏾‍🏫
 permalink: /markdown/lessons/
 categories: [markdown]
 ---

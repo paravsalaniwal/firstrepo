@@ -67,7 +67,7 @@ window.onload = wrap_img;
         </span>
       </label>
 
-      <div class="trigger"><a class="page-link" href="/firstrepo/markdown/about/">About Me 🙍‍♂️</a><a class="page-link" href="/firstrepo/schedule/">Schedule 🗓</a><a class="page-link" href="/firstrepo/markdown/notes/">Notes 📝</a><a class="page-link" href="/firstrepo/markdown/lessons/">Lessons</a><a class="page-link" href="/firstrepo/search/">Search 🔎</a><a class="page-link" href="/firstrepo/categories/">Tags 🏷</a><a class="page-link" href="/firstrepo/music/">Music 🎵</a><p id="time" class="page-link">Current time: </p>
+      <div class="trigger"><a class="page-link" href="/firstrepo/music/">Music 🎵</a><a class="page-link" href="/firstrepo/schedule/">Schedule 🗓</a><a class="page-link" href="/firstrepo/markdown/notes/">Notes 📝</a><a class="page-link" href="/firstrepo/markdown/lessons/">Lessons 👨🏾‍🏫</a><a class="page-link" href="/firstrepo/JSproject/">JS Project 💻</a><a class="page-link" href="/firstrepo/categories/">Tags 🏷</a><a class="page-link" href="/firstrepo/search/">Search 🔎</a><a class="page-link" href="/firstrepo/markdown/about/">About Me 🙍‍♂️</a><p id="time" class="page-link">Current time: </p>
       </div>
     </nav></div>
 </header>
@@ -249,13 +249,13 @@ Bash and Anaconda were installed, as I recall. Software development uses Bash, w
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>brew list <span class="c1"># list packages</span>
-brew update <span class="c1"># update package list</span>
-brew upgrade <span class="c1"># upgrade packages</span>
-brew install git  <span class="c1"># install latest git</span>
-brew install python <span class="c1"># install python3 for development</span>
-python --version <span class="c1"># version of python3 installed</span>
-brew install java <span class="c1"># openjdk install</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">brew</span> <span class="nb">list</span> <span class="c1"># list packages</span>
+<span class="n">brew</span> <span class="n">update</span> <span class="c1"># update package list</span>
+<span class="n">brew</span> <span class="n">upgrade</span> <span class="c1"># upgrade packages</span>
+<span class="n">brew</span> <span class="n">install</span> <span class="n">git</span>  <span class="c1"># install latest git</span>
+<span class="n">brew</span> <span class="n">install</span> <span class="n">python</span> <span class="c1"># install python3 for development</span>
+<span class="n">python</span> <span class="o">--</span><span class="n">version</span> <span class="c1"># version of python3 installed</span>
+<span class="n">brew</span> <span class="n">install</span> <span class="n">java</span> <span class="c1"># openjdk install</span>
 </pre></div>
 
     </div>
@@ -283,41 +283,41 @@ brew install java <span class="c1"># openjdk install</span>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>wsl --install
-wsl --list
-wsl --install -d Ubuntu-20.04
+<div class=" highlight hl-python"><pre><span></span><span class="n">wsl</span> <span class="o">--</span><span class="n">install</span>
+<span class="n">wsl</span> <span class="o">--</span><span class="nb">list</span>
+<span class="n">wsl</span> <span class="o">--</span><span class="n">install</span> <span class="o">-</span><span class="n">d</span> <span class="n">Ubuntu</span><span class="o">-</span><span class="mf">20.04</span>
 <span class="c1"># restart machine</span>
-wsl
-<span class="nb">cd</span> ~
-mkdir vscode
-ls
-<span class="nb">cd</span> ~/vscode  <span class="c1"># changes the directory to path for vscode files</span>
-git clone https://github.com/nighthawkcoders/APCSP.git <span class="c1"># clone repo</span>
-<span class="nb">cd</span> APCSP  <span class="c1"># changes the directory to path for APCSP repos assets</span>
-code .  <span class="c1"># opens APCSP in VSCode</span>
-<span class="nb">cd</span> ..    <span class="c1"># changes the directory to the previous/parent directory</span>
-git config --global user.email mygmail@gmail.com  <span class="c1"># tell git your email</span>
-git config --global user.name mygithub   <span class="c1"># tell git your github id</span>
-shay@MSI:/mnt/c/Users/ShayM$ git config --global user.email your@email.here
-shay@MSI:/mnt/c/Users/ShayM$ git config --global user.name yourusernamehere
+<span class="n">wsl</span>
+<span class="n">cd</span> <span class="o">~</span>
+<span class="n">mkdir</span> <span class="n">vscode</span>
+<span class="n">ls</span>
+<span class="n">cd</span> <span class="o">~/</span><span class="n">vscode</span>  <span class="c1"># changes the directory to path for vscode files</span>
+<span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">nighthawkcoders</span><span class="o">/</span><span class="n">APCSP</span><span class="o">.</span><span class="n">git</span> <span class="c1"># clone repo</span>
+<span class="n">cd</span> <span class="n">APCSP</span>  <span class="c1"># changes the directory to path for APCSP repos assets</span>
+<span class="n">code</span> <span class="o">.</span>  <span class="c1"># opens APCSP in VSCode</span>
+<span class="n">cd</span> <span class="o">..</span>    <span class="c1"># changes the directory to the previous/parent directory</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="n">mygmail</span><span class="nd">@gmail</span><span class="o">.</span><span class="n">com</span>  <span class="c1"># tell git your email</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="n">mygithub</span>   <span class="c1"># tell git your github id</span>
+<span class="n">shay</span><span class="nd">@MSI</span><span class="p">:</span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">ShayM</span><span class="err">$</span> <span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="n">your</span><span class="nd">@email</span><span class="o">.</span><span class="n">here</span>
+<span class="n">shay</span><span class="nd">@MSI</span><span class="p">:</span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">ShayM</span><span class="err">$</span> <span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="n">yourusernamehere</span>
 <span class="c1"># restart machine</span>
-PS C:<span class="se">\U</span>sers<span class="se">\U</span>serName&gt; wsl  <span class="c1"># Windows prompt to WSL command</span>
-<span class="nb">cd</span> /tmp
-wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
-chmod +x Anaconda3-2022.05-Linux-x86_64.sh
+<span class="n">PS</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">UserName</span><span class="o">&gt;</span> <span class="n">wsl</span>  <span class="c1"># Windows prompt to WSL command</span>
+<span class="n">cd</span> <span class="o">/</span><span class="n">tmp</span>
+<span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">repo</span><span class="o">.</span><span class="n">anaconda</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span><span class="n">Anaconda3</span><span class="o">-</span><span class="mf">2022.05</span><span class="o">-</span><span class="n">Linux</span><span class="o">-</span><span class="n">x86_64</span><span class="o">.</span><span class="n">sh</span>
+<span class="n">chmod</span> <span class="o">+</span><span class="n">x</span> <span class="n">Anaconda3</span><span class="o">-</span><span class="mf">2022.05</span><span class="o">-</span><span class="n">Linux</span><span class="o">-</span><span class="n">x86_64</span><span class="o">.</span><span class="n">sh</span>
 <span class="c1"># Answer yes to all the prompts</span>
-./Anaconda3-2022.05-Linux-x86_64.sh
+<span class="o">./</span><span class="n">Anaconda3</span><span class="o">-</span><span class="mf">2022.05</span><span class="o">-</span><span class="n">Linux</span><span class="o">-</span><span class="n">x86_64</span><span class="o">.</span><span class="n">sh</span>
 <span class="c1"># run apt package commands now</span>
-sudo apt list <span class="c1"># list packages</span>
-sudo apt update <span class="c1"># update package list</span>
-sudo apt upgrade <span class="c1"># upgrade packages</span>
-sudo apt install python2 <span class="c1"># install python2 for package dependencies</span>
-sudo apt install python3 python3-pip <span class="c1"># install python3 and pip3 for development</span>
-python --version  <span class="c1"># version of python3 should be shown</span>
-sudo apt install default-jdk default-jre  <span class="c1"># java install</span>
-java --version  <span class="c1"># java runtime version</span>
-javac --version <span class="c1"># java compiler version</span>
-sudo apt install unzip  <span class="c1"># unzip utility</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="nb">list</span> <span class="c1"># list packages</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">update</span> <span class="c1"># update package list</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">upgrade</span> <span class="c1"># upgrade packages</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">python2</span> <span class="c1"># install python2 for package dependencies</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">python3</span> <span class="n">python3</span><span class="o">-</span><span class="n">pip</span> <span class="c1"># install python3 and pip3 for development</span>
+<span class="n">python</span> <span class="o">--</span><span class="n">version</span>  <span class="c1"># version of python3 should be shown</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">default</span><span class="o">-</span><span class="n">jdk</span> <span class="n">default</span><span class="o">-</span><span class="n">jre</span>  <span class="c1"># java install</span>
+<span class="n">java</span> <span class="o">--</span><span class="n">version</span>  <span class="c1"># java runtime version</span>
+<span class="n">javac</span> <span class="o">--</span><span class="n">version</span> <span class="c1"># java compiler version</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">unzip</span>  <span class="c1"># unzip utility</span>
 </pre></div>
 
     </div>
@@ -345,36 +345,36 @@ sudo apt install unzip  <span class="c1"># unzip utility</span>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="o">(</span>base<span class="o">)</span> id:~$ conda --version 
-<span class="o">(</span>base<span class="o">)</span> id:~$ conda install jupyter <span class="c1"># install jupyter</span>
-<span class="o">(</span>base<span class="o">)</span> id:~$ jupyter kernelspec list <span class="c1"># list installed kernels</span>
-Available kernels:
-  python3    /home/shay/.local/share/jupyter/kernels/python3
+<div class=" highlight hl-python"><pre><span></span><span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="nb">id</span><span class="p">:</span><span class="o">~</span><span class="err">$</span> <span class="n">conda</span> <span class="o">--</span><span class="n">version</span> 
+<span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="nb">id</span><span class="p">:</span><span class="o">~</span><span class="err">$</span> <span class="n">conda</span> <span class="n">install</span> <span class="n">jupyter</span> <span class="c1"># install jupyter</span>
+<span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="nb">id</span><span class="p">:</span><span class="o">~</span><span class="err">$</span> <span class="n">jupyter</span> <span class="n">kernelspec</span> <span class="nb">list</span> <span class="c1"># list installed kernels</span>
+<span class="n">Available</span> <span class="n">kernels</span><span class="p">:</span>
+  <span class="n">python3</span>    <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">shay</span><span class="o">/.</span><span class="n">local</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">jupyter</span><span class="o">/</span><span class="n">kernels</span><span class="o">/</span><span class="n">python3</span>
 
-<span class="o">(</span>base<span class="o">)</span> id:~$ <span class="c1"># start in home directory</span>
-<span class="o">(</span>base<span class="o">)</span> id:~$ pip install bash_kernel <span class="c1"># download bash kernel</span>
-Collecting bash_kernel
-  Downloading bash_kernel-0.7.2-py2.py3-none-any.whl <span class="o">(</span><span class="m">15</span> kB<span class="o">)</span>
-Requirement already satisfied: pexpect&gt;<span class="o">=</span><span class="m">4</span>.0 in ./anaconda3/lib/python3.9/site-packages <span class="o">(</span>from bash_kernel<span class="o">)</span> <span class="o">(</span><span class="m">4</span>.8.0<span class="o">)</span>
-Requirement already satisfied: ptyprocess&gt;<span class="o">=</span><span class="m">0</span>.5 in ./anaconda3/lib/python3.9/site-packages <span class="o">(</span>from pexpect&gt;<span class="o">=</span><span class="m">4</span>.0-&gt;bash_kernel<span class="o">)</span> <span class="o">(</span><span class="m">0</span>.7.0<span class="o">)</span>
-Installing collected packages: bash-kernel
-Successfully installed bash-kernel-0.7.2
-<span class="o">(</span>base<span class="o">)</span> id:~$ python -m bash_kernel.install <span class="c1"># install kernel</span>
-Installing IPython kernel spec
-<span class="o">(</span>base<span class="o">)</span> id:~$ jupyter kernelspec list <span class="c1"># list kernels</span>
-Available kernels:
-  bash       /home/shay/.local/share/jupyter/kernels/bash
-  python3    /home/shay/.local/share/jupyter/kernels/python3
+<span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="nb">id</span><span class="p">:</span><span class="o">~</span><span class="err">$</span> <span class="c1"># start in home directory</span>
+<span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="nb">id</span><span class="p">:</span><span class="o">~</span><span class="err">$</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">bash_kernel</span> <span class="c1"># download bash kernel</span>
+<span class="n">Collecting</span> <span class="n">bash_kernel</span>
+  <span class="n">Downloading</span> <span class="n">bash_kernel</span><span class="o">-</span><span class="mf">0.7</span><span class="o">.</span><span class="mi">2</span><span class="o">-</span><span class="n">py2</span><span class="o">.</span><span class="n">py3</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="nb">any</span><span class="o">.</span><span class="n">whl</span> <span class="p">(</span><span class="mi">15</span> <span class="n">kB</span><span class="p">)</span>
+<span class="n">Requirement</span> <span class="n">already</span> <span class="n">satisfied</span><span class="p">:</span> <span class="n">pexpect</span><span class="o">&gt;=</span><span class="mf">4.0</span> <span class="ow">in</span> <span class="o">./</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="o">.</span><span class="mi">9</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span> <span class="p">(</span><span class="kn">from</span> <span class="nn">bash_kernel</span><span class="p">)</span> <span class="p">(</span><span class="mf">4.8</span><span class="o">.</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">Requirement</span> <span class="n">already</span> <span class="n">satisfied</span><span class="p">:</span> <span class="n">ptyprocess</span><span class="o">&gt;=</span><span class="mf">0.5</span> <span class="ow">in</span> <span class="o">./</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="o">.</span><span class="mi">9</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span> <span class="p">(</span><span class="kn">from</span> <span class="nn">pexpect</span><span class="o">&gt;=</span><span class="mf">4.0</span><span class="o">-&gt;</span><span class="n">bash_kernel</span><span class="p">)</span> <span class="p">(</span><span class="mf">0.7</span><span class="o">.</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">Installing</span> <span class="n">collected</span> <span class="n">packages</span><span class="p">:</span> <span class="n">bash</span><span class="o">-</span><span class="n">kernel</span>
+<span class="n">Successfully</span> <span class="n">installed</span> <span class="n">bash</span><span class="o">-</span><span class="n">kernel</span><span class="o">-</span><span class="mf">0.7</span><span class="o">.</span><span class="mi">2</span>
+<span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="nb">id</span><span class="p">:</span><span class="o">~</span><span class="err">$</span> <span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">bash_kernel</span><span class="o">.</span><span class="n">install</span> <span class="c1"># install kernel</span>
+<span class="n">Installing</span> <span class="n">IPython</span> <span class="n">kernel</span> <span class="n">spec</span>
+<span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="nb">id</span><span class="p">:</span><span class="o">~</span><span class="err">$</span> <span class="n">jupyter</span> <span class="n">kernelspec</span> <span class="nb">list</span> <span class="c1"># list kernels</span>
+<span class="n">Available</span> <span class="n">kernels</span><span class="p">:</span>
+  <span class="n">bash</span>       <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">shay</span><span class="o">/.</span><span class="n">local</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">jupyter</span><span class="o">/</span><span class="n">kernels</span><span class="o">/</span><span class="n">bash</span>
+  <span class="n">python3</span>    <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">shay</span><span class="o">/.</span><span class="n">local</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">jupyter</span><span class="o">/</span><span class="n">kernels</span><span class="o">/</span><span class="n">python3</span>
 
-<span class="o">(</span>base<span class="o">)</span> id:~$ conda install nodejs <span class="c1"># node is framework for JavaScript kernel</span>
-<span class="o">(</span>base<span class="o">)</span> id:~$ npm -version  <span class="c1"># node package manager comes with nodejs</span>
-<span class="o">(</span>base<span class="o">)</span> id:~$ npm install -g ijavascript  <span class="c1"># get the kernel</span>
-<span class="o">(</span>base<span class="o">)</span> id:~$ ijsinstall <span class="c1"># install javascript kernel</span>
-<span class="o">(</span>base<span class="o">)</span> id:~$ jupyter kernelspec list <span class="c1"># list kernels</span>
-Available kernels:
-  bash          /home/shay/.local/share/jupyter/kernels/bash
-  javascript    /home/shay/.local/share/jupyter/kernels/javascript
-  python3       /home/shay/.local/share/jupyter/kernels/python3
+<span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="nb">id</span><span class="p">:</span><span class="o">~</span><span class="err">$</span> <span class="n">conda</span> <span class="n">install</span> <span class="n">nodejs</span> <span class="c1"># node is framework for JavaScript kernel</span>
+<span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="nb">id</span><span class="p">:</span><span class="o">~</span><span class="err">$</span> <span class="n">npm</span> <span class="o">-</span><span class="n">version</span>  <span class="c1"># node package manager comes with nodejs</span>
+<span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="nb">id</span><span class="p">:</span><span class="o">~</span><span class="err">$</span> <span class="n">npm</span> <span class="n">install</span> <span class="o">-</span><span class="n">g</span> <span class="n">ijavascript</span>  <span class="c1"># get the kernel</span>
+<span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="nb">id</span><span class="p">:</span><span class="o">~</span><span class="err">$</span> <span class="n">ijsinstall</span> <span class="c1"># install javascript kernel</span>
+<span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="nb">id</span><span class="p">:</span><span class="o">~</span><span class="err">$</span> <span class="n">jupyter</span> <span class="n">kernelspec</span> <span class="nb">list</span> <span class="c1"># list kernels</span>
+<span class="n">Available</span> <span class="n">kernels</span><span class="p">:</span>
+  <span class="n">bash</span>          <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">shay</span><span class="o">/.</span><span class="n">local</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">jupyter</span><span class="o">/</span><span class="n">kernels</span><span class="o">/</span><span class="n">bash</span>
+  <span class="n">javascript</span>    <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">shay</span><span class="o">/.</span><span class="n">local</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">jupyter</span><span class="o">/</span><span class="n">kernels</span><span class="o">/</span><span class="n">javascript</span>
+  <span class="n">python3</span>       <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">shay</span><span class="o">/.</span><span class="n">local</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">jupyter</span><span class="o">/</span><span class="n">kernels</span><span class="o">/</span><span class="n">python3</span>
 </pre></div>
 
     </div>
@@ -410,12 +410,12 @@ Available kernels:
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>git clone <span class="o">{</span>repos-name-here.git<span class="o">}</span> <span class="c1"># what does it do?</span>
-git checkout <span class="o">[</span>branch<span class="o">]</span> <span class="c1"># what does it do?</span>
-git fork <span class="o">{</span>repos-name-here.git<span class="o">}</span> <span class="c1"># what does it do?</span>
-git commit -m <span class="o">{</span><span class="s2">"commit-msg"</span><span class="o">}</span> <span class="c1"># what does it do?</span>
-git pull <span class="c1"># what does it do?</span>
-git push <span class="c1"># what does it do?</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="p">{</span><span class="n">repos</span><span class="o">-</span><span class="n">name</span><span class="o">-</span><span class="n">here</span><span class="o">.</span><span class="n">git</span><span class="p">}</span> <span class="c1"># what does it do?</span>
+<span class="n">git</span> <span class="n">checkout</span> <span class="p">[</span><span class="n">branch</span><span class="p">]</span> <span class="c1"># what does it do?</span>
+<span class="n">git</span> <span class="n">fork</span> <span class="p">{</span><span class="n">repos</span><span class="o">-</span><span class="n">name</span><span class="o">-</span><span class="n">here</span><span class="o">.</span><span class="n">git</span><span class="p">}</span> <span class="c1"># what does it do?</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="p">{</span><span class="s2">"commit-msg"</span><span class="p">}</span> <span class="c1"># what does it do?</span>
+<span class="n">git</span> <span class="n">pull</span> <span class="c1"># what does it do?</span>
+<span class="n">git</span> <span class="n">push</span> <span class="c1"># what does it do?</span>
 
 <span class="c1"># After this line, name other commands that you can use and what they do. This should be easy, as you've already answered the qeue</span>
 </pre></div>
@@ -501,56 +501,56 @@ git push <span class="c1"># what does it do?</span>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>from flask import Blueprint, request, jsonify
-from flask_restful import Api, Resource <span class="c1"># used for REST API building</span>
-from datetime import datetime
-from model_chess import getUser
+<div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Blueprint</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">jsonify</span>
+<span class="kn">from</span> <span class="nn">flask_restful</span> <span class="kn">import</span> <span class="n">Api</span><span class="p">,</span> <span class="n">Resource</span> <span class="c1"># used for REST API building</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">from</span> <span class="nn">model_chess</span> <span class="kn">import</span> <span class="n">getUser</span>
 
-from model_battleship import BattleshipUsers
-from model_battleship import get_scores
+<span class="kn">from</span> <span class="nn">model_battleship</span> <span class="kn">import</span> <span class="n">BattleshipUsers</span>
+<span class="kn">from</span> <span class="nn">model_battleship</span> <span class="kn">import</span> <span class="n">get_scores</span>
 
-<span class="nv">battleship_user_api</span> <span class="o">=</span> Blueprint<span class="o">(</span><span class="s1">'battleship_user_api'</span>, __name__,
-                   <span class="nv">url_prefix</span><span class="o">=</span><span class="s1">'/api/battleship_users'</span><span class="o">)</span>
+<span class="n">battleship_user_api</span> <span class="o">=</span> <span class="n">Blueprint</span><span class="p">(</span><span class="s1">'battleship_user_api'</span><span class="p">,</span> <span class="vm">__name__</span><span class="p">,</span>
+                   <span class="n">url_prefix</span><span class="o">=</span><span class="s1">'/api/battleship_users'</span><span class="p">)</span>
 
 <span class="c1"># API docs https://flask-restful.readthedocs.io/en/latest/api.html</span>
-<span class="nv">api</span> <span class="o">=</span> Api<span class="o">(</span>battleship_user_api<span class="o">)</span>
+<span class="n">api</span> <span class="o">=</span> <span class="n">Api</span><span class="p">(</span><span class="n">battleship_user_api</span><span class="p">)</span>
 
-class UserAPI:        
-    class _Create<span class="o">(</span>Resource<span class="o">)</span>:
-        def post<span class="o">(</span>self<span class="o">)</span>:
-            <span class="nv">body</span> <span class="o">=</span> request.get_json<span class="o">()</span>
+<span class="k">class</span> <span class="nc">UserAPI</span><span class="p">:</span>        
+    <span class="k">class</span> <span class="nc">_Create</span><span class="p">(</span><span class="n">Resource</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">post</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="n">body</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">get_json</span><span class="p">()</span>
             
-            <span class="s1">''' Avoid garbage in, error checking '''</span>
+            <span class="sd">''' Avoid garbage in, error checking '''</span>
             <span class="c1"># validate name</span>
-            <span class="nv">name</span> <span class="o">=</span> body.get<span class="o">(</span><span class="s1">'username'</span><span class="o">)</span>
-            <span class="k">if</span> name is None or len<span class="o">(</span>name<span class="o">)</span> &lt; <span class="m">2</span>:
-                <span class="k">return</span> <span class="o">{</span><span class="s1">'message'</span>: f<span class="s1">'Name is missing, or is less than 2 characters'</span><span class="o">}</span>, <span class="m">210</span>
-            <span class="nv">score</span> <span class="o">=</span> body.get<span class="o">(</span><span class="s1">'score'</span><span class="o">)</span>
-            <span class="s1">''' #1: Key code block, setup USER OBJECT '''</span>
-            <span class="nv">uo</span> <span class="o">=</span> BattleshipUsers<span class="o">(</span><span class="nv">username</span><span class="o">=</span>name, <span class="nv">score</span><span class="o">=</span>score<span class="o">)</span>
-            <span class="s1">''' #2: Key Code block to add user to database '''</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'username'</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">name</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">{</span><span class="s1">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'Name is missing, or is less than 2 characters'</span><span class="p">},</span> <span class="mi">210</span>
+            <span class="n">score</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'score'</span><span class="p">)</span>
+            <span class="sd">''' #1: Key code block, setup USER OBJECT '''</span>
+            <span class="n">uo</span> <span class="o">=</span> <span class="n">BattleshipUsers</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">score</span><span class="o">=</span><span class="n">score</span><span class="p">)</span>
+            <span class="sd">''' #2: Key Code block to add user to database '''</span>
             <span class="c1"># create user in database</span>
-            uo.create<span class="o">()</span>
+            <span class="n">uo</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
             <span class="c1"># success returns json of user</span>
-            <span class="k">if</span> uo:
-                <span class="k">return</span> jsonify<span class="o">(</span>uo.read<span class="o">())</span>
+            <span class="k">if</span> <span class="n">uo</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">uo</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
             <span class="c1"># failure returns error</span>
-            <span class="k">return</span> <span class="o">{</span><span class="s1">'message'</span>: f<span class="s1">'Processed {name}, either a format error or User ID {uo.username} is duplicate'</span><span class="o">}</span>, <span class="m">210</span>
+            <span class="k">return</span> <span class="p">{</span><span class="s1">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'Processed </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">, either a format error or User ID </span><span class="si">{</span><span class="n">uo</span><span class="o">.</span><span class="n">username</span><span class="si">}</span><span class="s1"> is duplicate'</span><span class="p">},</span> <span class="mi">210</span>
 
-    class _Read<span class="o">(</span>Resource<span class="o">)</span>:
-        def get<span class="o">(</span>self<span class="o">)</span>:
-            <span class="nv">users</span> <span class="o">=</span> BattleshipUsers.query.all<span class="o">()</span>    <span class="c1"># read/extract all users from database</span>
-            <span class="nv">json_ready</span> <span class="o">=</span> <span class="o">[</span>user.read<span class="o">()</span> <span class="k">for</span> user in users<span class="o">]</span>  <span class="c1"># prepare output in json</span>
-            <span class="k">return</span> jsonify<span class="o">(</span>json_ready<span class="o">)</span>  <span class="c1"># jsonify creates Flask response object, more specific to APIs than json.dumps</span>
+    <span class="k">class</span> <span class="nc">_Read</span><span class="p">(</span><span class="n">Resource</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="n">users</span> <span class="o">=</span> <span class="n">BattleshipUsers</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>    <span class="c1"># read/extract all users from database</span>
+            <span class="n">json_ready</span> <span class="o">=</span> <span class="p">[</span><span class="n">user</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">users</span><span class="p">]</span>  <span class="c1"># prepare output in json</span>
+            <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">json_ready</span><span class="p">)</span>  <span class="c1"># jsonify creates Flask response object, more specific to APIs than json.dumps</span>
     
-    class _Scores<span class="o">(</span>Resource<span class="o">)</span>:
-        def get<span class="o">(</span>self<span class="o">)</span>:
-            <span class="k">return</span> jsonify<span class="o">(</span>get_scores<span class="o">())</span>
+    <span class="k">class</span> <span class="nc">_Scores</span><span class="p">(</span><span class="n">Resource</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">get_scores</span><span class="p">())</span>
 
     <span class="c1"># building RESTapi endpoint</span>
-    api.add_resource<span class="o">(</span>_Create, <span class="s1">'/create'</span><span class="o">)</span>
-    api.add_resource<span class="o">(</span>_Scores, <span class="s1">'/scores'</span><span class="o">)</span>
-    api.add_resource<span class="o">(</span>_Read, <span class="s1">'/'</span><span class="o">)</span>
+    <span class="n">api</span><span class="o">.</span><span class="n">add_resource</span><span class="p">(</span><span class="n">_Create</span><span class="p">,</span> <span class="s1">'/create'</span><span class="p">)</span>
+    <span class="n">api</span><span class="o">.</span><span class="n">add_resource</span><span class="p">(</span><span class="n">_Scores</span><span class="p">,</span> <span class="s1">'/scores'</span><span class="p">)</span>
+    <span class="n">api</span><span class="o">.</span><span class="n">add_resource</span><span class="p">(</span><span class="n">_Read</span><span class="p">,</span> <span class="s1">'/'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -576,98 +576,98 @@ class UserAPI:
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>import os
-from __init__ import db, app
-from sqlalchemy.exc import IntegrityError
-from werkzeug.security import generate_password_hash, check_password_hash
-from flask_login import UserMixin
-from flask import Blueprint, request, jsonify
+<div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">__init__</span> <span class="kn">import</span> <span class="n">db</span><span class="p">,</span> <span class="n">app</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy.exc</span> <span class="kn">import</span> <span class="n">IntegrityError</span>
+<span class="kn">from</span> <span class="nn">werkzeug.security</span> <span class="kn">import</span> <span class="n">generate_password_hash</span><span class="p">,</span> <span class="n">check_password_hash</span>
+<span class="kn">from</span> <span class="nn">flask_login</span> <span class="kn">import</span> <span class="n">UserMixin</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Blueprint</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">jsonify</span>
 
-class BattleshipUsers<span class="o">(</span>db.Model<span class="o">)</span>:
-    <span class="nv">__tablename__</span> <span class="o">=</span> <span class="s1">'battleship_users'</span>
+<span class="k">class</span> <span class="nc">BattleshipUsers</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">__tablename__</span> <span class="o">=</span> <span class="s1">'battleship_users'</span>
     
     <span class="c1"># Define the Users schema</span>
-    <span class="nv">username</span> <span class="o">=</span> db.Column<span class="o">(</span>db.String<span class="o">(</span><span class="m">255</span><span class="o">)</span>, <span class="nv">primary_key</span><span class="o">=</span>True<span class="o">)</span>
-    <span class="nv">score</span> <span class="o">=</span> db.Column<span class="o">(</span>db.String<span class="o">(</span><span class="m">255</span><span class="o">)</span>, <span class="nv">unique</span><span class="o">=</span>False, <span class="nv">nullable</span><span class="o">=</span>False<span class="o">)</span>
+    <span class="n">username</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">score</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="c1"># Defines a relationship between User record and Notes table, one-to-many (one user to many notes)</span>
     <span class="c1"># notes = db.relationship("Notes", cascade='all, delete', backref='users', lazy=True)</span>
 
     <span class="c1"># constructor of a User object, initializes of instance variables within object</span>
-    def __init__<span class="o">(</span>self, <span class="nv">username</span><span class="o">=</span><span class="s2">""</span>, <span class="nv">score</span><span class="o">=</span><span class="s2">"0"</span><span class="o">)</span>:
-        self.username <span class="o">=</span> username
-        self.score <span class="o">=</span> score
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">score</span><span class="o">=</span><span class="s2">"0"</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">username</span> <span class="o">=</span> <span class="n">username</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">score</span> <span class="o">=</span> <span class="n">score</span>
 
     <span class="c1"># returns a string representation of object, similar to java toString()</span>
-    def __repr__<span class="o">(</span>self<span class="o">)</span>:
-        <span class="k">return</span> <span class="s2">"Users("</span> + str<span class="o">(</span>self.username<span class="o">)</span> + <span class="s2">","</span> + self.score + <span class="s2">")"</span>
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">"Users("</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">username</span><span class="p">)</span> <span class="o">+</span> <span class="s2">","</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">score</span> <span class="o">+</span> <span class="s2">")"</span>
 
     <span class="c1"># CRUD create/add a new record to the table</span>
     <span class="c1"># returns self or None on error</span>
-    def create<span class="o">(</span>self<span class="o">)</span>:
-        try:
+    <span class="k">def</span> <span class="nf">create</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
             <span class="c1"># creates a person object from Users(db.Model) class, passes initializers</span>
-            db.session.add<span class="o">(</span>self<span class="o">)</span>  <span class="c1"># add prepares to persist person object to Users table</span>
-            db.session.commit<span class="o">()</span>  <span class="c1"># SqlAlchemy "unit of work pattern" requires a manual commit</span>
-            <span class="k">return</span> self
-        except IntegrityError:
-            db.session.remove<span class="o">()</span>
-            <span class="k">return</span> None
+            <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>  <span class="c1"># add prepares to persist person object to Users table</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>  <span class="c1"># SqlAlchemy "unit of work pattern" requires a manual commit</span>
+            <span class="k">return</span> <span class="bp">self</span>
+        <span class="k">except</span> <span class="n">IntegrityError</span><span class="p">:</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">remove</span><span class="p">()</span>
+            <span class="k">return</span> <span class="kc">None</span>
 
     <span class="c1"># CRUD read converts self to dictionary</span>
     <span class="c1"># returns dictionary</span>
-    def read<span class="o">(</span>self<span class="o">)</span>:
-        <span class="k">return</span> <span class="o">{</span>
-            <span class="s2">"username"</span>: self.username,
-            <span class="s2">"score"</span>: self.score,
-        <span class="o">}</span>
+    <span class="k">def</span> <span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s2">"username"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">username</span><span class="p">,</span>
+            <span class="s2">"score"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">score</span><span class="p">,</span>
+        <span class="p">}</span>
 
-    def read2<span class="o">(</span>self<span class="o">)</span>:
-        <span class="k">return</span> <span class="o">{</span>
-            <span class="s2">"username"</span>: self.username,
-            <span class="s2">"score"</span>: self.score,
-        <span class="o">}</span>
+    <span class="k">def</span> <span class="nf">read2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s2">"username"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">username</span><span class="p">,</span>
+            <span class="s2">"score"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">score</span><span class="p">,</span>
+        <span class="p">}</span>
 
     <span class="c1"># CRUD update: updates users name, password, phone</span>
     <span class="c1"># returns self</span>
-    def update<span class="o">(</span>self, <span class="nv">username</span><span class="o">=</span><span class="s2">""</span>, <span class="nv">score</span><span class="o">=</span><span class="s2">""</span><span class="o">)</span>:
-        <span class="s2">"""only updates values with length"""</span>
-        <span class="k">if</span> len<span class="o">(</span>username<span class="o">)</span> &gt; <span class="m">0</span>:
-            self.username <span class="o">=</span> username
-        <span class="k">if</span> len<span class="o">(</span>score<span class="o">)</span> &gt; <span class="m">0</span>:
-            self.score <span class="o">=</span> score
-        db.session.commit<span class="o">()</span>
-        <span class="k">return</span> self
+    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">score</span><span class="o">=</span><span class="s2">""</span><span class="p">):</span>
+        <span class="sd">"""only updates values with length"""</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">username</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">username</span> <span class="o">=</span> <span class="n">username</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">score</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">score</span> <span class="o">=</span> <span class="n">score</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span>
 
     <span class="c1"># CRUD delete: remove self</span>
     <span class="c1"># None</span>
-    def delete<span class="o">(</span>self<span class="o">)</span>:
-        db.session.delete<span class="o">(</span>self<span class="o">)</span>
-        db.session.commit<span class="o">()</span>
-        <span class="k">return</span> None
+    <span class="k">def</span> <span class="nf">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="k">return</span> <span class="kc">None</span>
 
     <span class="c1"># required for login_user, overrides id (login_user default) to implemented userID</span>
-    def get_score<span class="o">(</span>self<span class="o">)</span>:
-        <span class="k">return</span> self.score
+    <span class="k">def</span> <span class="nf">get_score</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">score</span>
 
-def get_scores<span class="o">()</span>: <span class="c1"># gets userscore, determines if it is lower or greater than current leaderboard scores, and if lower then it will replace</span>
-    <span class="nv">users</span> <span class="o">=</span> BattleshipUsers.query.all<span class="o">()</span> <span class="c1"># uses CRUD read and update and delete</span>
-    <span class="nv">highScore</span> <span class="o">=</span> <span class="m">999999</span>
-    <span class="nv">middleScore</span> <span class="o">=</span> <span class="m">999999</span>
-    <span class="nv">lowScore</span> <span class="o">=</span> <span class="m">999999</span>
-    <span class="nv">scoreTypes</span> <span class="o">=</span> <span class="o">[</span>highScore, middleScore, lowScore<span class="o">]</span>
-    <span class="k">for</span> i in range<span class="o">(</span><span class="m">3</span><span class="o">)</span>:
-        <span class="k">for</span> user in users:
-            <span class="nv">score</span> <span class="o">=</span> int<span class="o">(</span>user.score<span class="o">)</span>
-            <span class="k">if</span> score &lt; scoreTypes<span class="o">[</span>i<span class="o">]</span>:
-                scoreTypes<span class="o">[</span>i<span class="o">]</span> <span class="o">=</span> score
-        <span class="k">for</span> user in users:
-            <span class="k">if</span> int<span class="o">(</span>user.score<span class="o">)</span> <span class="o">==</span> scoreTypes<span class="o">[</span>i<span class="o">]</span>:
-                users.remove<span class="o">(</span>user<span class="o">)</span>
+<span class="k">def</span> <span class="nf">get_scores</span><span class="p">():</span> <span class="c1"># gets userscore, determines if it is lower or greater than current leaderboard scores, and if lower then it will replace</span>
+    <span class="n">users</span> <span class="o">=</span> <span class="n">BattleshipUsers</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">all</span><span class="p">()</span> <span class="c1"># uses CRUD read and update and delete</span>
+    <span class="n">highScore</span> <span class="o">=</span> <span class="mi">999999</span>
+    <span class="n">middleScore</span> <span class="o">=</span> <span class="mi">999999</span>
+    <span class="n">lowScore</span> <span class="o">=</span> <span class="mi">999999</span>
+    <span class="n">scoreTypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">highScore</span><span class="p">,</span> <span class="n">middleScore</span><span class="p">,</span> <span class="n">lowScore</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">users</span><span class="p">:</span>
+            <span class="n">score</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">score</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">score</span> <span class="o">&lt;</span> <span class="n">scoreTypes</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                <span class="n">scoreTypes</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">score</span>
+        <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">users</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">score</span><span class="p">)</span> <span class="o">==</span> <span class="n">scoreTypes</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                <span class="n">users</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
 
-    <span class="k">return</span> <span class="o">{</span><span class="s2">"highScore"</span>: scoreTypes<span class="o">[</span><span class="m">0</span><span class="o">]</span>, <span class="s2">"middleScore"</span>: scoreTypes<span class="o">[</span><span class="m">1</span><span class="o">]</span>, <span class="s2">"lowScore"</span>: scoreTypes<span class="o">[</span><span class="m">2</span><span class="o">]}</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s2">"highScore"</span><span class="p">:</span> <span class="n">scoreTypes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">"middleScore"</span><span class="p">:</span> <span class="n">scoreTypes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">"lowScore"</span><span class="p">:</span> <span class="n">scoreTypes</span><span class="p">[</span><span class="mi">2</span><span class="p">]}</span>
 
-<span class="k">if</span> <span class="nv">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span>:
-    print<span class="o">(</span><span class="s2">"hi"</span><span class="o">)</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"hi"</span><span class="p">)</span>
 </pre></div>
 
     </div>

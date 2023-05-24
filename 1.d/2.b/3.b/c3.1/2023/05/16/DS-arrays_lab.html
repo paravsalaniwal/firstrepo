@@ -97,7 +97,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      13 min read
+      14 min read
     
 </span></p>
 
@@ -432,6 +432,29 @@ For loop with shortcut (*) row expansion
 <span class="p">}</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr2D</span><span class="p">);</span>
 <span class="nx">element</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">arr2D</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">keypad</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="kd">var</span> <span class="nx">rows1</span> <span class="o">=</span> <span class="mf">4</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">cols1</span> <span class="o">=</span> <span class="mf">3</span><span class="p">;</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">rows1</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">keypad</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">[];</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">cols1</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="nx">i</span> <span class="o">*</span> <span class="nx">cols1</span> <span class="o">+</span> <span class="nx">j</span> <span class="o">+</span> <span class="mf">1</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">&lt;=</span> <span class="mf">9</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">keypad</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">]</span> <span class="o">=</span> <span class="nx">num</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">==</span> <span class="mf">10</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">keypad</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">]</span> <span class="o">=</span> <span class="s2">" "</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">==</span> <span class="mf">11</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">keypad</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">==</span> <span class="mf">12</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">keypad</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">]</span> <span class="o">=</span> <span class="s2">" "</span><span class="p">;</span>
+            <span class="p">}</span>
+      <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">keypad</span><span class="p">);</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">"&lt;br&gt;"</span> <span class="o">+</span> <span class="nx">keypad</span><span class="p">);</span>
 </pre></div>
 
     </div>
@@ -446,10 +469,10 @@ For loop with shortcut (*) row expansion
 
 
 
-<div id="152d6f74-7937-4341-aa96-fb92a6aac7ae"></div>
+<div id="9bb7bd3e-0bfc-4676-bf62-96467db5837e"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#152d6f74-7937-4341-aa96-fb92a6aac7ae');
+var element = $('#9bb7bd3e-0bfc-4676-bf62-96467db5837e');
 
 /*
 * Creator: Nighthawk Coding Society
@@ -469,6 +492,29 @@ for (var i = 0; i < rows; i++) {
 }
 console.log(arr2D);
 element.append(arr2D);
+
+var keypad = [];
+var rows1 = 4;
+var cols1 = 3;
+
+for (var i = 0; i < rows1; i++) {
+      keypad[i] = [];
+        for (var j = 0; j < cols1; j++) {
+            var num = i * cols1 + j + 1;
+            if (num <= 9) {
+                keypad[i][j] = num;
+            } else if (num == 10) {
+                keypad[i][j] = " ";
+            } else if (num == 11) {
+                keypad[i][j] = 0;
+            } else if (num == 12) {
+                keypad[i][j] = " ";
+            }
+      }
+}
+
+console.log(keypad);
+element.append("<br>" + keypad);
 
 </script>
 </div>

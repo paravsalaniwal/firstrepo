@@ -142,8 +142,8 @@ window.onload = wrap_img;
         alert('Please enter an artist name.');
         return;
       }
-
-      fetch(`https://api.deezer.com/search/artist?q=${encodeURIComponent(artistInput)}`, {
+    
+      fetch(`/api/search?artist=${encodeURIComponent(artistInput)}`, {
         headers: {
           Authorization: 'Bearer frIadzjoDoRQyUgt3fM1X38Y1AM9SLMWXYi2RCB26EC3r729hKa'
         }
@@ -155,9 +155,9 @@ window.onload = wrap_img;
         })
         .catch(error => console.error(error));
     }
-
+    
     function fetchAlbums(artistId) {
-      fetch(`https://api.deezer.com/artist/${artistId}/albums`, {
+      fetch(`/api/albums?artistId=${artistId}`, {
         headers: {
           Authorization: 'Bearer frIadzjoDoRQyUgt3fM1X38Y1AM9SLMWXYi2RCB26EC3r729hKa'
         }
@@ -187,12 +187,12 @@ window.onload = wrap_img;
           });
         })
         .catch(error => console.error(error));
-    }    
-
+    }
+    
     function fetchSongs() {
       const albumId = document.getElementById('album-select').value;
     
-      fetch(`https://api.deezer.com/album/${albumId}`, {
+      fetch(`/api/album/${albumId}`, {
         headers: {
           Authorization: 'Bearer frIadzjoDoRQyUgt3fM1X38Y1AM9SLMWXYi2RCB26EC3r729hKa'
         }
@@ -210,7 +210,7 @@ window.onload = wrap_img;
     
           data.data.forEach(song => {
             const row = document.createElement('tr');
-            row.innerHTML = `
+            row.innerHTML += `
               <td>${song.title}</td>
               <td>${song.artist.name}</td>
               <td>${song.artist.name}</td>
@@ -221,38 +221,7 @@ window.onload = wrap_img;
           });
         })
         .catch(error => console.error(error));
-    }
-    
-    function formatTime(duration) {
-      const minutes = Math.floor(duration / 60);
-      const seconds = duration % 60;
-      return `${minutes}:${seconds.toString().padStart(2, '0')}`;
-    }
-
-    function sortTable(column) {
-      const table = document.getElementById('songs-table');
-      const tbody = table.tBodies[0];
-      const rows = Array.from(tbody.querySelectorAll('tr'));
-
-      const sortType = typeof rows[0].cells[column].textContent;
-
-      rows.sort((a, b) => {
-        const aValue = a.cells[column].textContent;
-        const bValue = b.cells[column].textContent;
-
-        if (sortType === 'string') {
-          return aValue.localeCompare(bValue);
-        } else {
-          return +aValue - +bValue;
-        }
-      });
-
-      while (tbody.firstChild) {
-        tbody.removeChild(tbody.firstChild);
-      }
-
-      rows.forEach(row => tbody.appendChild(row));
-    }
+    }    
   </script>
 </body>
 </html>

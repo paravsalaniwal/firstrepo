@@ -88,75 +88,165 @@ window.onload = wrap_img;
         <!DOCTYPE html>
 <html>
 <head>
-  <title>Online Code Editor</title>
+  <title>Artist and Album Data Table</title>
   <style>
-    .pane {
-      width: 50%;
-      height: 300px;
-      overflow: scroll;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f2f2f2;
     }
   </style>
 </head>
 <body>
-  <div>
-    <h1>Online Code Editor</h1>
-    <select id="languageSelect" onchange="changeLanguage()">
-      <option value="html">HTML</option>
-      <option value="css">CSS</option>
-      <option value="js">JavaScript</option>
+  <h1>Search for an Artist</h1>
+  <input type="text" id="artist-input" placeholder="Enter artist name" />
+  <button onclick="searchArtist()">Get Results</button>
+
+  <div id="album-section" style="display: none;">
+    <h2>Albums</h2>
+    <select id="album-select" onchange="fetchSongs()">
+      <option>Select an album</option>
     </select>
-    <button onclick="runCode()">Run</button>
+    <div id="album-details">
+      <h3 id="album-streams"></h3>
+      <h3 id="album-release-date"></h3>
+    </div>
   </div>
-  <div class="pane">
-    <textarea id="code" rows="10" cols="50"></textarea>
-  </div>
-  <div class="pane">
-    <h2>Output</h2>
-    <iframe id="output"></iframe>
-  </div>
+
+  <h2>Songs</h2>
+  <table id="songs-table">
+    <thead>
+      <tr>
+        <th onclick="sortTable(0)">Song Title</th>
+        <th onclick="sortTable(1)">Song Artist</th>
+        <th onclick="sortTable(2)">Song Features</th>
+        <th onclick="sortTable(3)">All Time Listens</th>
+        <th onclick="sortTable(4)">Length of Song</th>
+      </tr>
+    </thead>
+    <tbody id="songs-table-body">
+    </tbody>
+  </table>
 
   <script>
-    function changeLanguage() {
-      const languageSelect = document.getElementById("languageSelect");
-      const codeTextarea = document.getElementById("code");
+    function searchArtist() {
+      const artistInput = document.getElementById('artist-input').value;
+      if (artistInput === '') {
+        alert('Please enter an artist name.');
+        return;
+      }
 
-      // Clear the code textarea
-      codeTextarea.value = "";
-
-      // Set the placeholder based on the selected language
-      const selectedLanguage = languageSelect.value;
-      codeTextarea.placeholder = `Enter your ${selectedLanguage} code here...`;
+      fetch(`https://api.deezer.com/search/artist?q=${encodeURIComponent(artistInput)}`, {
+        headers: {
+          Authorization: 'Bearer frIadzjoDoRQyUgt3fM1X38Y1AM9SLMWXYi2RCB26EC3r729hKa'
+        }
+      })
+        .then(response => response.json())
+        .then(data => {
+          const artistId = data.data[0].id;
+          fetchAlbums(artistId);
+        })
+        .catch(error => console.error(error));
     }
 
-    function runCode() {
-      const codeTextarea = document.getElementById("code");
-      const output = document.getElementById("output");
-      const selectedLanguage = document.getElementById("languageSelect").value;
-
-      // Clear the output iframe
-      output.contentDocument.body.innerHTML = "";
-
-      // Evaluate the code based on the selected language
-      try {
-        if (selectedLanguage === "html") {
-          output.contentDocument.body.innerHTML = codeTextarea.value;
-        } else if (selectedLanguage === "css") {
-          const style = document.createElement("style");
-          style.innerHTML = codeTextarea.value;
-          output.contentDocument.head.appendChild(style);
-        } else if (selectedLanguage === "js") {
-          const script = document.createElement("script");
-          script.innerHTML = codeTextarea.value;
-          output.contentDocument.body.appendChild(script);
+    function fetchAlbums(artistId) {
+      fetch(`https://api.deezer.com/artist/${artistId}/albums`, {
+        headers: {
+          Authorization: 'Bearer frIadzjoDoRQyUgt3fM1X38Y1AM9SLMWXYi2RCB26EC3r729hKa'
         }
-      } catch (error) {
-        console.error(error);
+      })
+        .then(response => response.json())
+        .then(data => {
+          const albumSelect = document.getElementById('album-select');
+          const albumSection = document.getElementById('album-section');
+
+          albumSelect.innerHTML = '<option>Select an album</option>';
+          albumSection.style.display = 'block';
+
+          data.data.forEach(album => {
+            const option = document.createElement('option');
+            option.value = album.id;
+            option.textContent = album.title;
+            albumSelect.appendChild(option);
+          });
+        })
+        .catch(error => console.error(error));
+    }
+
+    function fetchSongs() {
+      const albumId = document.getElementById('album-select').value;
+
+      fetch(`https://api.deezer.com/album/${albumId}`, {
+        headers: {
+          Authorization: 'Bearer frIadzjoDoRQyUgt3fM1X38Y1AM9SLMWXYi2RCB26EC3r729hKa'
+        }
+      })
+        .then(response => response.json())
+        .then(data => {
+          const albumStreams = document.getElementById('album-streams');
+          const albumReleaseDate = document.getElementById('album-release-date');
+          const songsTableBody = document.getElementById('songs-table-body');
+
+          albumStreams.textContent = `Number of Streams: ${data.nb_fan}`;
+          albumReleaseDate.textContent = `Release Date: ${data.release_date}`;
+
+          songsTableBody.innerHTML = '';
+
+          data.tracks.data.forEach(song => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+              <td>${song.title}</td>
+              <td>${song.artist.name}</td>
+              <td>${song.artist.name}</td>
+              <td>${song.rank}</td>
+              <td>${formatTime(song.duration)}</td>
+            `;
+            songsTableBody.appendChild(row);
+          });
+        })
+        .catch(error => console.error(error));
+    }
+
+    function formatTime(duration) {
+      const minutes = Math.floor(duration / 60);
+      const seconds = duration % 60;
+      return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+    }
+
+    function sortTable(column) {
+      const table = document.getElementById('songs-table');
+      const tbody = table.tBodies[0];
+      const rows = Array.from(tbody.querySelectorAll('tr'));
+
+      const sortType = typeof rows[0].cells[column].textContent;
+
+      rows.sort((a, b) => {
+        const aValue = a.cells[column].textContent;
+        const bValue = b.cells[column].textContent;
+
+        if (sortType === 'string') {
+          return aValue.localeCompare(bValue);
+        } else {
+          return +aValue - +bValue;
+        }
+      });
+
+      while (tbody.firstChild) {
+        tbody.removeChild(tbody.firstChild);
       }
+
+      rows.forEach(row => tbody.appendChild(row));
     }
   </script>
 </body>
 </html>
-
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/firstrepo/"></data>

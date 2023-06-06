@@ -3,7 +3,6 @@ layout: base
 permalink: /JSproject/
 title: JS Project 💻
 ---
-<!DOCTYPE html>
 <html>
 <head>
   <title>Artist and Album Data Table</title>
@@ -62,6 +61,7 @@ title: JS Project 💻
       }
     
       fetch(`/api/search?artist=${encodeURIComponent(artistInput)}`, {
+        method: 'GET',
         headers: {
           Authorization: 'Bearer frIadzjoDoRQyUgt3fM1X38Y1AM9SLMWXYi2RCB26EC3r729hKa'
         }
@@ -76,6 +76,7 @@ title: JS Project 💻
     
     function fetchAlbums(artistId) {
       fetch(`/api/albums?artistId=${artistId}`, {
+        method: 'GET',
         headers: {
           Authorization: 'Bearer frIadzjoDoRQyUgt3fM1X38Y1AM9SLMWXYi2RCB26EC3r729hKa'
         }
@@ -111,6 +112,7 @@ title: JS Project 💻
       const albumId = document.getElementById('album-select').value;
     
       fetch(`/api/album/${albumId}`, {
+        method: 'GET',
         headers: {
           Authorization: 'Bearer frIadzjoDoRQyUgt3fM1X38Y1AM9SLMWXYi2RCB26EC3r729hKa'
         }

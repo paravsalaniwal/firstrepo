@@ -1,0 +1,99 @@
+---
+layout: base
+permalink: /Test/
+title: Test
+---
+<html>
+<head>
+  <title>Deezer API Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Deezer API Example</h1>
+    <label for="artist-input">Artist:</label>
+    <input type="text" id="artist-input">
+    <button id="get-results-btn">Get Results</button>
+    <div id="albums"></div>
+    <div id="songs"></div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const artistInput = document.getElementById('artist-input');
+        const getResultsBtn = document.getElementById('get-results-btn');
+        const albumsContainer = document.getElementById('albums');
+        const songsContainer = document.getElementById('songs');
+      
+        getResultsBtn.addEventListener('click', () => {
+          const artist = artistInput.value;
+          if (artist) {
+            fetch(`http://127.0.0.1:8086/api/music/albums?artist=${encodeURIComponent(artist)}`)
+              .then(response => response.json())
+              .then(albums => {
+                albumsContainer.innerHTML = '';
+                albums.forEach(album => {
+                  const albumElement = document.createElement('div');
+                  albumElement.classList.add('album');
+                  albumElement.innerHTML = `
+                    <img src="${album.cover_medium}" alt="${album.title}">
+                    <span>${album.title}</span>
+                  `;
+                  albumElement.addEventListener('click', () => {
+                    fetch(`http://127.0.0.1:8086/api/music/songs?albumId=${album.id}`)
+                      .then(response => response.json())
+                      .then(songs => {
+                        songsContainer.innerHTML = '';
+                        const table = document.createElement('table');
+                        table.innerHTML = `
+                          <thead>
+                            <tr>
+                              <th>Title</th>
+                              <th>Artist</th>
+                              <th>Features</th>
+                              <th>All-time Listens</th>
+                              <th>Length</th>
+                            </tr>
+                          </thead>
+                          <tbody></tbody>
+                        `;
+                        const tbody = table.querySelector('tbody');
+                        songs.forEach(song => {
+                          const row = document.createElement('tr');
+                          row.innerHTML = `
+                            <td>${song.title}</td>
+                            <td>${song.artist.name}</td>
+                            <td>${song.artist_feat.map(feat => feat.name).join(', ')}</td>
+                            <td>${song.nb_play}</td>
+                            <td>${song.duration}</td>
+                          `;
+                          tbody.appendChild(row);
+                        });
+                        songsContainer.appendChild(table);
+                      })
+                      .catch(error => console.error(error));
+                  });
+                  albumsContainer.appendChild(albumElement);
+                });
+              })
+              .catch(error => console.error(error));
+          }
+        });
+      });      
+  </script>
+  <style>
+    #app {
+        text-align: center;
+      }
+      
+      #albums {
+        margin-top: 20px;
+      }
+      
+      #songs {
+        margin-top: 20px;
+      }
+      
+  </style>
+</body>
+</html>

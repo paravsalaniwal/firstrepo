@@ -85,8 +85,7 @@ window.onload = wrap_img;
   setInterval(clock, 1000)
 </script><main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <!DOCTYPE html>
-<html>
+        <html>
 <head>
   <title>Artist and Album Data Table</title>
   <style>
@@ -144,6 +143,7 @@ window.onload = wrap_img;
       }
     
       fetch(`/api/search?artist=${encodeURIComponent(artistInput)}`, {
+        method: 'GET',
         headers: {
           Authorization: 'Bearer frIadzjoDoRQyUgt3fM1X38Y1AM9SLMWXYi2RCB26EC3r729hKa'
         }
@@ -158,6 +158,7 @@ window.onload = wrap_img;
     
     function fetchAlbums(artistId) {
       fetch(`/api/albums?artistId=${artistId}`, {
+        method: 'GET',
         headers: {
           Authorization: 'Bearer frIadzjoDoRQyUgt3fM1X38Y1AM9SLMWXYi2RCB26EC3r729hKa'
         }
@@ -193,6 +194,7 @@ window.onload = wrap_img;
       const albumId = document.getElementById('album-select').value;
     
       fetch(`/api/album/${albumId}`, {
+        method: 'GET',
         headers: {
           Authorization: 'Bearer frIadzjoDoRQyUgt3fM1X38Y1AM9SLMWXYi2RCB26EC3r729hKa'
         }

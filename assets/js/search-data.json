@@ -737,26 +737,14 @@
   
 
   
-
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-
+      ,"page8": {
+          "title": "Test",
+          "content": "Deezer API Example . Deezer API Example . Artist: Get Results .",
+          "url": "https://paravsalaniwal.github.io/firstrepo/Test/",
+          "relUrl": "/Test/",
+          "date": ""
+      }
+      
   
 
   
@@ -767,7 +755,30 @@
   
 
   
-      ,"page20": {
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+      ,"page21": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://paravsalaniwal.github.io/firstrepo/robots.txt",

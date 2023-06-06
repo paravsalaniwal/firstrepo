@@ -85,12 +85,10 @@ window.onload = wrap_img;
   setInterval(clock, 1000)
 </script><main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <!DOCTYPE html>
-<html>
+        <html>
 <head>
   <title>Music Search</title>
   <style>
-    /* CSS styles for the table and input */
     table {
       border-collapse: collapse;
       width: 100%;
@@ -111,7 +109,6 @@ window.onload = wrap_img;
       margin-bottom: 10px;
     }
 
-    /* CSS styles for the album artwork */
     .album-artwork {
       width: 100px;
       height: auto;
@@ -121,65 +118,61 @@ window.onload = wrap_img;
 <body>
   <h1>Music Search</h1>
 
-  <!-- Input field for searching by song title -->
   <input type="text" id="searchInput" placeholder="Search by Song Title..." />
 
-  <!-- Table to display the music search results -->
   <table id="dataTable">
     <thead>
-      <!-- Table header row with sortable column headers -->
+      <!-- the table is made to sort on click by alphabetical -->
       <tr>
         <th onclick="sortTable(0)">Track Name</th>
         <th onclick="sortTable(1)">Artist</th>
-        <th onclick="sortTable(2)">Genre</th>
-        <th onclick="sortTable(3)">Album</th>
-        <th onclick="sortTable(4)">Duration</th>
-        <th onclick="sortTable(5)">Album Artwork</th>
-        <th onclick="sortTable(6)">Preview</th>
+        <th onclick="sortTable(2)">Album</th>
+        <th onclick="sortTable(3)">Duration</th>
+        <th onclick="sortTable(4)">Album Artwork</th>
+        <th onclick="sortTable(5)">Preview</th>
       </tr>
     </thead>
     <tbody id="dataBody"></tbody>
   </table>
 
   <script>
-    // Fetch music data from the iTunes Search API and populate the table
+    // fetch the data for music all across iTunes using their API and display in table
     async function fetchMusicData() {
-      const searchTerm = document.getElementById('searchInput').value;
-      const response = await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(searchTerm)}&entity=song&limit=50`);
-      const data = await response.json();
-      const tableBody = document.getElementById('dataBody');
+      const searchTerm = document.getElementById('searchInput').value; // gets the user search input and goes to the api
+      const response = await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(searchTerm)}&entity=song&limit=50`); // gets the information based on the user input through fetch
+      const data = await response.json(); // prints the data in json format so its easy to read and present
+      const tableBody = document.getElementById('dataBody'); // puts the information on the body of the table
 
-      // Clear the table body before populating new data
+      // sets it to clear the html table right before the next input request is entered
       tableBody.innerHTML = '';
 
-      // Loop through each song result and create a new table row for each song
+      // loops (using for loops) through every song which has the keywords in the title and displays as a new row in the table
       data.results.forEach(song => {
         const row = document.createElement('tr');
         row.innerHTML = `
           <td>${song.trackName}</td>
           <td>${song.artistName}</td>
-          <td>${song.primaryGenreName}</td>
           <td>${song.collectionName}</td>
           <td>${formatDuration(song.trackTimeMillis)}</td>
           <td><img class="album-artwork" src="${song.artworkUrl100}" alt="Album Artwork"></td>
           <td><audio src="${song.previewUrl}" controls></audio></td>
         `;
-        tableBody.appendChild(row);
+        tableBody.appendChild(row); // appends the data to the table in the appropriate row
       });
     }
 
-    // Sorting the table based on the clicked column header
+    // sorting the table in ascending or descending
     function sortTable(columnIndex) {
-      const table = document.getElementById('dataTable');
-      const rows = Array.from(table.rows).slice(1); // Exclude header row
-      const isAscending = table.rows[0].cells[columnIndex].classList.toggle('asc');
+      const table = document.getElementById('dataTable'); // takes all of the data fron the table currently
+      const rows = Array.from(table.rows).slice(1); // exclude the header row
+      const isAscending = table.rows[0].cells[columnIndex].classList.toggle('asc'); // sorts all that in ascending order
 
-      // Sort the rows based on the clicked column index and ascending/descending order
+      // sorts table 
       rows.sort((row1, row2) => {
         const cellValue1 = row1.cells[columnIndex].innerText;
         const cellValue2 = row2.cells[columnIndex].innerText;
 
-        // Compare the cell values as strings or numbers depending on their type
+        // compares the values when getting sorted in alphabetical order or reverse alphabetical
         if (isNaN(cellValue1) || isNaN(cellValue2)) {
           return cellValue1.localeCompare(cellValue2);
         } else {
@@ -187,23 +180,23 @@ window.onload = wrap_img;
         }
       });
 
-      // Reverse the rows if the order is descending
+      // reverses the rows if descending
       if (!isAscending) {
         rows.reverse();
       }
 
-      // Append the sorted rows back to the table body
+      // append the new organized data
       table.tBodies[0].append(...rows);
     }
 
-    // Formatting duration from milliseconds to minutes:seconds
+    // duration changing from milli to minutes because iTunes API uses milliseconds
     function formatDuration(durationInMillis) {
       const minutes = Math.floor(durationInMillis / 60000);
       const seconds = ((durationInMillis % 60000) / 1000).toFixed(0);
       return `${minutes}:${seconds.padStart(2, '0')}`;
     }
 
-    // Trigger search and data fetching when Enter key is pressed
+    // triggers the data to be fetched when enter key is hit
     const searchInput = document.getElementById('searchInput');
     searchInput.addEventListener('keyup', function(event) {
       if (event.key === 'Enter') {
@@ -211,7 +204,7 @@ window.onload = wrap_img;
       }
     });
 
-    // Fetch music data when the page loads
+    // fetch music
     fetchMusicData();
   </script>
 </body>

@@ -166,23 +166,32 @@ window.onload = wrap_img;
         .then(data => {
           const albumSelect = document.getElementById('album-select');
           const albumSection = document.getElementById('album-section');
-
+    
           albumSelect.innerHTML = '<option>Select an album</option>';
           albumSection.style.display = 'block';
-
+    
           data.data.forEach(album => {
             const option = document.createElement('option');
             option.value = album.id;
             option.textContent = album.title;
             albumSelect.appendChild(option);
+    
+            // Add album cover
+            if (album.cover_medium) {
+              const albumCover = document.createElement('img');
+              albumCover.src = album.cover_medium;
+              albumCover.alt = album.title;
+              albumCover.style.maxWidth = '200px';
+              albumSection.appendChild(albumCover);
+            }
           });
         })
         .catch(error => console.error(error));
-    }
+    }    
 
     function fetchSongs() {
       const albumId = document.getElementById('album-select').value;
-
+    
       fetch(`https://api.deezer.com/album/${albumId}`, {
         headers: {
           Authorization: 'Bearer frIadzjoDoRQyUgt3fM1X38Y1AM9SLMWXYi2RCB26EC3r729hKa'
@@ -193,13 +202,13 @@ window.onload = wrap_img;
           const albumStreams = document.getElementById('album-streams');
           const albumReleaseDate = document.getElementById('album-release-date');
           const songsTableBody = document.getElementById('songs-table-body');
-
+    
           albumStreams.textContent = `Number of Streams: ${data.nb_fan}`;
           albumReleaseDate.textContent = `Release Date: ${data.release_date}`;
-
+    
           songsTableBody.innerHTML = '';
-
-          data.tracks.data.forEach(song => {
+    
+          data.data.forEach(song => {
             const row = document.createElement('tr');
             row.innerHTML = `
               <td>${song.title}</td>
@@ -213,7 +222,7 @@ window.onload = wrap_img;
         })
         .catch(error => console.error(error));
     }
-
+    
     function formatTime(duration) {
       const minutes = Math.floor(duration / 60);
       const seconds = duration % 60;
